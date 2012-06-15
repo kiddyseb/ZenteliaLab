@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANIMS_INFO</key>
+	<array>
+		<dict>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0.5, 1}, {32, 32}}</string>
+					<key>SpriteName</key>
+					<string>StoneBig</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0.5, 36.5}, {32, 32}}</string>
+					<key>SpriteName</key>
+					<string>WoodBig</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{36.5, 0.5}, {32, 32}}</string>
+					<key>SpriteName</key>
+					<string>GlassBig</string>
+				</dict>
+			</array>
+			<key>Image</key>
+			<string>spriteHelperScene.png</string>
+			<key>LoopForever</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>Speed</key>
+			<real>0.40000000596046448</real>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>OtherAnim</string>
+		</dict>
+		<dict>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{36.5, 35.5}, {33, 17}}</string>
+					<key>SpriteName</key>
+					<string>Brick</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0.5, 71.5}, {32, 16}}</string>
+					<key>SpriteName</key>
+					<string>StoneSmall</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{36.5, 55.5}, {32, 16}}</string>
+					<key>SpriteName</key>
+					<string>GlassSmall</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{36.5, 74.5}, {32, 16}}</string>
+					<key>SpriteName</key>
+					<string>WoodSmall</string>
+				</dict>
+			</array>
+			<key>Image</key>
+			<string>spriteHelperScene.png</string>
+			<key>LoopForever</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>Speed</key>
+			<real>0.40000000596046448</real>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>OtherAnim2</string>
+		</dict>
+		<dict>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player001</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{336, 519}, {109, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player002</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{336, 260}, {109, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player003</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{224, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player004</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{336, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player005</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{112, 260}, {109.5, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player006</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{224, 520}, {109, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player007</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{448, 130}, {109.5, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player008</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{336, 390}, {109, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player009</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0, 130}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player010</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{224, 130}, {109.5, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player011</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0, 260}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player012</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{336, 130}, {109.5, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player013</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{112, 130}, {109.5, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player014</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{447, 260}, {109, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player015</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{447, 390}, {109, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player016</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{448, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player017</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0, 520}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player018</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{112, 519}, {109, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player019</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0, 390}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player020</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{224, 260}, {109, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player021</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{224, 390}, {109, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player022</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{112, 389}, {109.5, 127}}</string>
+					<key>SpriteName</key>
+					<string>Player023</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{112, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player024</string>
+				</dict>
+			</array>
+			<key>Image</key>
+			<string>animation.png</string>
+			<key>LoopForever</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>Speed</key>
+			<real>0.05000000074505806</real>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>WalkAnim_1</string>
+		</dict>
+		<dict>
+			<key>Frames</key>
+			<array>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{0, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player001</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{112, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player024</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{224, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player004</string>
+				</dict>
+				<dict>
+					<key>FrameRect</key>
+					<string>{{336, 0}, {109.5, 127.5}}</string>
+					<key>SpriteName</key>
+					<string>Player005</string>
+				</dict>
+			</array>
+			<key>Image</key>
+			<string>animation.png</string>
+			<key>LoopForever</key>
+			<true/>
+			<key>Repetitions</key>
+			<integer>1</integer>
+			<key>Speed</key>
+			<real>0.40000000596046448</real>
+			<key>StartAtLaunch</key>
+			<true/>
+			<key>UniqueName</key>
+			<string>WalkAnim_2</string>
+		</dict>
+	</array>
+	<key>Author</key>
+	<string>Bogdan Vladu</string>
+	<key>BEZIER_INFO</key>
+	<array>
+		<dict>
+			<key>CanSleep</key>
+			<true/>
+			<key>Category</key>
+			<integer>1</integer>
+			<key>Color</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>Curves</key>
+			<array>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{362.05985700349277, 52.518341367889889}</string>
+					<key>EndPoint</key>
+					<string>{192.42403694252434, 81.390642707993038}</string>
+					<key>StartControlPoint</key>
+					<string>{403.13007652024692, 14.991575246502407}</string>
+					<key>StartPoint</key>
+					<string>{399.96774598221248, -60.475872153590672}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{62.139264337820435, 139.28629312460566}</string>
+					<key>EndPoint</key>
+					<string>{98.187278054756547, 153.83302474563266}</string>
+					<key>StartControlPoint</key>
+					<string>{56.393538884920503, 94.101856564928539}</string>
+					<key>StartPoint</key>
+					<string>{192.42403694252434, 81.390642707993038}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{181.32208650569385, 169.2839867526784}</string>
+					<key>EndPoint</key>
+					<string>{227.08843871216243, 197.93304360454226}</string>
+					<key>StartControlPoint</key>
+					<string>{134.48414229611819, 165.11096299235965}</string>
+					<key>StartPoint</key>
+					<string>{98.187278054756547, 153.83302474563266}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{236.02848159532016, 246.518906479527}</string>
+					<key>EndPoint</key>
+					<string>{239.07177736620372, 289.07946622913028}</string>
+					<key>StartControlPoint</key>
+					<string>{284.83930426101153, 227.9615026766553}</string>
+					<key>StartPoint</key>
+					<string>{227.08843871216243, 197.93304360454226}</string>
+				</dict>
+			</array>
+			<key>Density</key>
+			<real>0.20000000298023224</real>
+			<key>Friction</key>
+			<real>0.20000000298023224</real>
+			<key>GravityScale</key>
+			<real>1</real>
+			<key>Group</key>
+			<integer>0</integer>
+			<key>Image</key>
+			<string></string>
+			<key>IsClosed</key>
+			<false/>
+			<key>IsDrawable</key>
+			<false/>
+			<key>IsPath</key>
+			<true/>
+			<key>IsSenzor</key>
+			<false/>
+			<key>IsSimpleLine</key>
+			<false/>
+			<key>IsTile</key>
+			<false/>
+			<key>LineColor</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>LineWidth</key>
+			<real>1</real>
+			<key>Mask</key>
+			<integer>65535</integer>
+			<key>PhysicType</key>
+			<integer>0</integer>
+			<key>Restitution</key>
+			<real>0.20000000298023224</real>
+			<key>Tag</key>
+			<integer>0</integer>
+			<key>TagName</key>
+			<string>DEFAULT</string>
+			<key>TileVertices</key>
+			<array/>
+			<key>UniqueName</key>
+			<string>Bezier</string>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>CreatedWith</key>
+	<string>LevelHelper</string>
+	<key>Gravity</key>
+	<string>{0, 0}</string>
+	<key>JOINTS_INFO</key>
+	<array/>
+	<key>LHVersion</key>
+	<string>1.4</string>
+	<key>LoadedImages</key>
+	<array>
+		<dict>
+			<key>Image</key>
+			<string>car.png</string>
+			<key>OrderZ</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Image</key>
+			<string>gears.png</string>
+			<key>OrderZ</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Image</key>
+			<string>groundTile.png</string>
+			<key>OrderZ</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Image</key>
+			<string>parachuteGuy.png</string>
+			<key>OrderZ</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Image</key>
+			<string>spriteHelperScene.png</string>
+			<key>OrderZ</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Image</key>
+			<string>animation.png</string>
+			<key>OrderZ</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>PARALLAX_INFO</key>
+	<array/>
+	<key>SPRITES_INFO</key>
+	<array>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>parachuteGuy.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<true/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathName</key>
+				<string>None</string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{229.65843534469604, 79.889231860637665}</string>
+				<key>SHName</key>
+				<string>parachuteBackground</string>
+				<key>SHScene</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/parachuteGuy.pshs</string>
+				<key>Scale</key>
+				<string>{1.6039508581161499, 1}</string>
+				<key>Size</key>
+				<string>{320, 480}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{0, 0}, {320, 480}}</string>
+				<key>UniqueName</key>
+				<string>parachuteBackground</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<true/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array/>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>3</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>parachuteGuy.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathName</key>
+				<string>Bezier</string>
+				<key>PathOrientation</key>
+				<integer>2</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>15</real>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{400.27250935892528, -69.230712408374302}</string>
+				<key>SHName</key>
+				<string>parachuteGuy</string>
+				<key>SHScene</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/parachuteGuy.pshs</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>Size</key>
+				<string>{60, 78}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{323, 0}, {60, 78}}</string>
+				<key>UniqueName</key>
+				<string>parachuteGuy</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{7.1087036, -13.950382}</string>
+						<string>{29.749695, 10.241367}</string>
+						<string>{27.578644, 20.786488}</string>
+						<string>{20.75531, 30.401157}</string>
+						<string>{13.932007, 35.363567}</string>
+						<string>{-9.0191345, -12.089478}</string>
+						<string>{-8.0886841, -17.362038}</string>
+						<string>{-3.746582, -20.463547}</string>
+					</array>
+					<array>
+						<string>{-23.906372, 27.609802}</string>
+						<string>{-29.489075, 11.792118}</string>
+						<string>{-9.0191345, -12.089478}</string>
+						<string>{13.932007, 35.363567}</string>
+						<string>{0.28540039, 38.465073}</string>
+						<string>{-10.569885, 36.604168}</string>
+					</array>
+					<array>
+						<string>{-6.2277832, -38.452286}</string>
+						<string>{-2.1958008, -38.452286}</string>
+						<string>{-0.024780273, -32.249268}</string>
+						<string>{3.697052, -19.533092}</string>
+						<string>{-3.1262817, -31.008667}</string>
+					</array>
+					<array>
+						<string>{3.697052, -19.533092}</string>
+						<string>{7.4188538, -17.362038}</string>
+						<string>{7.1087036, -13.950382}</string>
+						<string>{-3.746582, -20.463547}</string>
+					</array>
+					<array>
+						<string>{3.3869019, -38.452286}</string>
+						<string>{7.1087036, -36.591377}</string>
+						<string>{4.0072021, -32.249268}</string>
+						<string>{-0.024780273, -32.249268}</string>
+					</array>
+					<array>
+						<string>{-0.024780273, -32.249268}</string>
+						<string>{4.0072021, -32.249268}</string>
+						<string>{3.697052, -19.533092}</string>
+					</array>
+					<array>
+						<string>{-3.1262817, -31.008667}</string>
+						<string>{3.697052, -19.533092}</string>
+						<string>{-3.746582, -20.463547}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>ScenePreference</key>
+	<dict>
+		<key>BackgroundColor</key>
+		<string>{{0.85599901018099545, 0.84224258507217831}, {0.85255990390379122, 2.1356522001940927e-314}}</string>
+		<key>GameWorld</key>
+		<string>{{0, 0}, {480, 320}}</string>
+		<key>LevelsPath</key>
+		<string>file://localhost/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/</string>
+		<key>PanValue</key>
+		<string>{312.86783078394376, 162.85189208726587}</string>
+		<key>ProjectName</key>
+		<string>LevelHelperTutorialProject</string>
+		<key>SHScenesPath</key>
+		<string>file://localhost/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/</string>
+		<key>SafeFrame</key>
+		<string>{480, 320}</string>
+		<key>ScreenSize</key>
+		<integer>1</integer>
+		<key>Tags</key>
+		<array>
+			<string>DEFAULT</string>
+		</array>
+		<key>ZoomValue</key>
+		<real>1.3006106615066528</real>
+	</dict>
+</dict>
+</plist>

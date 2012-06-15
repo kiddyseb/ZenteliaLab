@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANIMATION_INFO</key>
+	<array/>
+	<key>Author</key>
+	<string>Bogdan Vladu</string>
+	<key>BatchZOrder</key>
+	<integer>0</integer>
+	<key>CreatedWith</key>
+	<string>SpriteHelper</string>
+	<key>ImportedImages</key>
+	<array>
+		<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears.png</string>
+	</array>
+	<key>ImportedImages-HD</key>
+	<array>
+		<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears-hd.png</string>
+	</array>
+	<key>ImportedImages-HD_relative</key>
+	<array>
+		<string>gears-hd.png</string>
+	</array>
+	<key>ImportedImages_relative</key>
+	<array>
+		<string>gears.png</string>
+	</array>
+	<key>SPRITES_INFO</key>
+	<array>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>9000</real>
+				<key>Fixtures</key>
+				<array>
+					<array>
+						<string>{-59.251305, -34.991409}</string>
+						<string>{61.0177, -35.33902}</string>
+						<string>{60.32251, -21.782684}</string>
+						<string>{-59.5989, -21.782684}</string>
+					</array>
+				</array>
+				<key>Friction</key>
+				<real>9999</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>2</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array>
+					<string>{242.14502, 115.56537}</string>
+					<string>{243.5354, 142.67804}</string>
+					<string>{2.9973907, 141.98282}</string>
+					<string>{2.3022003, 115.56537}</string>
+				</array>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 0}, {121.5, 72}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 0}, {243, 144}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0}, {0.88043481, 0.52173913}}</string>
+				<key>HD_ImageSize</key>
+				<string>{276, 276}</string>
+				<key>Image</key>
+				<string>gears.png</string>
+				<key>Image-HD</key>
+				<string>gears-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears-hd.png</string>
+				<key>Name</key>
+				<string>device</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{138, 138}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<true/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>2</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 75}, {62, 62}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 150}, {124, 124}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.54347825}, {0.44927537, 0.99275362}}</string>
+				<key>HD_ImageSize</key>
+				<string>{276, 276}</string>
+				<key>Image</key>
+				<string>gears.png</string>
+				<key>Image-HD</key>
+				<string>gears-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears-hd.png</string>
+				<key>Name</key>
+				<string>wheel2</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{138, 138}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<true/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>2</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{65, 75}, {60, 60}}</string>
+				<key>Frame-HD</key>
+				<string>{{130, 150}, {120, 120}}</string>
+				<key>FrameUV</key>
+				<string>{{0.4710145, 0.54347825}, {0.90579712, 0.97826087}}</string>
+				<key>HD_ImageSize</key>
+				<string>{276, 276}</string>
+				<key>Image</key>
+				<string>gears.png</string>
+				<key>Image-HD</key>
+				<string>gears-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears-hd.png</string>
+				<key>Name</key>
+				<string>wheel1</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{138, 138}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<true/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>2</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{124, 0}, {9, 9}}</string>
+				<key>Frame-HD</key>
+				<string>{{248, 0}, {18, 18}}</string>
+				<key>FrameUV</key>
+				<string>{{0.89855075, 0}, {0.96376812, 0.065217391}}</string>
+				<key>HD_ImageSize</key>
+				<string>{276, 276}</string>
+				<key>Image</key>
+				<string>gears.png</string>
+				<key>Image-HD</key>
+				<string>gears-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears-hd.png</string>
+				<key>Name</key>
+				<string>trigger</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{138, 138}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>2</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array/>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{124, 12}, {14, 3}}</string>
+				<key>Frame-HD</key>
+				<string>{{248, 24}, {28, 6}}</string>
+				<key>FrameUV</key>
+				<string>{{0.89855075, 0.086956523}, {1, 0.10869565}}</string>
+				<key>HD_ImageSize</key>
+				<string>{276, 276}</string>
+				<key>Image</key>
+				<string>gears.png</string>
+				<key>Image-HD</key>
+				<string>gears-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/vladu_bogdan/Desktop/LevelHelperCocos2dBox2diOS/LevelHelperCocos2dBox2diOS/Resources/gears-hd.png</string>
+				<key>Name</key>
+				<string>rope</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{138, 138}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>ScenePreference</key>
+	<dict>
+		<key>BackgroundColor</key>
+		<string>{{0.89399999, 0.89399999}, {0.89399999, 1}}</string>
+		<key>GridSize</key>
+		<integer>32</integer>
+	</dict>
+	<key>Version</key>
+	<string>1.7.3</string>
+</dict>
+</plist>
