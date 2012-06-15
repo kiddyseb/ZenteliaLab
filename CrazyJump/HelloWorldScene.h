@@ -21,7 +21,6 @@
     
 	LevelHelperLoader* lh;    
     
-    b2MouseJoint* mouseJoint;
 }
 
 // returns a Scene that contains the HelloWorld as the only child
