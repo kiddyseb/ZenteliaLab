@@ -172,23 +172,37 @@
             [framesSeq addObject:[frames objectAtIndex:i]];
         }
         
+#if COCOS2D_VERSION >= 0x00020000
+        CCAnimation *animSeqFromStartFrame = [CCAnimation animationWithSpriteFrames:framesSeq delay:speed];
+        animSeqFromStartFrame = [CCAnimate actionWithAnimation:animSeqFromStartFrame];
+#else
         CCAnimation *animSeqFromStartFrame = [CCAnimation animationWithFrames:framesSeq delay:speed];
-        
         animSeqFromStartAction = [CCAnimate actionWithAnimation:animSeqFromStartFrame restoreOriginalFrame:NO];
+#endif   
+        
 
 #ifndef LH_ARC_ENABLED
         [framesSeq release];
 #endif
     }
     
+#if COCOS2D_VERSION >= 0x00020000
+    CCAnimation *anim = [CCAnimation animationWithSpriteFrames:frames delay:speed];
+#else
     CCAnimation *anim = [CCAnimation animationWithFrames:frames delay:speed];
+#endif
     
     CCFiniteTimeAction *seq;
     if(!loop)
     {
+#if COCOS2D_VERSION >= 0x00020000
+        id animAct = [CCRepeat actionWithAction:[CCAnimate actionWithAnimation:anim] 
+                                          times:repetitions];
+#else
         id animAct = [CCRepeat actionWithAction:[CCAnimate actionWithAnimation:anim 
                                                           restoreOriginalFrame:NO] 
                                           times:repetitions];
+#endif
         
         id seq1 = animAct;
         if(animSeqFromStartAction != nil)
@@ -228,16 +242,25 @@
                                                          data:(__bridge void*)uniqueName];
 #endif
             
+#if COCOS2D_VERSION >= 0x00020000
+            id animAct = [CCSequence actionOne:[CCAnimate actionWithAnimation:anim] 
+                                           two:actionRestart];
+#else
             id animAct = [CCSequence actionOne:[CCAnimate actionWithAnimation:anim 
                                                          restoreOriginalFrame:NO] 
                                            two:actionRestart];
+#endif
             
             seq = [CCRepeatForever actionWithAction:animAct];
         }
         else
         {
+#if COCOS2D_VERSION >= 0x00020000
+            seq = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:anim]];
+#else
             seq = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:anim 
                                                               restoreOriginalFrame:NO]];
+#endif
         }
         
         if(animSeqFromStartAction != nil)

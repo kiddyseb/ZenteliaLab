@@ -95,6 +95,42 @@
 //                  -(LHSprite*) newPhysicalSpriteWithName:(NSString*)name fromSpriteHelperScene:(NSString*)sceneName;
 //                  -(LHSprite*) newPhysicalBatchSpriteWithName:(NSString*)name fromSpriteHelperScene:(NSString*)sceneName;
 // v2.5.1 23 Feb 12 - Fixed strech art on ipad when using custom screen size
+// v2.5.2 03 Mar 12 - Fixed startAtLaunch path movement
+//                  - Added following methods in LHSprite class
+//                              -(void)setCollisionFilterCategory:(int)category;
+//                              -(void)setCollisionFilterMask:(int)mask;
+//                              -(void)setCollisionFilterGroup:(int)group;
+//                              -(void)makeDynamic;
+//                              -(void)makeStatic;
+//                              -(void)makeKinematic;
+
+// v2.5.3 05 Mar 12 - Fixed touch handling with new sprites that dont use batch nodes.
+//                  - Added support for touches on sprite to NOT use the physic shape if thats what you want.
+//                  - Changed NSMutableArray to CCArray in the parallax implementation - better performance
+//                  - fixed visibility issue caused by parallax implementation
+//                  - Added new methods in order to be able to create new custom type sprites 
+//                         see comments in this file in the new section
+//                  - deprecated some methods because of warnings when using ARC - new methods were renamed from
+//                       newSprite ... to createSprite...
+// v2.5.4 06 Mar 12 - Fixed path movement for sprites that are inside a parallax node
+// v2.5.4.1 07 Mar 12 - added check for unsaved levels to work with new 1.4.7 version of LH
+// v2.6 16 Mar 12 - Added Physic Cutting Engine
+//                - Fixed bug for touch on tag
+//                - Fixed bug for touch on tag not getting released
+//                - Updated code for Cocos2d 2.0 (latest version)
+// v2.6.1 18 Mar 12 - Fixed createSprite fromSpriteHelperScene - crashing when using sprites with quad shapes
+//                  - Fixed ARC issue in LHSprite.h
+// v2.6.2 18 Mar 12 - Fixed ARC issues in LHCuttingEngineMgr
+// v2.6.3 18 Mar 12 - Fixes all Cocos2d 2.0 deprecated methods
+// v2.7   19 Mar 12 - Big update to the parallax node - this is the update you all been waithing for.
+//                    It brings big speed improvement - 40FPS on iPhone2G
+//                    Because parallax movement is now time based all your Continuos parallaxes speed will have to be modified
+//                    Usually what used to be 0.2 now its 200 - for the speed property
+// v2.7.1   21 Mar 12 - Fixed retina touches
+//                  - Fixed body shape scale issue 
+// v2.7.2   30 Mar 12 - Fixed crash when creating a physical sprite from a spritehelper doc
+//                    - Added remove touch observer on a sprite 
+// v2.7.3   28 Apr 12 - Fixed a problem where continuos parallax scrolling had sprites dissapear to early when scaling was involved
 ////////////////////////////////////////////////////////////////////////////////
 
 #import <Foundation/Foundation.h>
@@ -108,6 +144,7 @@
 #import "LHContactNode.h"
 #import "LHTouchMgr.h"
 #import "LHCustomSpriteMgr.h"
+#import "LHCuttingEngineMgr.h"
 
 #if __has_feature(objc_arc) && __clang_major__ >= 3
 #define LH_ARC_ENABLED 1
@@ -116,9 +153,7 @@
 enum LevelHelper_TAG 
 { 
 	DEFAULT_TAG 	= 0,
-	CAR 			= 1,
-	OTHER 			= 2,
-	NUMBER_OF_TAGS 	= 3
+	NUMBER_OF_TAGS 	= 1
 };
 
 enum LH_ACTIONS_TAGS
@@ -304,16 +339,39 @@ NSValue* LHValueWithCGPoint(CGPoint pt);
 //sprites returned needs to be added in the layer by you
 //new sprite unique name for the returned sprite will be
 //[OLDNAME]_LH_NEW__SPRITE_XX and [OLDNAME]_LH_NEW_BODY_XX
--(LHSprite*) newSpriteWithUniqueName:(NSString *)name; //no physic body
--(LHSprite*) newPhysicalSpriteWithUniqueName:(NSString*)name;//with physic body
--(LHSprite*) newPhysicalSpriteWithUniqueName:(NSString *)name newBodyScale:(CGSize*)newScale;
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newSpriteWithUniqueName:(NSString *)name NS_DEPRECATED(10_0, 10_4, 2_0, 2_0); //no physic body
+-(LHSprite*) createSpriteWithUniqueName:(NSString *)name; //no physic body
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newPhysicalSpriteWithUniqueName:(NSString*)name NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);//with physic body
+-(LHSprite*) createPhysicalSpriteWithUniqueName:(NSString*)name;
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newPhysicalSpriteWithUniqueName:(NSString *)name 
+                                newBodyScale:(CGSize*)newScale NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);
+
+-(LHSprite*) createPhysicalSpriteWithUniqueName:(NSString *)name 
+                                   newBodyScale:(CGSize*)newScale;
 
 //sprites are added in the coresponding batch node automatically
 //new sprite unique name for the returned sprite will be
 //[OLDNAME]_LH_NEW_BATCH_SPRITE_XX and [OLDNAME]_LH_NEW_BATCH_BODY_XX
--(LHSprite*) newBatchSpriteWithUniqueName:(NSString*)name; //no physic body
--(LHSprite*) newPhysicalBatchSpriteWithUniqueName:(NSString*)name; //with physic body
--(LHSprite*) newPhysicalBatchSpriteWithUniqueName:(NSString *)name newBodyScale:(CGSize*)newScale;
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newBatchSpriteWithUniqueName:(NSString*)name NS_DEPRECATED(10_0, 10_4, 2_0, 2_0); //no physic body
+-(LHSprite*) createBatchSpriteWithUniqueName:(NSString*)name;
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newPhysicalBatchSpriteWithUniqueName:(NSString*)name NS_DEPRECATED(10_0, 10_4, 2_0, 2_0); //with physic body
+-(LHSprite*) createPhysicalBatchSpriteWithUniqueName:(NSString*)name;
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newPhysicalBatchSpriteWithUniqueName:(NSString *)name 
+                                     newBodyScale:(CGSize*)newScale NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);
+-(LHSprite*) createPhysicalBatchSpriteWithUniqueName:(NSString *)name 
+                                        newBodyScale:(CGSize*)newScale;
 
 
 /*EXAMPLE
@@ -322,14 +380,36 @@ LHSprite* spr = [lh newSpriteWithName:@"SpriteNameInsideSpriteHelper" fromSprite
 [spr setPosition:location];
  //set other properties like tag here
 */
--(LHSprite*) newSpriteWithName:(NSString*)name fromSpriteHelperScene:(NSString*)sceneName;
+
+//deprecated because of warnings on ARC - use the next method
+-(LHSprite*) newSpriteWithName:(NSString*)name 
+         fromSpriteHelperScene:(NSString*)sceneName NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);
+
+-(LHSprite*) createSpriteWithName:(NSString*)name 
+            fromSpriteHelperScene:(NSString*)sceneName;
+
+
+//use this in order to create sprites of custom types
+-(LHSprite*) createSpriteWithName:(NSString*)name 
+            fromSpriteHelperScene:(NSString*)sceneName tag:(LevelHelper_TAG)tag;
 
 /*EXAMPLE
  LHSprite* spr = [lh newBatchSpriteWithName:@"SpriteNameInsideSpriteHelper" fromSpriteHelperScene:@"SpriteHeleprSceneNameWithoutExtension"];
  [spr setPosition:location];
  //set other properties like tag here
  */
--(LHSprite*) newBatchSpriteWithName:(NSString*)name fromSpriteHelperScene:(NSString*)sceneName;
+//use this in order to create sprites of custom types
+-(LHSprite*) newBatchSpriteWithName:(NSString*)name 
+              fromSpriteHelperScene:(NSString*)sceneName NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);
+
+-(LHSprite*) createBatchSpriteWithName:(NSString*)name 
+                 fromSpriteHelperScene:(NSString*)sceneName;
+
+//use this in order to create sprites of custom types
+-(LHSprite*) createBatchSpriteWithName:(NSString*)name 
+              fromSpriteHelperScene:(NSString*)sceneName 
+                                tag:(LevelHelper_TAG)tag;
+
 
 /*EXAMPLE
 LHSprite* spr = [lh newPhysicalSpriteWithName:@"SpriteNameInsideSpriteHelper" fromSpriteHelperScene:@"SpriteHeleprSceneNameWithoutExtension"];
@@ -337,14 +417,34 @@ LHSprite* spr = [lh newPhysicalSpriteWithName:@"SpriteNameInsideSpriteHelper" fr
 [spr transformPosition:location];
 //set other properties like tag here
  */
--(LHSprite*) newPhysicalSpriteWithName:(NSString*)name fromSpriteHelperScene:(NSString*)sceneName;
+//use this in order to create sprites of custom types
+-(LHSprite*) newPhysicalSpriteWithName:(NSString*)name 
+                 fromSpriteHelperScene:(NSString*)sceneName NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);
+
+-(LHSprite*) createPhysicalSpriteWithName:(NSString*)name 
+                 fromSpriteHelperScene:(NSString*)sceneName;
+
+//use this in order to create sprites of custom types
+-(LHSprite*) createPhysicalSpriteWithName:(NSString*)name 
+              fromSpriteHelperScene:(NSString*)sceneName 
+                                tag:(LevelHelper_TAG)tag;
+
 
 /*EXAMPLE
  LHSprite* spr = [lh newPhysicalBatchSpriteWithName:@"SpriteNameInsideSpriteHelper" fromSpriteHelperScene:@"SpriteHeleprSceneNameWithoutExtension"];
  [spr transformPosition:location];
  //set other properties like tag here
  */
--(LHSprite*) newPhysicalBatchSpriteWithName:(NSString*)name fromSpriteHelperScene:(NSString*)sceneName;
+-(LHSprite*) newPhysicalBatchSpriteWithName:(NSString*)name 
+                      fromSpriteHelperScene:(NSString*)sceneName NS_DEPRECATED(10_0, 10_4, 2_0, 2_0);
+
+-(LHSprite*) createPhysicalBatchSpriteWithName:(NSString*)name 
+                      fromSpriteHelperScene:(NSString*)sceneName;
+
+//use this in order to create sprites of custom types
+-(LHSprite*) createPhysicalBatchSpriteWithName:(NSString*)name 
+                 fromSpriteHelperScene:(NSString*)sceneName 
+                                   tag:(LevelHelper_TAG)tag;
 
 
 /*More methods in LHCreationExt.h - download from http://www.levelhelper.org*/
@@ -490,8 +590,21 @@ LHSprite* spr = [lh newPhysicalSpriteWithName:@"SpriteNameInsideSpriteHelper" fr
 
 //Others
 -(NSString*) imageFolder;
+
+//object is of type LHSprite or LHBezierNode
++(void)setTouchDispatcherForObject:(id)object tag:(int)tag;
++(void)removeTouchDispatcherFromObject:(id)object;
 ////////////////////////////////////////////////////////////////////////////////
 @end
+
+
+
+
+
+
+
+
+
 
 
 

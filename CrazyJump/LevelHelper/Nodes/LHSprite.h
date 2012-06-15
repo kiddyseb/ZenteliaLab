@@ -57,11 +57,14 @@
     NSMutableString* uniqueName;
     NSMutableDictionary* customUserValues;
     
+    NSString* imageFile;
+    CGRect originalRect;
+    
     int currentFrame;
     LHAnimationNode* animation;
     LHPathNode* pathNode;
     
-    LevelHelperLoader* parentLoader;
+    __unsafe_unretained LevelHelperLoader* parentLoader;
     
     CGSize realScale; //used for the joints in case you create a level with SD graphics using ipad template
     
@@ -90,8 +93,12 @@
     bool mouseDownStarted;//keeps track if mouse down was started on the sprite
     bool r_mouseDownStarted;
 #endif
-
+    
+    bool usesOverloadedTransformations; //false uses native Cocos2d setPosition setRotation - true uses LH (may cause problems in certain game logics)
+    
+    bool usePhysicsForTouches;
 }
+@property bool usesOverloadedTransformations;
 @property (readwrite) CGSize realScale;
 @property (readwrite) bool swallowTouches;
 
@@ -120,6 +127,27 @@
 
 -(void) setCustomValue:(id)value withKey:(NSString*)key;
 -(id) customValueWithKey:(NSString*)key;
+
+
+//methods used by the cutting engine
+-(NSString*)imageFile;
+-(void)setImageFile:(NSString*)img;
+
+-(CGRect)originalRect;
+-(void)setOriginalRect:(CGRect)rect;
+
+//CUTTING METHODS
+////------------------------------------------------------------------------------
+////returns array of new sprites - current sprite will be removed
+//-(NSArray*)splitAtPoint:(CGPoint)point;
+//
+////will triangulate all fixtures based on your decision.
+////all bodies that have mass smaller then your decision will not be created - improves performance
+////usually mass smaller then 0.04 - 0.06 can be ignore - play with this value until it suit your needs
+//-(NSArray*)splitAtPoint:(CGPoint)point 
+// triangulateAllFixtures:(bool)triangulate 
+//      ignoreSmallerMass:(float)mass;
+
 
 
 //TRANSFORMATION METHODS
@@ -220,6 +248,10 @@
 //of the sprite
 -(bool)isTouchedAtPoint:(CGPoint)point;
 
+//if you dont want to use the physic shape to test for touches but only want to use the rect of the sprite
+//call this method with false
+-(void)setUsePhysicsForTouches:(bool)val;
+
 //Note: in order to make porting from ios to mac easy, left mouse events from mac are equivalent with touch events on ios
 
 //selector needs to have this signature -(void) touchXXX:(LHTouchInfo*)info
@@ -228,6 +260,7 @@
 -(void)registerTouchBeginObserver:(id)observer selector:(SEL)selector;
 -(void)registerTouchMovedObserver:(id)observer selector:(SEL)selector;
 -(void)registerTouchEndedObserver:(id)observer selector:(SEL)selector;
+-(void)removeTouchObserver;
 
 
 #ifdef __MAC_OS_X_VERSION_MAX_ALLOWED
@@ -249,4 +282,18 @@
 //------------------------------------------------------------------------------
 - (NSComparisonResult)sortAscending:(LHSprite *)other;
 - (NSComparisonResult)sortDescending:(LHSprite *)other;
+
+//COLLISION FILTERING
+//------------------------------------------------------------------------------
+-(void)setCollisionFilterCategory:(int)category;
+-(void)setCollisionFilterMask:(int)mask;
+-(void)setCollisionFilterGroup:(int)group;
+
+//TYPE CONVERSION
+//------------------------------------------------------------------------------
+-(void)makeDynamic;
+-(void)makeStatic;
+-(void)makeKinematic;
+
+
 @end	

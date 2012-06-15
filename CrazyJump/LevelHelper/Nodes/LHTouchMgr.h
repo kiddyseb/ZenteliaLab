@@ -103,9 +103,14 @@
 //sprite will be the LHSprite* instance on which the touch was performed that has the registered tag
 //for specific touch on a certain sprite use the observer from LHSprite
 -(void)registerTouchBeginObserver:(id)observer selector:(SEL)selector forTag:(int)tag;
+
+//in order to get events for touch moved and touch ended you also need touch begin to be registered
 -(void)registerTouchMovedObserver:(id)observer selector:(SEL)selector forTag:(int)tag;
 -(void)registerTouchEndedObserver:(id)observer selector:(SEL)selector forTag:(int)tag;
 
+-(void)removeTouchBeginObserver:(id)observer; //removing touch begin observer will remove all other observers also
+-(void)removeTouchMovedObserver:(id)observer;
+-(void)removeTouchEndedObserver:(id)observer;
 
 //get back the observer that was registered for a specific tag
 -(LHObserverPair*)onTouchBeginObserverForTag:(int)tag;

@@ -48,14 +48,15 @@
 	
 	bool paused;
     
-	int screenNumberOnTheRight;
-	int screenNumberOnTheLeft;
-	int screenNumberOnTheTop;
-	int screenNumberOnTheBottom;
+	float screenNumberOnTheRight;
+	float screenNumberOnTheLeft;
+	float screenNumberOnTheTop;
+	float screenNumberOnTheBottom;
 	
-	NSMutableArray* sprites;
+	//NSMutableArray* sprites;
+    CCArray* sprites;//better performance
     
-    LevelHelperLoader* lhLoader;
+    __unsafe_unretained LevelHelperLoader* lhLoader;
     bool removeSpritesOnDelete;
     
     LHSprite* followedSprite;
@@ -63,7 +64,7 @@
     bool followChangeX;
     bool followChangeY;
     
-
+//    double time;
 }
 @property (readonly) bool isContinuous;
 @property (readonly) int direction;

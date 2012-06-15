@@ -27,6 +27,8 @@
 #import "LHSettings.h"
 #import "LHSprite.h"
 #import "LevelHelperLoader.h"
+
+//#import <time.h>
 ////////////////////////////////////////////////////////////////////////////////
 
 @interface LHSprite (LH_PARALLAX_SPRITE_EXT) 
@@ -44,19 +46,21 @@
 
 @interface LHParallaxPointObject : NSObject
 {
-    CGPoint virtualPosition;
+    //CGPoint virtualPosition;
 	CGPoint position;
 	CGPoint	ratio;
-	CGPoint offset;
+	//CGPoint offset;
+    bool isLHSprite;
 	CGPoint initialPosition;
 #ifndef LH_ARC_ENABLED
 	CCNode *ccsprite;	//weak ref
 	b2Body *body;		//weak ref
 #endif
 }
-@property (readwrite) CGPoint virtualPosition;
+//@property (readwrite) CGPoint virtualPosition;
 @property (readwrite) CGPoint ratio;
-@property (readwrite) CGPoint offset;
+//@property (readwrite) CGPoint offset;
+@property (readwrite) bool isLHSprite;
 @property (readwrite) CGPoint initialPosition;
 @property (readwrite) CGPoint position;
 @property (readwrite,assign) CCNode *ccsprite;
@@ -67,10 +71,11 @@
 @end
 
 @implementation LHParallaxPointObject
-@synthesize virtualPosition;
+//@synthesize virtualPosition;
 @synthesize ratio;
+@synthesize isLHSprite;
 @synthesize initialPosition;
-@synthesize offset;
+//@synthesize offset;
 @synthesize position;
 @synthesize ccsprite;
 @synthesize body;
@@ -138,11 +143,15 @@
 {
 	if( (self=[super init])) {
 
-		sprites = [[NSMutableArray alloc] init];
+		//sprites = [[NSMutableArray alloc] init];
+        sprites = [[CCArray alloc] init];
 		isContinuous = [[parallaxDict objectForKey:@"ContinuousScrolling"] boolValue];
 		direction = [[parallaxDict objectForKey:@"Direction"] intValue];
 		speed = [[parallaxDict objectForKey:@"Speed"] floatValue];
-		lastPosition = CGPointMake(-100,-100);
+		
+        lastPosition = CGPointMake(0,0);
+        self.position = CGPointMake(0, 0);
+        
         paused = false;
 		winSize = [[CCDirector sharedDirector] winSize];
 		screenNumberOnTheRight = 1;
@@ -159,6 +168,14 @@
         uniqueName  = [[NSString alloc] initWithString:[parallaxDict objectForKey:@"UniqueName"]];
 		if(!isContinuous)
 			speed = 1.0f;
+        
+        //time = [[NSDate date] timeIntervalSince1970];
+        
+        
+        //[self scheduleUpdate];
+        
+        [self schedule: @selector(tick:) interval:1.0f/60.0f];
+        
 	}
 	return self;
 }
@@ -180,8 +197,8 @@
 	obj.ccsprite = node;
 	obj.body = NULL;
 	obj.position = [node position];
-    obj.virtualPosition = obj.ccsprite.position;
-	obj.offset = [node position];
+//    obj.virtualPosition = obj.ccsprite.position;
+//	obj.offset = [node position];
 	obj.initialPosition = [node position];
 	[sprites addObject:obj];
 	//[sprite setSpriteIsInParallax:self];
@@ -218,6 +235,7 @@
                                                                    ratio:ratio];
     
 	obj.body = [sprite body];
+    obj.isLHSprite = true;
 	[sprite setSpriteIsInParallax:self];
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -284,8 +302,7 @@
 #else
     NSMutableArray* sprs = [[NSMutableArray alloc] init];
 #endif
-	for(LHParallaxPointObject* pt in sprites)
-	{
+	for(LHParallaxPointObject* pt in sprites){
 		if(pt.ccsprite != nil)
 			[sprs addObject:pt.ccsprite];
 	}
@@ -300,92 +317,13 @@
 #else
     NSMutableArray* sprs = [[NSMutableArray alloc] init];
 #endif
-	for(LHParallaxPointObject* pt in sprites)
-	{
+        
+	for(LHParallaxPointObject* pt in sprites){
 		if(0 != pt.body)
 			[sprs addObject:[NSValue valueWithPointer:pt.body]];
 	}	
 			 
 	return sprs;
-}
-////////////////////////////////////////////////////////////////////////////////
--(bool)shouldTransformPoint:(LHParallaxPointObject*)point
-{
-    if(!point.ccsprite) return false;
-    
-    //lets move the sprite only if it enters in view - else just leave it there
-    CGSize spriteContentSize = [point.ccsprite contentSize];
-    
-    switch (direction) {
-        case 1: //right to left
-            if(point.virtualPosition.x - spriteContentSize.width < winSize.width + spriteContentSize.width)    
-                return true;
-            break;
-            
-        case 0: //left to right
-            if(point.virtualPosition.x + spriteContentSize.width > -spriteContentSize.width)    
-                return true;
-            break;
-            
-        case 2://up to bottom
-			if(point.virtualPosition.y - spriteContentSize.height < winSize.height + spriteContentSize.height)
-                return true;
-            break;
-        case 3://bottom to top
-            if(point.virtualPosition.y + spriteContentSize.height > -spriteContentSize.height)
-                return true;
-            break;
-    }
-    return false;
-}
-
--(void) setPosition:(CGPoint)pos 
-            onPoint:(LHParallaxPointObject*)point 
-             offset:(CGPoint)offset
-{
-    if(!isContinuous)
-    {
-        if(point.ccsprite != nil){
-            point.ccsprite.position = pos;
-        
-            if(point.body != NULL){
-            
-                float angle = [point.ccsprite rotation];
-                point.body->SetAwake(TRUE);
-                
-                point.body->SetTransform(b2Vec2(pos.x/[[LHSettings sharedInstance] lhPtmRatio], 
-                                                pos.y/[[LHSettings sharedInstance] lhPtmRatio]), 
-                                         CC_DEGREES_TO_RADIANS(-angle));
-            }
-        }
-    }
-    else
-    {
-
-        if(point.ccsprite != nil){
-            
-            bool shouldTransformBody = [self shouldTransformPoint:point];
-                       
-            CGPoint newPos = CGPointMake(point.virtualPosition.x - offset.x,
-                                         point.virtualPosition.y - offset.y);
-            
-            if(shouldTransformBody)
-            {
-                [point.ccsprite setPosition:newPos];
-                [point.ccsprite setVisible:YES];
-                
-                if(point.body != NULL){
-            
-                    float angle = [point.ccsprite rotation];
-                    point.body->SetTransform(b2Vec2(newPos.x/[[LHSettings sharedInstance] lhPtmRatio], 
-                                                    newPos.y/[[LHSettings sharedInstance] lhPtmRatio]), 
-                                             CC_DEGREES_TO_RADIANS(-angle));
-                }
-            }
-            
-            point.virtualPosition = newPos;
-        }
-    }
 }
 ////////////////////////////////////////////////////////////////////////////////
 -(CGSize) getBounds:(float)rw height:(float)rh angle:(float)radians
@@ -417,44 +355,37 @@
     return CGSizeMake(x_max-x_min, y_max-y_min);
 }
 ////////////////////////////////////////////////////////////////////////////////
--(void)repositionPoint:(LHParallaxPointObject*)point
+-(void)repositionPoint:(LHParallaxPointObject*)point frameTime:(double)frameTime
 {
-    if(![self shouldTransformPoint:point])
-        return;
-        
     CGSize spriteContentSize = [point.ccsprite contentSize];
-    
+    CGPoint spritePosition = [point.ccsprite position];
     float angle = [point.ccsprite rotation];
     float rotation = CC_DEGREES_TO_RADIANS(angle);
 	float scaleX = [point.ccsprite scaleX];
 	float scaleY = [point.ccsprite scaleY];
     
-    CGSize contentSize = [self getBounds:spriteContentSize.width 
-                                  height:spriteContentSize.height 
+    CGSize contentSize = [self getBounds:spriteContentSize.width*scaleX
+                                  height:spriteContentSize.height*scaleY
                                    angle:rotation];
         
 	switch (direction) {
 		case 1: //right to left
 		{
-			if(point.virtualPosition.x + contentSize.width/2.0f*scaleX <= 0)
+            if(spritePosition.x + contentSize.width/2.0f <= 0)
 			{
-				float difX = point.virtualPosition.x + contentSize.width/2.0f*scaleX;
-		
-				[point setOffset:ccp(winSize.width*screenNumberOnTheRight - point.ratio.x*speed -  contentSize.width/2.0f*scaleX + difX, point.offset.y)];
-	
                 if(nil != point.ccsprite){
-                    CGPoint newPos = CGPointMake(point.offset.x, point.virtualPosition.y);
-    
-                    [point.ccsprite setPosition:newPos];
-                    point.virtualPosition = newPos;
-                    [point.ccsprite setVisible:NO];
-                    
-                    if(point.body != NULL){
-                    
-                        float angle = [point.ccsprite rotation];
-                        point.body->SetTransform(b2Vec2(newPos.x/[[LHSettings sharedInstance] lhPtmRatio], 
-                                                        newPos.y/[[LHSettings sharedInstance] lhPtmRatio]), 
-                                                 CC_DEGREES_TO_RADIANS(-angle));
+                    float difX = spritePosition.x;
+                                        
+                    CGPoint newPos = CGPointMake(winSize.width*screenNumberOnTheRight + difX,
+                                                 spritePosition.y);
+
+             
+                    if(point.isLHSprite)
+                    {
+                        [(LHSprite*)point.ccsprite transformPosition:newPos];
+                    }
+                    else {
+                        [point.ccsprite setPosition:newPos];
                     }
                 }
                     
@@ -471,29 +402,20 @@
 			
 		case 0://left to right
 		{
-			if(point.virtualPosition.x - contentSize.width/2.0f*scaleX >= winSize.width)
+			if(spritePosition.x - contentSize.width/2.0f >= winSize.width)
 			{
-				float difX = point.virtualPosition.x - contentSize.width/2.0f*scaleX - winSize.width;
+				float difX = spritePosition.x - winSize.width;
 				
-				[point setOffset:ccp(winSize.width*screenNumberOnTheLeft + point.ratio.x*speed +  contentSize.width/2.0f*scaleX + difX, point.offset.y)];
-                
-                
-                
-                if(nil != point.ccsprite){
-                    CGPoint newPos = CGPointMake(point.offset.x, point.virtualPosition.y);
-                    [point.ccsprite setPosition:newPos];
-                    point.virtualPosition = newPos;
-                    [point.ccsprite setVisible:NO];
-                    
-                    if(point.body != NULL){
-                        
-                        float angle = [point.ccsprite rotation];
-                        point.body->SetTransform(b2Vec2(newPos.x/[[LHSettings sharedInstance] lhPtmRatio], 
-                                                        newPos.y/[[LHSettings sharedInstance] lhPtmRatio]), 
-                                                 CC_DEGREES_TO_RADIANS(-angle));
-                    }
-                }
+                CGPoint newPos = CGPointMake(winSize.width*screenNumberOnTheLeft + difX,
+                                             spritePosition.y);
 
+                if(point.isLHSprite)
+                {
+                    [(LHSprite*)point.ccsprite transformPosition:newPos];
+                }
+                else {
+                    [point.ccsprite setPosition:newPos];
+                }
                 
                 if(nil != movedEndListenerObj && nil != movedEndListenerSEL){
                     #pragma clang diagnostic push
@@ -507,27 +429,22 @@
 			
 		case 2://up to bottom
 		{
-			if(point.virtualPosition.y + contentSize.height/2.0f*scaleY <= 0)
+			if(spritePosition.y + contentSize.height/2.0f <= 0)
 			{
-				float difY = point.virtualPosition.y + contentSize.height/2.0f*scaleY;
+				float difY = spritePosition.y;
 				
-				[point setOffset:ccp(point.offset.x, winSize.height*screenNumberOnTheTop - point.ratio.y*speed - contentSize.height/2.0f*scaleY + difY)];
+                CGPoint newPos = CGPointMake(spritePosition.x,
+                                             winSize.height*screenNumberOnTheTop +difY);
                 
                 
-                if(nil != point.ccsprite){
-                    CGPoint newPos = CGPointMake(point.virtualPosition.x, point.offset.y);
-                    [point.ccsprite setPosition:newPos];
-                    [point.ccsprite setVisible:NO];
-                    point.virtualPosition = newPos;
-                    if(point.body != NULL){
-                        
-                        float angle = [point.ccsprite rotation];
-                        point.body->SetTransform(b2Vec2(newPos.x/[[LHSettings sharedInstance] lhPtmRatio], 
-                                                        newPos.y/[[LHSettings sharedInstance] lhPtmRatio]), 
-                                                 CC_DEGREES_TO_RADIANS(-angle));
-                    }
+                if(point.isLHSprite)
+                {
+                    [(LHSprite*)point.ccsprite transformPosition:newPos];
                 }
-                
+                else {
+                    [point.ccsprite setPosition:newPos];
+                }
+                                
                 if(nil != movedEndListenerObj && nil != movedEndListenerSEL){
                     #pragma clang diagnostic push
                     #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
@@ -540,27 +457,21 @@
 			
 		case 3://bottom to top
 		{
-			if(point.virtualPosition.y - contentSize.height/2.0f*scaleY >= winSize.height)
+			if(spritePosition.y - contentSize.height/2.0f >= winSize.height)
 			{
-				float difY = point.virtualPosition.y - contentSize.height/2.0f*scaleY - winSize.height;
-				
-				[point setOffset:ccp(point.offset.x, winSize.height*screenNumberOnTheBottom + point.ratio.y*speed + contentSize.height/2.0f*scaleY + difY)];
+				float difY = spritePosition.y - winSize.height;
+				               
+                CGPoint newPos = CGPointMake(spritePosition.x,
+                                             winSize.height*screenNumberOnTheBottom + difY);
                 
-                if(nil != point.ccsprite){
-                    CGPoint newPos = CGPointMake(point.virtualPosition.x, point.offset.y);
-                    [point.ccsprite setPosition:newPos];
-                    point.virtualPosition = newPos;
-                    [point.ccsprite setVisible:NO];
-                    
-                    if(point.body != NULL){
-                        
-                        float angle = [point.ccsprite rotation];
-                        point.body->SetTransform(b2Vec2(newPos.x/[[LHSettings sharedInstance] lhPtmRatio], 
-                                                        newPos.y/[[LHSettings sharedInstance] lhPtmRatio]), 
-                                                 CC_DEGREES_TO_RADIANS(-angle));
-                    }
+                if(point.isLHSprite)
+                {
+                    [(LHSprite*)point.ccsprite transformPosition:newPos];
                 }
-                
+                else {
+                    [point.ccsprite setPosition:newPos];
+                }
+                                
                 if(nil != movedEndListenerObj && nil != movedEndListenerSEL){
                     #pragma clang diagnostic push
                     #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
@@ -574,15 +485,15 @@
 			break;
 	}
 }
-////////////////////////////////////////////////////////////////////////////////
--(void)visit
-{
-    if([[LHSettings sharedInstance] levelPaused]) //level is paused
+
+-(void) tick: (ccTime) dt
+{    
+    if([[LHSettings sharedInstance] levelPaused] || paused) //level is paused
+    {
+       // time = [[NSDate date] timeIntervalSince1970];
         return;
-    
-    if(paused) //this parallax is paused
-        return;
-    
+    }
+        
     if(NULL != followedSprite)
     {
         CGPoint spritePos = [followedSprite position];
@@ -605,32 +516,43 @@
         }
     }
     
-    int i = -1; //direction left to right //bottom to up
+    double i = -1.0f; //direction left to right //bottom to up
 	CGPoint pos = [self position];
+    
+    CGPoint deltaPos = CGPointMake(pos.x - lastPosition.x,
+                                   pos.y - lastPosition.y);
+    
 	if(isContinuous || ! CGPointEqualToPoint(pos, lastPosition)) 
 	{
-		for(LHParallaxPointObject *point in sprites)
-		{
-            i = -1; //direction left to right //bottom to up
+        float   frameTime = dt;//[[NSDate date] timeIntervalSince1970] - time;
+        
+		for(LHParallaxPointObject *point in sprites){
+            i = -1.0f; //direction left to right //bottom to up
             if(direction == 1 || direction == 2) //right to left //up to bottom
-                i = 1;
-
-			[self setPosition:CGPointMake(pos.x * point.ratio.x + point.offset.x, 
-                                          pos.y * point.ratio.y + point.offset.y)
-                      onPoint:point offset:CGPointMake(i*point.ratio.x*speed, i*point.ratio.y*speed)];	
-			
-			if(isContinuous)
-			{
-				[self repositionPoint:point];
-			
-				[point setOffset:ccp(point.offset.x + i*point.ratio.x*speed, 
-									 point.offset.y + i*point.ratio.y*speed)];
-
-			}
+                i = 1.0f;
+            
+            LHSprite* spr = (LHSprite*)point.ccsprite;
+            CGPoint oldPos = [spr position];
+            
+            
+            if(isContinuous)
+            {
+                [spr transformPosition:CGPointMake(oldPos.x - i*point.ratio.x*speed*frameTime,
+                                                   oldPos.y - i*point.ratio.y*speed*frameTime)];
+            
+                [self repositionPoint:point frameTime:frameTime];
+            }
+            else {
+                
+                [spr transformPosition:CGPointMake(oldPos.x + point.ratio.x*deltaPos.x/*2.0f*frameTime*/,
+                                                   oldPos.y + point.ratio.y*deltaPos.y/*2.0f*frameTime*/)];
+                
+                
+            }
 		}
-		lastPosition = pos;
 	}
-	//[super visit];
+    lastPosition = pos;
+//	time = [[NSDate date] timeIntervalSince1970];
 }
 				   
 @end

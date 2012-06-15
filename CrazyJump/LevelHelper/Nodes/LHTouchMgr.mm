@@ -75,6 +75,7 @@
 	return self;
 }
 //------------------------------------------------------------------------------
+
 +(id)observerPair{
 #ifndef LH_ARC_ENABLED
     return [[[LHObserverPair alloc] initObserverPair] autorelease];    
@@ -199,6 +200,53 @@
     [onTouchEndedOnSpriteOfTag setObject:pair 
                                   forKey:[NSNumber numberWithInt:(int)tag]];    
 }
+//removing touch begin observer will remove all other observers also
+-(void)removeTouchBeginObserver:(id)observer{
+    
+    if(onTouchBeginOnSpriteOfTag == nil)
+        return;
+    
+    NSArray* keys = [onTouchBeginOnSpriteOfTag allKeys];
+    
+    for(NSNumber* key in keys){
+        LHObserverPair* pair = [onTouchBeginOnSpriteOfTag objectForKey:key];
+        if(pair.object == observer){
+            [onTouchBeginOnSpriteOfTag removeObjectForKey:key];
+        }
+    }
+
+    [self removeTouchMovedObserver:observer];
+    [self removeTouchEndedObserver:observer];
+}
+-(void)removeTouchMovedObserver:(id)observer{
+
+    if(onTouchMovedOnSpriteOfTag == nil)
+        return;
+    
+    NSArray* keys = [onTouchMovedOnSpriteOfTag allKeys];
+    
+    for(NSNumber* key in keys){
+        LHObserverPair* pair = [onTouchMovedOnSpriteOfTag objectForKey:key];
+        if(pair.object == observer){
+            [onTouchMovedOnSpriteOfTag removeObjectForKey:key];
+        }
+    }
+}
+-(void)removeTouchEndedObserver:(id)observer{
+    
+    if(onTouchEndedOnSpriteOfTag == nil)
+        return;
+    
+    NSArray* keys = [onTouchEndedOnSpriteOfTag allKeys];
+    
+    for(NSNumber* key in keys){
+        LHObserverPair* pair = [onTouchEndedOnSpriteOfTag objectForKey:key];
+        if(pair.object == observer){
+            [onTouchEndedOnSpriteOfTag removeObjectForKey:key];
+        }
+    }
+}
+
 //------------------------------------------------------------------------------
 -(LHObserverPair*)onTouchBeginObserverForTag:(int)tag{
     if(onTouchBeginOnSpriteOfTag){

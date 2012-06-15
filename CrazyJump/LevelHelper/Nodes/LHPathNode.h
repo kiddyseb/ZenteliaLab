@@ -38,7 +38,7 @@
 	NSMutableArray* pathPoints; //week ptr
     
 	float speed;
-	float interval;
+	double interval;
 	bool startAtEndPoint;
 	bool isCyclic;
 	bool restartOtherEnd;
@@ -47,7 +47,7 @@
     bool flipY;
     
 	int currentPoint;
-	float elapsed;
+	double elapsed;
 
 	bool paused;
 	float initialAngle;

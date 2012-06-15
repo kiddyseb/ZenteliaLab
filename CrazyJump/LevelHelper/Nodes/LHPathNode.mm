@@ -187,7 +187,7 @@
 {
     if([[LHSettings sharedInstance] levelPaused]) //level is paused
     {
-        elapsed += [[NSDate date]  timeIntervalSince1970] - time;
+        //elapsed += [[NSDate date]  timeIntervalSince1970] - time;
         time = [[NSDate date] timeIntervalSince1970];
         return;
     }
@@ -197,7 +197,7 @@
 	
 	if(paused) 
     {
-        elapsed += [[NSDate date]  timeIntervalSince1970] - time;
+        //elapsed += [[NSDate date]  timeIntervalSince1970] - time;
         time = [[NSDate date] timeIntervalSince1970];
 		return;
     }

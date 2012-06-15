@@ -168,7 +168,11 @@
     if(nil != newSpr)
     {
         [sprite setTexture:[newSpr texture]];
+        #if COCOS2D_VERSION >= 0x00020000 
+        if([sprite batchNode]){
+        #else
         if([sprite usesBatchNode]){
+        #endif
             [sprite setBatchNode:[newSpr batchNode]];
         }
         [sprite setTextureRect:[newSpr textureRect]];

@@ -30,7 +30,7 @@
 #import "LHAnimationNode.h"
 #import "LevelHelperLoader.h"
 #import "LHTouchMgr.h"
-
+#import "LHCuttingEngineMgr.h"
 #import "LHJoint.h"
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -59,18 +59,19 @@
 @end
 ////////////////////////////////////////////////////////////////////////////////
 @implementation LHSprite
+@synthesize usesOverloadedTransformations;
 @synthesize realScale;
 @synthesize swallowTouches;
 ////////////////////////////////////////////////////////////////////////////////
 //-(oneway void) release{
 //    
-//    NSLog(@"LH Sprite RELEASE %@", uniqueName);
+//   NSLog(@"LH Sprite RELEASE %@ rtCount %d", uniqueName, [self retainCount]);
 //    
 //    [super release];
 //}
 -(void) dealloc{		
     
-    //NSLog(@"LH Sprite Dealloc %@", uniqueName);
+//    NSLog(@"LH Sprite Dealloc %@", uniqueName);
     [self removeBodyFromWorld];
     
 #ifndef LH_ARC_ENABLED
@@ -80,6 +81,12 @@
         [touchMovedObserver release];
     if(touchEndedObserver)
         [touchEndedObserver release];
+    
+    if(pathNode)
+        [pathNode release];
+    
+    if(imageFile)
+        [imageFile release];
 #endif
     touchBeginObserver = nil;
     touchMovedObserver = nil;
@@ -113,7 +120,7 @@
 }
 ////////////////////////////////////////////////////////////////////////////////
 -(void) generalLHSpriteInit{
-        
+    
     if(nil != uniqueName)
         return; //compatibility with cocos2d 2.0
     
@@ -132,6 +139,11 @@
     tagTouchBeginObserver = nil;
     tagTouchMovedObserver = nil;
     tagTouchEndedObserver = nil;
+    
+    usesOverloadedTransformations = false;
+    usePhysicsForTouches = true;
+    
+    originalRect = self.textureRect;
 }
 -(id) initSprite{ //bad CCSprite designe - causes recursion
     self = [super init];
@@ -152,34 +164,34 @@
     return [[self alloc] initWithTexture:texture];
 #endif
 }
-+(id) spriteWithTexture:(CCTexture2D*)texture rect:(CGRect)rect{
-    #ifndef LH_ARC_ENABLED
-    return [[[self alloc] initWithTexture:texture rect:rect] autorelease];
-    #else
-    return [[self alloc] initWithTexture:texture rect:rect];
-    #endif
-}
-+(id) spriteWithSpriteFrame:(CCSpriteFrame*)spriteFrame{
-    #ifndef LH_ARC_ENABLED
-    return [[[self alloc] initWithSpriteFrame:spriteFrame] autorelease];
-#else
-    return [[self alloc] initWithSpriteFrame:spriteFrame];
-#endif
-}
-+(id) spriteWithSpriteFrameName:(NSString*)spriteFrameName{
-    #ifndef LH_ARC_ENABLED
-    return [[[self alloc] initWithSpriteFrameName:spriteFrameName] autorelease];
-#else
-    return [[self alloc] initWithSpriteFrameName:spriteFrameName];
-#endif
-}
-+(id) spriteWithFile:(NSString*)filename{
-    #ifndef LH_ARC_ENABLED
-    return [[[self alloc] initWithFile:filename] autorelease];
-#else
-    return [[self alloc] initWithFile:filename];
-#endif
-}
+//+(id) spriteWithTexture:(CCTexture2D*)texture rect:(CGRect)rect{
+//    #ifndef LH_ARC_ENABLED
+//    return [[[self alloc] initWithTexture:texture rect:rect] autorelease];
+//    #else
+//    return [[self alloc] initWithTexture:texture rect:rect];
+//    #endif
+//}
+//+(id) spriteWithSpriteFrame:(CCSpriteFrame*)spriteFrame{
+//    #ifndef LH_ARC_ENABLED
+//    return [[[self alloc] initWithSpriteFrame:spriteFrame] autorelease];
+//#else
+//    return [[self alloc] initWithSpriteFrame:spriteFrame];
+//#endif
+//}
+//+(id) spriteWithSpriteFrameName:(NSString*)spriteFrameName{
+//    #ifndef LH_ARC_ENABLED
+//    return [[[self alloc] initWithSpriteFrameName:spriteFrameName] autorelease];
+//#else
+//    return [[self alloc] initWithSpriteFrameName:spriteFrameName];
+//#endif
+//}
+//+(id) spriteWithFile:(NSString*)filename{
+//    #ifndef LH_ARC_ENABLED
+//    return [[[self alloc] initWithFile:filename] autorelease];
+//#else
+//    return [[self alloc] initWithFile:filename];
+//#endif
+//}
 +(id) spriteWithFile:(NSString*)filename rect:(CGRect)rect{
     #ifndef LH_ARC_ENABLED
     return [[[self alloc] initWithFile:filename rect:rect] autorelease];
@@ -187,13 +199,13 @@
     return [[self alloc] initWithFile:filename rect:rect];
 #endif
 }
-+(id) spriteWithCGImage: (CGImageRef)image key:(NSString*)key{
-    #ifndef LH_ARC_ENABLED
-    return [[[self alloc] initWithCGImage:image key:key] autorelease];
-#else
-    return [[self alloc] initWithCGImage:image key:key];
-#endif
-}
+//+(id) spriteWithCGImage: (CGImageRef)image key:(NSString*)key{
+//    #ifndef LH_ARC_ENABLED
+//    return [[[self alloc] initWithCGImage:image key:key] autorelease];
+//#else
+//    return [[self alloc] initWithCGImage:image key:key];
+//#endif
+//}
 +(id) spriteWithBatchNode:(CCSpriteBatchNode*)batchNode rect:(CGRect)rect{
     #ifndef LH_ARC_ENABLED
     return [[[self alloc] initWithBatchNode:batchNode rect:rect] autorelease];
@@ -212,17 +224,48 @@
 }
 //------------------------------------------------------------------------------
 -(id) initWithBatchNode:(CCSpriteBatchNode*)batchNode rect:(CGRect)rect{
+    
+#if COCOS2D_VERSION >= 0x00020000
+    self = [super initWithTexture:[batchNode texture] rect:rect];
+#else
     self = [super initWithBatchNode:batchNode rect:rect];
+#endif
     if (self != nil)
     {
         [self generalLHSpriteInit];
     }
     return self;
 }
+//------------------------------------------------------------------------------
+-(id) initWithTexture:(CCTexture2D *)texture{
+        
+    self = [super initWithTexture:texture];
+    if (self != nil)
+    {
+        [self generalLHSpriteInit];
+    }
+    return self;
+}
+
+//-(id) initWithTexture:(CCTexture2D *)texture rect:(CGRect)rect{
+//    
+//    NSLog(@"INIT WITH TEXTU RECT");
+//    self = [super initWithTexture:texture rect:rect];
+//    if (self != nil)
+//    {
+//        [self generalLHSpriteInit];
+//    }
+//    return self;
+//}
 ////////////////////////////////////////////////////////////////////////////////
 -(void)removeSelf{
+    
+    [LevelHelperLoader removeTouchDispatcherFromObject:self];
     if(parentLoader)
         [parentLoader removeSprite:self];
+    else {
+        [super removeFromParentAndCleanup:YES];
+    }
 }
 //------------------------------------------------------------------------------
 -(void)removeFromParentAndCleanup:(BOOL)cleanup{
@@ -284,6 +327,27 @@
     NSAssert(key!=nil, @"Custom value key must not be nil");    
     return [customUserValues objectForKey:key];
 }
+////////////////////////////////////////////////////////////////////////////////
+-(NSString*)imageFile{
+    return imageFile;
+}
+-(void)setImageFile:(NSString*)img{
+    
+#ifndef LH_ARC_ENABLED
+    if(imageFile)
+        [imageFile release];
+#endif
+    
+    imageFile = [[NSString alloc] initWithString:img];
+}
+//------------------------------------------------------------------------------
+-(CGRect)originalRect{
+    return originalRect;
+}
+-(void)setOriginalRect:(CGRect)rect{
+    originalRect = rect;
+}
+//------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////
 -(void) transformPosition:(CGPoint)pos{
     [super setPosition:pos];
@@ -605,6 +669,10 @@
             [pNode setPathNotifierSelector:sel];
         }
         pathNode = pNode;
+        
+#ifndef LH_ARC_ENABLED
+        [pathNode retain];
+#endif
 	}
 }
 //------------------------------------------------------------------------------
@@ -646,19 +714,36 @@
 ////////////////////////////////////////////////////////////////////////////////
 -(bool)isTouchedAtPoint:(CGPoint)point{
     
-    if(body == NULL)
+    if(body == NULL || !usePhysicsForTouches)
     {
         float x = point.x;
         float y = point.y;
-     
-        float ax = quad_.tl.vertices.x;
-        float ay = quad_.tl.vertices.y;
+
+        float ax = quad_.tl.vertices.x/CC_CONTENT_SCALE_FACTOR();
+        float ay = quad_.tl.vertices.y/CC_CONTENT_SCALE_FACTOR();
         
-        float bx = quad_.tr.vertices.x;
-        float by = quad_.tr.vertices.y;
+        float bx = quad_.tr.vertices.x/CC_CONTENT_SCALE_FACTOR();
+        float by = quad_.tr.vertices.y/CC_CONTENT_SCALE_FACTOR();
         
-        float dx = quad_.bl.vertices.x;
-        float dy = quad_.bl.vertices.y;
+        float dx = quad_.bl.vertices.x/CC_CONTENT_SCALE_FACTOR();
+        float dy = quad_.bl.vertices.y/CC_CONTENT_SCALE_FACTOR();
+                
+#if COCOS2D_VERSION >= 0x00020000
+        if(!self.batchNode)
+#else
+        if(!self.usesBatchNode)
+#endif
+        {
+            ax += self.position.x;
+            ay += self.position.y; 
+            
+            bx += self.position.x;
+            by += self.position.y;
+            
+            dx += self.position.x;
+            dy += self.position.y;
+            
+        }
         
         float bax=bx-ax;
         float bay=by-ay;
@@ -684,6 +769,9 @@
         }
     }
     return false;    
+}
+-(void)setUsePhysicsForTouches:(bool)val{
+    usePhysicsForTouches = val;
 }
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
@@ -718,6 +806,21 @@
 #ifndef LH_ARC_ENABLED
     [touchEndedObserver retain];
 #endif
+}
+//------------------------------------------------------------------------------
+-(void)removeTouchObserver
+{
+#ifndef LH_ARC_ENABLED    
+    [touchBeginObserver release];
+    [touchMovedObserver release];
+    [touchEndedObserver release];
+#endif
+
+    touchBeginObserver = nil;
+    touchMovedObserver = nil;
+    touchEndedObserver = nil;
+    
+    [LevelHelperLoader removeTouchDispatcherFromObject:self];
 }
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
@@ -788,9 +891,15 @@
 //------------------------------------------------------------------------------
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
    
+    if(self == nil)
+        return NO;
+    
+    if(nil == touchBeginObserver && nil == tagTouchBeginObserver)
+        return false;
+    
     CGPoint touchPoint = [touch locationInView:[touch view]];
     touchPoint = [self convertedPoint:touchPoint];
-    
+        
     if([self isTouchedAtPoint:touchPoint])
     {
         LHTouchInfo* info = [LHTouchInfo touchInfo];
@@ -1099,5 +1208,98 @@
     
     return NSOrderedSame;           
 }
+//------------------------------------------------------------------------------
+-(void)setPosition:(CGPoint)pos
+{
+    if(usesOverloadedTransformations)
+        [self transformPosition:pos];
+    else {
+        [super setPosition:pos];
+    }
+}
+-(void)setRotation:(float)rot
+{
+    if(usesOverloadedTransformations)
+        [self transformRotation:rot];
+    else {
+        [super setRotation:rot];
+    }
+}
+//------------------------------------------------------------------------------
+-(void)setCollisionFilterCategory:(int)category{
+    if(body == nil)
+        return;
+    
+    b2Fixture* curFix = body->GetFixtureList();
+    while (curFix) {
+        
+        b2Filter curFilter = curFix->GetFilterData();
 
+        b2Filter filter;
+        filter.categoryBits = category;
+        filter.maskBits     = curFilter.maskBits;
+        filter.groupIndex   = curFilter.groupIndex;
+
+        curFix->SetFilterData(filter);        
+        curFix = curFix->GetNext();
+    }
+}
+-(void)setCollisionFilterMask:(int)mask{
+    if(body == nil)
+        return;
+
+    b2Fixture* curFix = body->GetFixtureList();
+    while (curFix) {
+        
+        b2Filter curFilter = curFix->GetFilterData();
+        
+        b2Filter filter;
+        filter.categoryBits = curFilter.categoryBits;
+        filter.maskBits     = mask;
+        filter.groupIndex   = curFilter.groupIndex;
+        
+        curFix->SetFilterData(filter);        
+        curFix = curFix->GetNext();
+    }
+}
+-(void)setCollisionFilterGroup:(int)group{
+    if(body == nil)
+        return;
+    b2Fixture* curFix = body->GetFixtureList();
+    while (curFix) {
+        
+        b2Filter curFilter = curFix->GetFilterData();
+        
+        b2Filter filter;
+        filter.categoryBits = curFilter.categoryBits;
+        filter.maskBits     = curFilter.maskBits;
+        filter.groupIndex   = group;
+        
+        curFix->SetFilterData(filter);        
+        curFix = curFix->GetNext();
+    }
+}
+
+//TYPE CONVERSION
+//------------------------------------------------------------------------------
+-(void)makeDynamic{
+    
+    if(body == nil)
+        return;
+    
+    body->SetType(b2_dynamicBody);    
+}
+-(void)makeStatic{
+    if(body == nil)
+        return;
+    
+    body->SetType(b2_staticBody);
+}
+-(void)makeKinematic{
+    if(body == nil)
+        return;
+
+    body->SetType(b2_kinematicBody);
+}
+//------------------------------------------------------------------------------
 @end

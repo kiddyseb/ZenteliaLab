@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AutoGenerateCode</key>
+	<true/>
+	<key>CodePathRelative</key>
+	<string>CrazyJump/</string>
+	<key>CustomScreenSize</key>
+	<string>{1024, 768}</string>
+	<key>Engine</key>
+	<integer>0</integer>
+	<key>LastLevelLoaded</key>
+	<string>/Users/sebastiendumont/Documents/dev/Games/CarCrash2/Resources/level4.plhs</string>
+	<key>LevelsPathRelative</key>
+	<string>CrazyJump/Resources/levels/</string>
+	<key>ProjectName</key>
+	<string>CrazyJump</string>
+	<key>SHScenesPathRelative</key>
+	<string>CrazyJump/Resources/images/</string>
+	<key>ScreenSize</key>
+	<integer>3</integer>
+	<key>Tags</key>
+	<array>
+		<string>DEFAULT</string>
+	</array>
+</dict>
+</plist>

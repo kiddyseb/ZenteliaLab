@@ -97,6 +97,19 @@
     return (LH_CONTACT_TYPE)contactType;
 }
 ////////////////////////////////////////////////////////////////////////////////
+-(CGPoint)contactPoint{
+    
+    if(contact)
+    {
+        b2WorldManifold worldManifold;
+        contact->GetWorldManifold(&worldManifold);
+          
+        return [LevelHelperLoader metersToPoints:worldManifold.points[0]];
+    }
+        
+    return CGPointZero;
+}
+////////////////////////////////////////////////////////////////////////////////
 -(LHSprite*)spriteA{
 #ifndef LH_ARC_ENABLED
     id spr = (id)bodyA->GetUserData();

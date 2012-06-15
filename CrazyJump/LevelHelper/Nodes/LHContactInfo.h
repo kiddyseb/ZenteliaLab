@@ -73,6 +73,8 @@ enum LH_CONTACT_TYPE
 //-2 if its post solve contact
 -(enum LH_CONTACT_TYPE) contactType; 
 
+-(CGPoint)contactPoint;
+
 -(LHSprite*)spriteA;//may return nil;
 -(LHSprite*)spriteB;//may return nil;
 

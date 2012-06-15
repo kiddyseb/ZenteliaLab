@@ -23,6 +23,9 @@
 //  that was used to generate this file.
 //
 ////////////////////////////////////////////////////////////////////////////////
+
+
+
 #import "LHBezierNode.h"
 #import "LevelHelperLoader.h"
 #import "LHTouchMgr.h"
@@ -30,12 +33,40 @@
 #import "LHSettings.h"
 #import "LHSprite.h"
 #import <Availability.h>
-
+#import "ccMacros.h"
 #ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
 #import <OpenGLES/EAGL.h>
 #elif defined(__MAC_OS_X_VERSION_MAX_ALLOWED)
 #import <OpenGL/OpenGL.h>
 #endif
+
+
+typedef struct _ccV3F_C4B_T2F_Triangle
+{
+	//! top left
+	ccV3F_C4B_T2F	tl;
+    //! top right
+	ccV3F_C4B_T2F	tr;
+	//! bottom
+	ccV3F_C4B_T2F	bc;
+    
+} lhV3F_C4B_T2F_Triangle;
+
+
+typedef struct lhV3F_C4B
+{
+    ccVertex3F point;
+    ccColor4B color;    
+} lhV3F_C4B;
+
+
+
+typedef struct lhV3F_Line
+{
+	lhV3F_C4B	A;
+	lhV3F_C4B	B;   
+} lhV3F_Line;
+
 
 @interface LHBezierBlendingInfo : NSObject
 {
@@ -79,9 +110,9 @@
                                                        tile:shouldTile] autorelease];
 #else
     return [[self alloc] initBezierBlendingInfoWithTexture:tex
-                                                blendSource:source
-                                           blendDestination:destination
-                                                       tile:shouldTile];
+                                               blendSource:source
+                                          blendDestination:destination
+                                                      tile:shouldTile];
 #endif
 }
 -(id) initBezierBlendingInfoWithTexture:(CCTexture2D*)tex
@@ -119,7 +150,7 @@
 @synthesize swallowTouches;
 ////////////////////////////////////////////////////////////////////////////////
 -(void) dealloc{		
-
+    
 #ifndef LH_ARC_ENABLED
     if(touchBeginObserver)
         [touchBeginObserver release];
@@ -146,7 +177,7 @@
 	[pathPoints release];
 	[linesHolder release];
 	[trianglesHolder release];
-
+    
 	[super dealloc];
 #endif
 }
@@ -167,15 +198,19 @@
 -(void) initTileVerticesFromDictionary:(NSDictionary*)bezierDict
 {
 	trianglesHolder = [[NSMutableArray alloc] init];
-
+    
     float scale = 1;
-    #ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-        scale = [[CCDirector sharedDirector] contentScaleFactor];
-    #endif
-
-
+    
+#if COCOS2D_VERSION < 0x00020000
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+    scale = [[CCDirector sharedDirector] contentScaleFactor];
+#endif
+#endif
+    
+    
     
 	CGPoint convert = [[LHSettings sharedInstance] convertRatio];
+    
 	NSArray* fixtures = [bezierDict objectForKey:@"TileVertices"];
 	for(NSArray* fix in fixtures)
 	{
@@ -219,7 +254,7 @@
 			CGPoint startPt     = LHPointFromString([curvDict objectForKey:@"StartPoint"]);
 			
             CGPoint pos_offset = [[LHSettings sharedInstance] possitionOffset];
-                        
+            
 			if(!isLine)
 			{
 				CGPoint prevPoint;
@@ -242,7 +277,7 @@
 						
                         pt1.x *= scale;
                         pt1.y *= scale;
-
+                        
                         pt2.x *= scale;
                         pt2.y *= scale;
                         
@@ -278,9 +313,11 @@
                 
                 pos2.x += pos_offset.x;
                 pos2.y -= pos_offset.y;
-
+                
 				[linesHolder addObject:LHValueWithCGPoint(pos1)];
 				[linesHolder addObject:LHValueWithCGPoint(pos2)];
+                
+                //  NSLog(@"LINE HOLDER");
 				
 			}
 		}
@@ -315,7 +352,7 @@
 														  t:t];
 				vPoint = LHMakePoint(vPoint.x*conv.x, 
                                      winSize.height - vPoint.y*conv.y);
-
+                
                 vPoint.x += pos_offset.x;
                 vPoint.y -= pos_offset.y;
                 
@@ -327,7 +364,7 @@
         else
         {
             CGPoint sPoint = LHMakePoint(startPt.x*conv.x, 
-                                 winSize.height - startPt.y*conv.y);
+                                         winSize.height - startPt.y*conv.y);
             
             sPoint.x += pos_offset.x;
             sPoint.y -= pos_offset.y;
@@ -363,7 +400,7 @@
 	int bodyType = [[bezierDict objectForKey:@"PhysicType"] intValue];
 	if(bodyType > 2)
         return;
-        
+    
 	bodyDef.type = (b2BodyType)bodyType;
     
 	bodyDef.position.Set(0.0f, 0.0f);
@@ -377,9 +414,9 @@
 	
 	body = world->CreateBody(&bodyDef);
 	
-  
+    
 	float ptm = [[LHSettings sharedInstance] lhPtmRatio];
-
+    
     for(NSArray* fix in trianglesHolder)
     {
         int size = [fix count];
@@ -388,14 +425,14 @@
         for(int j = (int)[fix count]-1; j >=0; --j)
         {
             NSValue* val = [fix objectAtIndex:j];
-                        
+            
             CGPoint pt = LHPointFromValue(val);
             
             verts[i].x = pt.x/ptm;
             verts[i].y = pt.y/ptm;            
             ++i;
         }
-
+        
         b2PolygonShape shape;
         shape.Set(verts, size);		
         
@@ -418,9 +455,9 @@
     
     if([pathPoints count] > 0)
     {
-    
+        
         b2Vec2 * verts = new b2Vec2 [(int)[pathPoints count]];
-
+        
         int i = 0;
         for(NSValue* val in pathPoints)
         {
@@ -431,20 +468,20 @@
         }
         b2ChainShape shape;
         shape.CreateChain (verts, (int)[pathPoints count]);
-    
+        
         b2FixtureDef fixture;
-    
-    
+        
+        
         fixture.density = [[bezierDict objectForKey:@"Density"] floatValue];
         fixture.friction = [[bezierDict objectForKey:@"Friction"] floatValue];
         fixture.restitution = [[bezierDict objectForKey:@"Restitution"] floatValue];
-    
+        
         fixture.filter.categoryBits = [[bezierDict objectForKey:@"Category"] intValue];
         fixture.filter.maskBits = [[bezierDict objectForKey:@"Mask"] intValue];
         fixture.filter.groupIndex = [[bezierDict objectForKey:@"Group"] intValue];
-    
+        
         fixture.isSensor = [[bezierDict objectForKey:@"IsSenzor"] boolValue];
-
+        
         fixture.shape = &shape;
         body-> CreateFixture (& fixture);
         delete [] verts;
@@ -459,6 +496,16 @@
 	self = [super init];
 	if (self != nil)
 	{
+        
+#if COCOS2D_VERSION >= 0x00020000
+        self.shaderProgram = [[CCShaderCache sharedShaderCache] programForKey:kCCShader_PositionTextureColor];
+        
+        mShaderProgram = [[CCShaderCache sharedShaderCache] programForKey:kCCShader_Position_uColor];
+        
+        mColorLocation = glGetUniformLocation( mShaderProgram->program_, "u_color");
+#endif
+        
+        
 		isClosed	= [[bezierDict objectForKey:@"IsClosed"] boolValue];
 		isTile		= [[bezierDict objectForKey:@"IsTile"] boolValue];
 		isVisible	= [[bezierDict objectForKey:@"IsDrawable"] boolValue];
@@ -468,7 +515,7 @@
 		uniqueName = [[NSString alloc] initWithString:[bezierDict objectForKey:@"UniqueName"]];
 		
         parentLoader = parent;
-                
+        
         blendingTextures = [[NSMutableArray alloc] init];
 		// pathNodes = [[NSMutableSet alloc] init];
 		
@@ -481,10 +528,10 @@
 		{
 			NSString* path = [[LHSettings sharedInstance] imagePath:img imageFolder:[parentLoader imageFolder]];
 			texture = [[CCTextureCache sharedTextureCache] addImage:path];
-           
-            #ifndef LH_ARC_ENABLED
-                [texture retain];
-            #endif
+            
+#ifndef LH_ARC_ENABLED
+            [texture retain];
+#endif
             
             
 			if( texture ) {
@@ -499,7 +546,7 @@
 		color = CCRectFromString([bezierDict objectForKey:@"Color"]);
 		lineColor = CCRectFromString([bezierDict objectForKey:@"LineColor"]);
 		lineWidth = [[bezierDict objectForKey:@"LineWidth"] floatValue];
-    
+        
 		[self initTileVerticesFromDictionary:bezierDict];
 		
 		[self initPathPointsFromDictionary:bezierDict];	
@@ -530,9 +577,9 @@
                                       parent:parent] autorelease];
 #else
     return [[self alloc] initWithDictionary:properties 
-								  cocosLayer:ccLayer 
-								 physicWorld:world
-                                      parent:parent];
+                                 cocosLayer:ccLayer 
+                                physicWorld:world
+                                     parent:parent];
 #endif
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -549,6 +596,172 @@
 	[super visit];
 }
 ////////////////////////////////////////////////////////////////////////////////
+#if COCOS2D_VERSION >= 0x00020000
+-(void)draw{ //COCOS2D 2.0 draw call with GLES 2.0
+    
+    [super draw];
+    
+    //        CC_NODE_DRAW_SETUP();
+    //    
+    ccGLEnable( glServerState_ );																\
+    NSAssert1(shaderProgram_, @"No shader program set for node: %@", self);                      \
+    [shaderProgram_ use];																		\
+    [shaderProgram_ setUniformForModelViewProjectionMatrix];	
+    
+    float scale = 1;
+    
+    //#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+    //        scale = [[CCDirector sharedDirector] contentScaleFactor];
+    //#endif
+    
+    int size = [trianglesHolder count];
+    
+    lhV3F_C4B_T2F_Triangle points[size];// = new ccV3F_C4B_T2F_Triangle[size];
+    
+    ccColor4B colorVert = { color.origin.x*255.0f, 
+        color.origin.y*255.0f, 
+        color.size.width*255.0f, 
+        color.size.height*255.0f};
+    
+    for(int k = 0; k < (int)[trianglesHolder count]; ++k)
+    {
+        NSArray* fix = [trianglesHolder objectAtIndex:k];
+        
+        for(int j = 0; j < 3; ++j)
+        {
+            NSValue* val  = [fix objectAtIndex:j];
+            
+            CGPoint pt = LHPointFromValue(val);
+            
+            pt.x *=scale;
+            pt.y *=scale;
+            
+            ccVertex3F vert = {pt.x, pt.y, 0};
+            ccTex2F tex = { (pt.x/imageSize.width), 
+                ((winSize.height - pt.y)/imageSize.height)};
+            
+            if(j == 0)
+            {
+                points[k].tl.vertices = vert;
+                points[k].tl.colors = colorVert;
+                points[k].tl.texCoords = tex;                
+            }
+            else if(j == 1)
+            {
+                points[k].tr.vertices = vert;
+                points[k].tr.colors = colorVert;
+                points[k].tr.texCoords = tex;                                    
+            }
+            else if (j == 2)
+            {
+                points[k].bc.vertices = vert;
+                points[k].bc.colors = colorVert;
+                points[k].bc.texCoords = tex;                
+            }
+        }
+    }
+    
+    
+    ccBlendFunc	blendFunc_;				// Needed for the texture protocol
+    
+    blendFunc_.src = GL_SRC_ALPHA;
+    blendFunc_.dst = GL_ONE_MINUS_SRC_ALPHA;
+    
+    
+    ccGLEnableVertexAttribs( kCCVertexAttribFlag_PosColorTex );
+    
+    ccGLBlendFunc( blendFunc_.src, blendFunc_.dst );
+    
+    ccGLBindTexture2D( texture.name );
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    
+    
+#define kPointSize sizeof(ccV3F_C4B_T2F)
+    long offset = (long)&points;
+    
+    // vertex
+    NSInteger diff = offsetof( ccV3F_C4B_T2F, vertices);
+    glVertexAttribPointer(kCCVertexAttrib_Position, 3, GL_FLOAT, GL_FALSE, kPointSize, (void*) (offset + diff));
+    
+    // texCoods
+    diff = offsetof( ccV3F_C4B_T2F, texCoords);
+    glVertexAttribPointer(kCCVertexAttrib_TexCoords, 2, GL_FLOAT, GL_FALSE, kPointSize, (void*)(offset + diff));
+    
+    // color
+    diff = offsetof( ccV3F_C4B_T2F, colors);
+    glVertexAttribPointer(kCCVertexAttrib_Color, 4, GL_UNSIGNED_BYTE, GL_TRUE, kPointSize, (void*)(offset + diff));
+    
+    glDrawArrays(GL_TRIANGLES, 0, 3*size);
+    
+    
+    bool wasBlend = glIsEnabled(GL_BLEND);
+    glEnable(GL_BLEND);            
+    
+    for(LHBezierBlendingInfo* info in blendingTextures)
+    {
+        CCTexture2D* tex = [info texture];
+        if(NULL != tex)
+        {
+            glBlendFunc([info blendSource], [info blendDestination]);
+            glBindTexture(GL_TEXTURE_2D, [tex name]);
+            
+            if([info tile]){
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+            }
+            
+            glDrawArrays(GL_TRIANGLES, 0, 3*size);
+        }
+    }
+    
+    if(!wasBlend)
+        glDisable(GL_BLEND);
+    
+    
+    float oldLineWidth = 1.0f;
+    glGetFloatv(GL_LINE_WIDTH, &oldLineWidth); 
+    
+    glLineWidth(lineWidth*[[CCDirector sharedDirector] contentScaleFactor]);
+    
+    
+    ccColor4B colorLineVert = {lineColor.origin.x*255.0f, 
+        lineColor.origin.y*255.0f, 
+        lineColor.size.width*255.0f, 
+        lineColor.size.height*255.0f};
+    
+    
+    int linesNo = [linesHolder count];
+    
+    [mShaderProgram use];
+	[mShaderProgram setUniformForModelViewProjectionMatrix];
+    
+	[mShaderProgram setUniformLocation:mColorLocation withF1:colorLineVert.r f2:colorLineVert.g f3:colorLineVert.b f4:colorLineVert.a];
+    
+    
+    CGPoint* line_verts = new CGPoint[[linesHolder count]];
+    for(int i = 0; i < (int)[linesHolder count]; i+=2)
+    {
+        CGPoint pt1 = LHPointFromValue([linesHolder objectAtIndex:i]);
+        CGPoint pt2 = LHPointFromValue([linesHolder objectAtIndex:i+1]);
+        
+        line_verts[i] = pt1;
+        line_verts[i+1] = pt2;            
+    }  
+    glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 0, line_verts);
+    
+	glDrawArrays(GL_LINES, 0, linesNo);
+	
+	CC_INCREMENT_GL_DRAWS(1);
+    
+    delete[] line_verts;
+    
+	CHECK_GL_ERROR_DEBUG();
+    
+}
+#else
+
 -(void)draw
 {
 	if(0.0f != [[LHSettings sharedInstance] customAlpha])
@@ -568,21 +781,21 @@
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 		
         float scale = 1;
-        #ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-            scale = [[CCDirector sharedDirector] contentScaleFactor];
-        #endif
-
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+        scale = [[CCDirector sharedDirector] contentScaleFactor];
+#endif
+        
         int size = [trianglesHolder count];
         CGPoint* glVertices = new CGPoint[size*3];
         CGPoint* glUV = new CGPoint[size*3];
         for(int k = 0; k < (int)[trianglesHolder count]; ++k)
         {
             NSArray* fix = [trianglesHolder objectAtIndex:k];
-        
+            
             for(int j = 0; j < 3; ++j)
 			{
                 NSValue* val  = [fix objectAtIndex:j];
-                                
+                
 				CGPoint pt = LHPointFromValue(val);
                 
                 pt.x *=scale;
@@ -636,7 +849,9 @@
         float oldLineWidth = 1.0f;
 		glGetFloatv(GL_LINE_WIDTH, &oldLineWidth); 
 		
-		glLineWidth(lineWidth);
+		//glLineWidth(lineWidth);
+        glLineWidth(lineWidth*[[CCDirector sharedDirector] contentScaleFactor]);
+		
 		
 		glDisable(GL_TEXTURE_2D);
         glDisableClientState(GL_TEXTURE_COORD_ARRAY);
@@ -665,6 +880,7 @@
 		glPopMatrix();
 	}	
 }
+#endif
 ////////////////////////////////////////////////////////////////////////////////
 -(LHPathNode*)addSpriteOnPath:(LHSprite*)spr
                         speed:(float)pathSpeed 
@@ -683,11 +899,10 @@
 	[node setBody:[spr body]];
     
     if(!dMove){
-       if([pathPoints count] > 0)
-       {
-           CGPoint pathPos = LHPointFromValue([pathPoints objectAtIndex:0]);
-           [spr transformPosition:pathPos];
-       }
+        if([pathPoints count] > 0){
+            CGPoint pathPos = LHPointFromValue([pathPoints objectAtIndex:0]);
+            [spr transformPosition:pathPos];
+        }
     }
     
 	[node setSpeed:pathSpeed];
@@ -726,7 +941,7 @@
 //------------------------------------------------------------------------------
 -(void) pushBlendingTextureNamed:(NSString*) texName
                       shouldTile:(bool)tile{
-
+    
     [self pushBlendingTextureNamed:texName
                         shouldTile:tile
                     blendingSource:GL_DST_COLOR
@@ -768,7 +983,7 @@
         CCLOG(@"Touch Events on bezier objects can only be performed on Tiled Shapes beziers. Touch Event Will be ignored.");
         return;
     }
-
+    
     if(nil == touchBeginObserver)
         touchBeginObserver = [LHObserverPair observerPair];
     
@@ -784,7 +999,7 @@
         CCLOG(@"Touch Events on bezier objects can only be performed on Tiled Shapes beziers. Touch Event Will be ignored.");
         return;
     }
-
+    
     if(nil == touchMovedObserver)
         touchMovedObserver = [LHObserverPair observerPair];
     
@@ -796,7 +1011,7 @@
 }
 //------------------------------------------------------------------------------
 -(void)registerTouchEndedObserver:(id)observer selector:(SEL)selector{
-
+    
     if(!isTile){
         CCLOG(@"Touch Events on bezier objects can only be performed on Tiled Shapes beziers. Touch Event Will be ignored.");
         return;
@@ -855,7 +1070,7 @@
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
     CGPoint touchPoint = [touch locationInView:[touch view]];    
     touchPoint=  [[CCDirector sharedDirector] convertToGL:touchPoint];    
-
+    
     
     if([self isTouchedAtPoint:touchPoint])
     {
@@ -867,10 +1082,10 @@
         info.touch = touch;
         info.bezier = self;
         info.delta = CGPointZero;
-
+        
         [LHObserverPair performObserverPair:touchBeginObserver object:info];
         [LHObserverPair performObserverPair:tagTouchBeginObserver object:info]; 
-
+        
         return swallowTouches;
     }
     return NO;
@@ -901,10 +1116,10 @@
     
     CGPoint touchPoint = [touch locationInView:[touch view]];
     touchPoint=  [[CCDirector sharedDirector] convertToGL:touchPoint];
-
+    
     CGPoint prevLocation = [touch previousLocationInView:[touch view]];
     prevLocation = [[CCDirector sharedDirector] convertToGL:prevLocation];    
-
+    
     LHTouchInfo* info = [LHTouchInfo touchInfo];
     info.relativePoint = CGPointMake(touchPoint.x - self.position.x,
                                      touchPoint.y - self.position.y);
@@ -914,7 +1129,7 @@
     info.bezier = self;
     info.delta = CGPointMake(touchPoint.x - prevLocation.x,
                              touchPoint.y - prevLocation.y);
-
+    
     [LHObserverPair performObserverPair:touchEndedObserver object:info];
     [LHObserverPair performObserverPair:tagTouchEndedObserver object:info];         
 }
@@ -949,9 +1164,9 @@
     
     if(!mouseDownStarted)
         return NO;
-
+    
     CGPoint touchPoint = [(CCDirectorMac*)[CCDirector sharedDirector] convertEventToGL:event];
-            
+    
     LHTouchInfo* info = [LHTouchInfo touchInfo];
     info.relativePoint = CGPointMake(touchPoint.x - self.position.x,
                                      touchPoint.y - self.position.y);
@@ -971,7 +1186,7 @@
     
     if(!mouseDownStarted)
         return NO;
-
+    
     CGPoint touchPoint = [(CCDirectorMac*)[CCDirector sharedDirector] convertEventToGL:event];
     
     mouseDownStarted = false;
@@ -1018,7 +1233,7 @@
     
     if(!r_mouseDownStarted)
         return NO;
-
+    
     CGPoint touchPoint = [(CCDirectorMac*)[CCDirector sharedDirector] convertEventToGL:event];
     
     LHTouchInfo* info = [LHTouchInfo touchInfo];

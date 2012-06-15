@@ -32,7 +32,7 @@
 -(LHSprite*) newSpriteWithUniqueName:(NSString*)uniqueName 
 						cocos2dLayer:(CCLayer*)_cocosLayer
 {
-    LHSprite* ccsprite = [self newSpriteWithUniqueName:uniqueName];
+    LHSprite* ccsprite = [self createSpriteWithUniqueName:uniqueName];
 	if(nil != ccsprite)
         [_cocosLayer addChild:ccsprite];
     
@@ -70,7 +70,7 @@
 -(b2Body*) newBodyWithUniqueName:(NSString*)name 
 						   world:(b2World*)_world
 {
-    LHSprite* ccsprite = [self newPhysicalBatchSpriteWithUniqueName:name];
+    LHSprite* ccsprite = [self createPhysicalBatchSpriteWithUniqueName:name];
     if(nil != ccsprite){
         return [ccsprite body];
     }
@@ -81,7 +81,7 @@
 						   world:(b2World*)_world
 					cocos2dLayer:(CCLayer*)_cocosLayer
 {
-    LHSprite* ccsprite = [self newPhysicalSpriteWithUniqueName:uniqueName];
+    LHSprite* ccsprite = [self createPhysicalSpriteWithUniqueName:uniqueName];
     
     if(nil != ccsprite){
         if(nil != _cocosLayer){

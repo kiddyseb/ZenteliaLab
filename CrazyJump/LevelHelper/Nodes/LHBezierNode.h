@@ -49,6 +49,12 @@
 @interface LHBezierNode : CCNode <CCMouseEventDelegate>
 #endif
 {
+    
+    #if COCOS2D_VERSION >= 0x00020000
+    CCGLProgram *mShaderProgram;
+	GLint		mColorLocation;
+    #endif
+    
 	bool isClosed;
 	bool isTile;
 	bool isVisible;
@@ -94,7 +100,7 @@
 #endif
 
     
-    LevelHelperLoader* parentLoader;
+    __unsafe_unretained LevelHelperLoader* parentLoader;
 }
 @property (readonly) bool isClosed;
 @property (readonly) bool isTile;
