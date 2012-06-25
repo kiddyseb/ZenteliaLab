@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANIMS_INFO</key>
+	<array/>
+	<key>Author</key>
+	<string>Bogdan Vladu</string>
+	<key>BEZIER_INFO</key>
+	<array>
+		<dict>
+			<key>CanSleep</key>
+			<true/>
+			<key>Category</key>
+			<integer>1</integer>
+			<key>Color</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>Curves</key>
+			<array>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{241.31986343860626, -413.50197804275922}</string>
+					<key>EndPoint</key>
+					<string>{316.85957777500153, -400.87723648849897}</string>
+					<key>StartControlPoint</key>
+					<string>{155.22543442249298, -403.17472350899152}</string>
+					<key>StartPoint</key>
+					<string>{13.591291069984436, -405.47221052948407}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{819.26365673542023, 428.54504191573687}</string>
+					<key>EndPoint</key>
+					<string>{1396.6784774065018, 481.35777938064166}</string>
+					<key>StartControlPoint</key>
+					<string>{846.76902759075165, 40.240271446071347}</string>
+					<key>StartPoint</key>
+					<string>{316.85957777500153, -400.87723648849897}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{1698.4593290090561, 483.65526640113421}</string>
+					<key>EndPoint</key>
+					<string>{1980.2401806116104, 485.95275342162677}</string>
+					<key>StartControlPoint</key>
+					<string>{1560.7286273241043, 483.65526640113421}</string>
+					<key>StartPoint</key>
+					<string>{1396.6784774065018, 481.35777938064166}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2163.943923830986, 496.74408018287249}</string>
+					<key>EndPoint</key>
+					<string>{2352.4330779314041, 495.14270150359698}</string>
+					<key>StartControlPoint</key>
+					<string>{2156.3366292715073, 490.54772746261187}</string>
+					<key>StartPoint</key>
+					<string>{1980.2401806116104, 485.95275342162677}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2640.1512230634689, 420.34856569465228}</string>
+					<key>EndPoint</key>
+					<string>{2821.1204301118851, 118.3548301428182}</string>
+					<key>StartControlPoint</key>
+					<string>{2529.2713831663132, 496.77024924453326}</string>
+					<key>StartPoint</key>
+					<string>{2352.4330779314041, 495.14270150359698}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2831.1204301118851, 433.11055195029803}</string>
+					<key>EndPoint</key>
+					<string>{2821.1204301118851, 747.86627375777789}</string>
+					<key>StartControlPoint</key>
+					<string>{2811.1204301118851, 433.11055195029803}</string>
+					<key>StartPoint</key>
+					<string>{2821.1204301118851, 118.3548301428182}</string>
+				</dict>
+			</array>
+			<key>Density</key>
+			<real>0.20000000298023224</real>
+			<key>Friction</key>
+			<real>0.20000000298023224</real>
+			<key>GravityScale</key>
+			<real>1</real>
+			<key>Group</key>
+			<integer>0</integer>
+			<key>Image</key>
+			<string></string>
+			<key>IsClosed</key>
+			<false/>
+			<key>IsDrawable</key>
+			<false/>
+			<key>IsPath</key>
+			<false/>
+			<key>IsSenzor</key>
+			<false/>
+			<key>IsSimpleLine</key>
+			<false/>
+			<key>IsTile</key>
+			<false/>
+			<key>LineColor</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>LineWidth</key>
+			<real>1</real>
+			<key>Mask</key>
+			<integer>65535</integer>
+			<key>PhysicType</key>
+			<integer>0</integer>
+			<key>Restitution</key>
+			<real>0.0</real>
+			<key>Tag</key>
+			<integer>0</integer>
+			<key>TagName</key>
+			<string>DEFAULT</string>
+			<key>TileVertices</key>
+			<array/>
+			<key>UniqueName</key>
+			<string>Bezier</string>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CanSleep</key>
+			<true/>
+			<key>Category</key>
+			<integer>1</integer>
+			<key>Color</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>Curves</key>
+			<array>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{3401.348880648613, 426.74527632888385}</string>
+					<key>EndPoint</key>
+					<string>{3384.4564195871353, 105.09709345992636}</string>
+					<key>StartControlPoint</key>
+					<string>{3381.348880648613, 426.74527632888385}</string>
+					<key>StartPoint</key>
+					<string>{3398.2413417100906, 748.39345919784137}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{3643.9772344827652, 513.82104193862506}</string>
+					<key>EndPoint</key>
+					<string>{3908.2834602594376, 509.45480906661578}</string>
+					<key>StartControlPoint</key>
+					<string>{3617.7808817625046, 301.07959854301043}</string>
+					<key>StartPoint</key>
+					<string>{3384.4564195871353, 105.09709345992636}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{4635.0994106531143, 507.15732204612323}</string>
+					<key>EndPoint</key>
+					<string>{5341.9153610467911, 504.85983502563067}</string>
+					<key>StartControlPoint</key>
+					<string>{4615.0994106531143, 507.15732204612323}</string>
+					<key>StartPoint</key>
+					<string>{3908.2834602594376, 509.45480906661578}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{5747.7659279108047, 504.21556031402179}</string>
+					<key>EndPoint</key>
+					<string>{6133.6164947748184, 503.5712856024129}</string>
+					<key>StartControlPoint</key>
+					<string>{5727.7659279108047, 504.21556031402179}</string>
+					<key>StartPoint</key>
+					<string>{5341.9153610467911, 504.85983502563067}</string>
+				</dict>
+			</array>
+			<key>Density</key>
+			<real>0.20000000298023224</real>
+			<key>Friction</key>
+			<real>0.20000000298023224</real>
+			<key>GravityScale</key>
+			<real>1</real>
+			<key>Group</key>
+			<integer>0</integer>
+			<key>Image</key>
+			<string></string>
+			<key>IsClosed</key>
+			<false/>
+			<key>IsDrawable</key>
+			<false/>
+			<key>IsPath</key>
+			<false/>
+			<key>IsSenzor</key>
+			<false/>
+			<key>IsSimpleLine</key>
+			<false/>
+			<key>IsTile</key>
+			<false/>
+			<key>LineColor</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>LineWidth</key>
+			<real>1</real>
+			<key>Mask</key>
+			<integer>65535</integer>
+			<key>PhysicType</key>
+			<integer>0</integer>
+			<key>Restitution</key>
+			<real>0.0</real>
+			<key>Tag</key>
+			<integer>0</integer>
+			<key>TagName</key>
+			<string>DEFAULT</string>
+			<key>TileVertices</key>
+			<array/>
+			<key>UniqueName</key>
+			<string>Bezier_1</string>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>CreatedWith</key>
+	<string>LevelHelper</string>
+	<key>Gravity</key>
+	<string>{0, -10}</string>
+	<key>JOINTS_INFO</key>
+	<array/>
+	<key>LHVersion</key>
+	<string>1.4.7</string>
+	<key>LoadedImages</key>
+	<array>
+		<dict>
+			<key>Image</key>
+			<string>beta.png</string>
+			<key>OrderZ</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>PARALLAX_INFO</key>
+	<array/>
+	<key>SPRITES_INFO</key>
+	<array>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>beta.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathFlipX</key>
+				<false/>
+				<key>PathFlipY</key>
+				<false/>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathMoveDelta</key>
+				<true/>
+				<key>PathName</key>
+				<string></string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartAtLaunch</key>
+				<true/>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{131.45997117116349, -511.71214979576325}</string>
+				<key>SHName</key>
+				<string>tiremag</string>
+				<key>SHScene</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.pshs</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>Size</key>
+				<string>{175, 176}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{0, 0}, {175, 176}}</string>
+				<key>UniqueName</key>
+				<string>tiremag</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.10000000149011612</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<true/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{86.5, -13}</string>
+						<string>{87.050003, -9}</string>
+						<string>{87, 9.5}</string>
+						<string>{82, 31}</string>
+						<string>{-87.449997, 9.5}</string>
+						<string>{-87.5, -9}</string>
+						<string>{-82.5, -30.5}</string>
+						<string>{82, -30.5}</string>
+					</array>
+					<array>
+						<string>{85.5, 19}</string>
+						<string>{84, 25}</string>
+						<string>{82, 31}</string>
+						<string>{87, 9.5}</string>
+						<string>{86.5, 13.5}</string>
+					</array>
+					<array>
+						<string>{-9.5, -87.550003}</string>
+						<string>{53.5, -69.5}</string>
+						<string>{82, -30.5}</string>
+						<string>{84, -24.5}</string>
+						<string>{85.5, -18.5}</string>
+						<string>{86.5, -13}</string>
+						<string>{87, 9.5}</string>
+						<string>{9, 87.949997}</string>
+					</array>
+					<array>
+						<string>{-86, 19}</string>
+						<string>{-87, 13.5}</string>
+						<string>{-87.449997, 9.5}</string>
+						<string>{82, 31}</string>
+						<string>{74.5, 46.5}</string>
+						<string>{-82.5, 31}</string>
+						<string>{-84.5, 25}</string>
+					</array>
+					<array>
+						<string>{-86, -18.5}</string>
+						<string>{-84.5, -24.5}</string>
+						<string>{-82.5, -30.5}</string>
+						<string>{-87.5, -9}</string>
+						<string>{-87, -13}</string>
+					</array>
+					<array>
+						<string>{-76.5, -43.5}</string>
+						<string>{-75, -46}</string>
+						<string>{74.5, -46}</string>
+						<string>{76, -43.5}</string>
+						<string>{80, -35.5}</string>
+						<string>{82, -30.5}</string>
+						<string>{-82.5, -30.5}</string>
+						<string>{-80.5, -35.5}</string>
+					</array>
+					<array>
+						<string>{-80.5, 36}</string>
+						<string>{-82.5, 31}</string>
+						<string>{74.5, 46.5}</string>
+						<string>{53.5, 70}</string>
+						<string>{-54, 70}</string>
+						<string>{-71, 52.5}</string>
+						<string>{-75, 46.5}</string>
+						<string>{-76.5, 44}</string>
+					</array>
+					<array>
+						<string>{53.5, 70}</string>
+						<string>{9, 87.949997}</string>
+						<string>{-9.5, 88}</string>
+						<string>{-23, 85.5}</string>
+						<string>{-34.5, 81.5}</string>
+						<string>{74.5, 46.5}</string>
+						<string>{70.5, 52.5}</string>
+						<string>{69, 54.5}</string>
+					</array>
+					<array>
+						<string>{-71, 52.5}</string>
+						<string>{-54, 70}</string>
+						<string>{-56.5, 68}</string>
+						<string>{-61.5, 63.5}</string>
+						<string>{-63, 62}</string>
+						<string>{-67.5, 57}</string>
+					</array>
+					<array>
+						<string>{-61.5, -63}</string>
+						<string>{-56.5, -67.5}</string>
+						<string>{-54, -69.5}</string>
+						<string>{-75, -46}</string>
+						<string>{-71, -52}</string>
+						<string>{-67.5, -56.5}</string>
+						<string>{-63, -61.5}</string>
+					</array>
+					<array>
+						<string>{74.5, 46.5}</string>
+						<string>{82, 31}</string>
+						<string>{80, 36}</string>
+						<string>{76, 44}</string>
+					</array>
+					<array>
+						<string>{53.5, -69.5}</string>
+						<string>{74.5, -46}</string>
+						<string>{-75, -46}</string>
+						<string>{-54, -69.5}</string>
+						<string>{-44.5, -76}</string>
+						<string>{-34.5, -81}</string>
+						<string>{-13.5, -87}</string>
+						<string>{9, -87.5}</string>
+					</array>
+					<array>
+						<string>{56, 68}</string>
+						<string>{53.5, 70}</string>
+						<string>{69, 54.5}</string>
+						<string>{67, 57}</string>
+						<string>{62.5, 62}</string>
+						<string>{61, 63.5}</string>
+					</array>
+					<array>
+						<string>{56, -67.5}</string>
+						<string>{61, -63}</string>
+						<string>{62.5, -61.5}</string>
+						<string>{67, -56.5}</string>
+						<string>{70.5, -52}</string>
+						<string>{53.5, -69.5}</string>
+					</array>
+					<array>
+						<string>{-54, 70}</string>
+						<string>{53.5, 70}</string>
+						<string>{48, 74}</string>
+						<string>{44, 76.5}</string>
+						<string>{34, 81.5}</string>
+						<string>{9, 87.949997}</string>
+						<string>{-34.5, 81.5}</string>
+						<string>{-44.5, 76.5}</string>
+					</array>
+					<array>
+						<string>{-39, -79}</string>
+						<string>{-34.5, -81}</string>
+						<string>{-44.5, -76}</string>
+					</array>
+					<array>
+						<string>{-34.5, 81.5}</string>
+						<string>{-23, 85.5}</string>
+						<string>{-26.5, 84.5}</string>
+						<string>{-29.5, 83.5}</string>
+					</array>
+					<array>
+						<string>{9, -87.5}</string>
+						<string>{16, -86.5}</string>
+						<string>{18.5, -86}</string>
+						<string>{22.5, -85}</string>
+						<string>{34, -81}</string>
+						<string>{44, -76}</string>
+						<string>{53.5, -69.5}</string>
+						<string>{-9.5, -87.550003}</string>
+					</array>
+					<array>
+						<string>{-29.5, -83}</string>
+						<string>{-26.5, -84}</string>
+						<string>{-19, -86}</string>
+						<string>{-13.5, -87}</string>
+						<string>{-34.5, -81}</string>
+					</array>
+					<array>
+						<string>{-23, 85.5}</string>
+						<string>{-9.5, 88}</string>
+						<string>{-13.5, 87.5}</string>
+						<string>{-19, 86.5}</string>
+					</array>
+					<array>
+						<string>{26, -84}</string>
+						<string>{29, -83}</string>
+						<string>{34, -81}</string>
+						<string>{22.5, -85}</string>
+					</array>
+					<array>
+						<string>{9, 87.949997}</string>
+						<string>{34, 81.5}</string>
+						<string>{29, 83.5}</string>
+						<string>{26, 84.5}</string>
+						<string>{18.5, 86.5}</string>
+						<string>{13, 87.5}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>ScenePreference</key>
+	<dict>
+		<key>BackgroundColor</key>
+		<string>{{0.00015780224091176156, 0.00014579909563353576}, {0.0045248868778280382, -2.192009047491218e-184}}</string>
+		<key>GameWorld</key>
+		<string>{{0, -768}, {6144, 1536}}</string>
+		<key>LevelsPath</key>
+		<string>file://localhost/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/levels/</string>
+		<key>PanValue</key>
+		<string>{814.93189642979996, -105.22621529983735}</string>
+		<key>ProjectName</key>
+		<string>CrazyJump</string>
+		<key>SHScenesPath</key>
+		<string>file://localhost/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/</string>
+		<key>SafeFrame</key>
+		<string>{1024, 768}</string>
+		<key>ScreenSize</key>
+		<integer>3</integer>
+		<key>Tags</key>
+		<array>
+			<string>DEFAULT</string>
+		</array>
+		<key>ZoomValue</key>
+		<real>2.3981471061706543</real>
+	</dict>
+	<key>WBInfo</key>
+	<dict>
+		<key>CanSleep</key>
+		<true/>
+		<key>Category</key>
+		<integer>1</integer>
+		<key>Density</key>
+		<real>0.20000000298023224</real>
+		<key>Friction</key>
+		<real>0.20000000298023224</real>
+		<key>Group</key>
+		<integer>0</integer>
+		<key>IsSensor</key>
+		<false/>
+		<key>Mask</key>
+		<integer>65535</integer>
+		<key>Restitution</key>
+		<real>0.20000000298023224</real>
+		<key>TagBottom</key>
+		<integer>0</integer>
+		<key>TagBottomName</key>
+		<string>DEFAULT</string>
+		<key>TagLeft</key>
+		<integer>0</integer>
+		<key>TagLeftName</key>
+		<string>DEFAULT</string>
+		<key>TagRight</key>
+		<integer>0</integer>
+		<key>TagRightName</key>
+		<string>DEFAULT</string>
+		<key>TagTop</key>
+		<integer>0</integer>
+		<key>TagTopName</key>
+		<string>DEFAULT</string>
+		<key>WBRect</key>
+		<string>{{0, -768}, {6144, 1536}}</string>
+	</dict>
+</dict>
+</plist>

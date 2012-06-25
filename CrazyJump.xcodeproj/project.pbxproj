@@ -7,6 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B612A74A1598B2D1003B596F /* beta-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = B612A7441598B2D1003B596F /* beta-hd.png */; };
+		B612A74B1598B2D1003B596F /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = B612A7451598B2D1003B596F /* beta.png */; };
+		B612A74C1598B2D1003B596F /* CrazyJump.pshs in Resources */ = {isa = PBXBuildFile; fileRef = B612A7461598B2D1003B596F /* CrazyJump.pshs */; };
+		B612A74D1598B2D1003B596F /* spriteSheet-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B612A7471598B2D1003B596F /* spriteSheet-hd.plist */; };
+		B612A74E1598B2D1003B596F /* spriteSheet.plist in Resources */ = {isa = PBXBuildFile; fileRef = B612A7481598B2D1003B596F /* spriteSheet.plist */; };
+		B612A74F1598B2D1003B596F /* tiremag.png in Resources */ = {isa = PBXBuildFile; fileRef = B612A7491598B2D1003B596F /* tiremag.png */; };
+		B612A7521598B32E003B596F /* level1.plhs in Resources */ = {isa = PBXBuildFile; fileRef = B612A7511598B32E003B596F /* level1.plhs */; };
+		B612A78D1598B66B003B596F /* LHAnimationsExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7571598B66B003B596F /* LHAnimationsExt.mm */; };
+		B612A78E1598B66B003B596F /* LHBatchExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7591598B66B003B596F /* LHBatchExt.mm */; };
+		B612A78F1598B66B003B596F /* LHConversionExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A75B1598B66B003B596F /* LHConversionExt.mm */; };
+		B612A7901598B66B003B596F /* LHCreationExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A75D1598B66B003B596F /* LHCreationExt.mm */; };
+		B612A7911598B66B003B596F /* LHJointsExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A75F1598B66B003B596F /* LHJointsExt.mm */; };
+		B612A7921598B66B003B596F /* LHMouseJointExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7611598B66B003B596F /* LHMouseJointExt.mm */; };
+		B612A7931598B66B003B596F /* LHParallaxExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7631598B66B003B596F /* LHParallaxExt.mm */; };
+		B612A7941598B66B003B596F /* LHPathExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7651598B66B003B596F /* LHPathExt.mm */; };
+		B612A7951598B66B003B596F /* LHSpritesExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7671598B66B003B596F /* LHSpritesExt.mm */; };
+		B612A7961598B66B003B596F /* LHUsersCategoriesExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7691598B66B003B596F /* LHUsersCategoriesExt.mm */; };
+		B612A7971598B66B003B596F /* LevelHelperLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A76B1598B66B003B596F /* LevelHelperLoader.mm */; };
+		B612A7981598B66B003B596F /* LICENSE_LevelHelper.txt in Resources */ = {isa = PBXBuildFile; fileRef = B612A76D1598B66B003B596F /* LICENSE_LevelHelper.txt */; };
+		B612A7991598B66B003B596F /* LHAnimationNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7701598B66B003B596F /* LHAnimationNode.mm */; };
+		B612A79A1598B66B003B596F /* LHBatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7721598B66B003B596F /* LHBatch.mm */; };
+		B612A79B1598B66B003B596F /* LHBezierNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7741598B66B003B596F /* LHBezierNode.mm */; };
+		B612A79C1598B66B003B596F /* LHContactInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7761598B66B003B596F /* LHContactInfo.mm */; };
+		B612A79D1598B66B003B596F /* LHContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7781598B66B003B596F /* LHContactListener.mm */; };
+		B612A79E1598B66B003B596F /* LHContactNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A77A1598B66B003B596F /* LHContactNode.mm */; };
+		B612A79F1598B66B003B596F /* LHCustomSpriteMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A77C1598B66B003B596F /* LHCustomSpriteMgr.mm */; };
+		B612A7A01598B66B003B596F /* LHCuttingEngineMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A77E1598B66B003B596F /* LHCuttingEngineMgr.mm */; };
+		B612A7A11598B66B003B596F /* LHJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7801598B66B003B596F /* LHJoint.mm */; };
+		B612A7A21598B66B003B596F /* LHParallaxNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7821598B66B003B596F /* LHParallaxNode.mm */; };
+		B612A7A31598B66B003B596F /* LHPathNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7841598B66B003B596F /* LHPathNode.mm */; };
+		B612A7A41598B66B003B596F /* LHSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7861598B66B003B596F /* LHSettings.mm */; };
+		B612A7A51598B66B003B596F /* LHSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7881598B66B003B596F /* LHSprite.mm */; };
+		B612A7A61598B66B003B596F /* LHTouchMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A78A1598B66B003B596F /* LHTouchMgr.mm */; };
+		B612A7A71598B66B003B596F /* SHDocumentLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A78C1598B66B003B596F /* SHDocumentLoader.mm */; };
 		B6AF6CC3158AC1F1009E49F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF6CC2158AC1F1009E49F0 /* QuartzCore.framework */; };
 		B6AF6CC5158AC1F2009E49F0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF6CC4158AC1F2009E49F0 /* OpenGLES.framework */; };
 		B6AF6CC7158AC1F2009E49F0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF6CC6158AC1F2009E49F0 /* OpenAL.framework */; };
@@ -163,32 +197,6 @@
 		B6AF6EA7158AC1F5009E49F0 /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EA6158AC1F5009E49F0 /* b2WeldJoint.cpp */; };
 		B6AF6EAA158AC1F5009E49F0 /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EA9158AC1F5009E49F0 /* b2WheelJoint.cpp */; };
 		B6AF6EB0158AC1F5009E49F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EAF158AC1F5009E49F0 /* main.m */; };
-		B6AF6EB4158AC1F6009E49F0 /* LevelHelperLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EB3158AC1F6009E49F0 /* LevelHelperLoader.mm */; };
-		B6AF6EB6158AC1F6009E49F0 /* LICENSE_LevelHelper.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6AF6EB5158AC1F6009E49F0 /* LICENSE_LevelHelper.txt */; };
-		B6AF6EBA158AC1F6009E49F0 /* LHAnimationNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EB9158AC1F6009E49F0 /* LHAnimationNode.mm */; };
-		B6AF6EBD158AC1F6009E49F0 /* LHBatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EBC158AC1F6009E49F0 /* LHBatch.mm */; };
-		B6AF6EC0158AC1F6009E49F0 /* LHBezierNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EBF158AC1F6009E49F0 /* LHBezierNode.mm */; };
-		B6AF6EC3158AC1F6009E49F0 /* LHContactInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EC2158AC1F6009E49F0 /* LHContactInfo.mm */; };
-		B6AF6EC6158AC1F6009E49F0 /* LHContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EC5158AC1F6009E49F0 /* LHContactListener.mm */; };
-		B6AF6EC9158AC1F6009E49F0 /* LHContactNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EC8158AC1F6009E49F0 /* LHContactNode.mm */; };
-		B6AF6ECC158AC1F6009E49F0 /* LHJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6ECB158AC1F6009E49F0 /* LHJoint.mm */; };
-		B6AF6ECF158AC1F6009E49F0 /* LHParallaxNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6ECE158AC1F6009E49F0 /* LHParallaxNode.mm */; };
-		B6AF6ED2158AC1F6009E49F0 /* LHPathNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6ED1158AC1F6009E49F0 /* LHPathNode.mm */; };
-		B6AF6ED5158AC1F6009E49F0 /* LHSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6ED4158AC1F6009E49F0 /* LHSettings.mm */; };
-		B6AF6ED8158AC1F6009E49F0 /* LHSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6ED7158AC1F6009E49F0 /* LHSprite.mm */; };
-		B6AF6EDB158AC1F6009E49F0 /* LHCustomSpriteMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EDA158AC1F6009E49F0 /* LHCustomSpriteMgr.mm */; };
-		B6AF6EDE158AC1F6009E49F0 /* LHTouchMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EDD158AC1F6009E49F0 /* LHTouchMgr.mm */; };
-		B6AF6EE1158AC1F6009E49F0 /* SHDocumentLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EE0158AC1F6009E49F0 /* SHDocumentLoader.mm */; };
-		B6AF6EE6158AC1F6009E49F0 /* LHAnimationsExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EE5158AC1F6009E49F0 /* LHAnimationsExt.mm */; };
-		B6AF6EE9158AC1F6009E49F0 /* LHBatchExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EE8158AC1F6009E49F0 /* LHBatchExt.mm */; };
-		B6AF6EEC158AC1F6009E49F0 /* LHConversionExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EEB158AC1F6009E49F0 /* LHConversionExt.mm */; };
-		B6AF6EEF158AC1F6009E49F0 /* LHCreationExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EEE158AC1F6009E49F0 /* LHCreationExt.mm */; };
-		B6AF6EF2158AC1F6009E49F0 /* LHJointsExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EF1158AC1F6009E49F0 /* LHJointsExt.mm */; };
-		B6AF6EF5158AC1F6009E49F0 /* LHMouseJointExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EF4158AC1F6009E49F0 /* LHMouseJointExt.mm */; };
-		B6AF6EF8158AC1F6009E49F0 /* LHParallaxExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EF7158AC1F6009E49F0 /* LHParallaxExt.mm */; };
-		B6AF6EFB158AC1F6009E49F0 /* LHPathExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EFA158AC1F6009E49F0 /* LHPathExt.mm */; };
-		B6AF6EFE158AC1F6009E49F0 /* LHSpritesExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6EFD158AC1F6009E49F0 /* LHSpritesExt.mm */; };
-		B6AF6F01158AC1F6009E49F0 /* LHUsersCategoriesExt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6F00158AC1F6009E49F0 /* LHUsersCategoriesExt.mm */; };
 		B6AF6F04158AC1F6009E49F0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6F03158AC1F6009E49F0 /* AppDelegate.mm */; };
 		B6AF6F07158AC1F6009E49F0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6F06158AC1F6009E49F0 /* RootViewController.m */; };
 		B6AF6F0A158AC1F6009E49F0 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AF6F09158AC1F6009E49F0 /* GLES-Render.mm */; };
@@ -197,6 +205,68 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B612A7441598B2D1003B596F /* beta-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beta-hd.png"; path = "Resources/images/beta-hd.png"; sourceTree = "<group>"; };
+		B612A7451598B2D1003B596F /* beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beta.png; path = Resources/images/beta.png; sourceTree = "<group>"; };
+		B612A7461598B2D1003B596F /* CrazyJump.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CrazyJump.pshs; path = Resources/images/CrazyJump.pshs; sourceTree = "<group>"; };
+		B612A7471598B2D1003B596F /* spriteSheet-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "spriteSheet-hd.plist"; path = "Resources/images/spriteSheet-hd.plist"; sourceTree = "<group>"; };
+		B612A7481598B2D1003B596F /* spriteSheet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = spriteSheet.plist; path = Resources/images/spriteSheet.plist; sourceTree = "<group>"; };
+		B612A7491598B2D1003B596F /* tiremag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tiremag.png; path = Resources/images/tiremag.png; sourceTree = "<group>"; };
+		B612A7511598B32E003B596F /* level1.plhs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = level1.plhs; path = Resources/levels/level1.plhs; sourceTree = "<group>"; };
+		B612A7551598B66B003B596F /* LevelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelHelper.h; sourceTree = "<group>"; };
+		B612A7561598B66B003B596F /* LHAnimationsExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHAnimationsExt.h; sourceTree = "<group>"; };
+		B612A7571598B66B003B596F /* LHAnimationsExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHAnimationsExt.mm; sourceTree = "<group>"; };
+		B612A7581598B66B003B596F /* LHBatchExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBatchExt.h; sourceTree = "<group>"; };
+		B612A7591598B66B003B596F /* LHBatchExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHBatchExt.mm; sourceTree = "<group>"; };
+		B612A75A1598B66B003B596F /* LHConversionExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHConversionExt.h; sourceTree = "<group>"; };
+		B612A75B1598B66B003B596F /* LHConversionExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHConversionExt.mm; sourceTree = "<group>"; };
+		B612A75C1598B66B003B596F /* LHCreationExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCreationExt.h; sourceTree = "<group>"; };
+		B612A75D1598B66B003B596F /* LHCreationExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHCreationExt.mm; sourceTree = "<group>"; };
+		B612A75E1598B66B003B596F /* LHJointsExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHJointsExt.h; sourceTree = "<group>"; };
+		B612A75F1598B66B003B596F /* LHJointsExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHJointsExt.mm; sourceTree = "<group>"; };
+		B612A7601598B66B003B596F /* LHMouseJointExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMouseJointExt.h; sourceTree = "<group>"; };
+		B612A7611598B66B003B596F /* LHMouseJointExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHMouseJointExt.mm; sourceTree = "<group>"; };
+		B612A7621598B66B003B596F /* LHParallaxExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHParallaxExt.h; sourceTree = "<group>"; };
+		B612A7631598B66B003B596F /* LHParallaxExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHParallaxExt.mm; sourceTree = "<group>"; };
+		B612A7641598B66B003B596F /* LHPathExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPathExt.h; sourceTree = "<group>"; };
+		B612A7651598B66B003B596F /* LHPathExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHPathExt.mm; sourceTree = "<group>"; };
+		B612A7661598B66B003B596F /* LHSpritesExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSpritesExt.h; sourceTree = "<group>"; };
+		B612A7671598B66B003B596F /* LHSpritesExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHSpritesExt.mm; sourceTree = "<group>"; };
+		B612A7681598B66B003B596F /* LHUsersCategoriesExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHUsersCategoriesExt.h; sourceTree = "<group>"; };
+		B612A7691598B66B003B596F /* LHUsersCategoriesExt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHUsersCategoriesExt.mm; sourceTree = "<group>"; };
+		B612A76A1598B66B003B596F /* LevelHelperLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelHelperLoader.h; sourceTree = "<group>"; };
+		B612A76B1598B66B003B596F /* LevelHelperLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelHelperLoader.mm; sourceTree = "<group>"; };
+		B612A76C1598B66B003B596F /* lhConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhConfig.h; sourceTree = "<group>"; };
+		B612A76D1598B66B003B596F /* LICENSE_LevelHelper.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_LevelHelper.txt; sourceTree = "<group>"; };
+		B612A76F1598B66B003B596F /* LHAnimationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHAnimationNode.h; sourceTree = "<group>"; };
+		B612A7701598B66B003B596F /* LHAnimationNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHAnimationNode.mm; sourceTree = "<group>"; };
+		B612A7711598B66B003B596F /* LHBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBatch.h; sourceTree = "<group>"; };
+		B612A7721598B66B003B596F /* LHBatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHBatch.mm; sourceTree = "<group>"; };
+		B612A7731598B66B003B596F /* LHBezierNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHBezierNode.h; sourceTree = "<group>"; };
+		B612A7741598B66B003B596F /* LHBezierNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHBezierNode.mm; sourceTree = "<group>"; };
+		B612A7751598B66B003B596F /* LHContactInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHContactInfo.h; sourceTree = "<group>"; };
+		B612A7761598B66B003B596F /* LHContactInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHContactInfo.mm; sourceTree = "<group>"; };
+		B612A7771598B66B003B596F /* LHContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHContactListener.h; sourceTree = "<group>"; };
+		B612A7781598B66B003B596F /* LHContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHContactListener.mm; sourceTree = "<group>"; };
+		B612A7791598B66B003B596F /* LHContactNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHContactNode.h; sourceTree = "<group>"; };
+		B612A77A1598B66B003B596F /* LHContactNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHContactNode.mm; sourceTree = "<group>"; };
+		B612A77B1598B66B003B596F /* LHCustomSpriteMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCustomSpriteMgr.h; sourceTree = "<group>"; };
+		B612A77C1598B66B003B596F /* LHCustomSpriteMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHCustomSpriteMgr.mm; sourceTree = "<group>"; };
+		B612A77D1598B66B003B596F /* LHCuttingEngineMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCuttingEngineMgr.h; sourceTree = "<group>"; };
+		B612A77E1598B66B003B596F /* LHCuttingEngineMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHCuttingEngineMgr.mm; sourceTree = "<group>"; };
+		B612A77F1598B66B003B596F /* LHJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHJoint.h; sourceTree = "<group>"; };
+		B612A7801598B66B003B596F /* LHJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHJoint.mm; sourceTree = "<group>"; };
+		B612A7811598B66B003B596F /* LHParallaxNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHParallaxNode.h; sourceTree = "<group>"; };
+		B612A7821598B66B003B596F /* LHParallaxNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHParallaxNode.mm; sourceTree = "<group>"; };
+		B612A7831598B66B003B596F /* LHPathNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPathNode.h; sourceTree = "<group>"; };
+		B612A7841598B66B003B596F /* LHPathNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHPathNode.mm; sourceTree = "<group>"; };
+		B612A7851598B66B003B596F /* LHSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSettings.h; sourceTree = "<group>"; };
+		B612A7861598B66B003B596F /* LHSettings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHSettings.mm; sourceTree = "<group>"; };
+		B612A7871598B66B003B596F /* LHSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSprite.h; sourceTree = "<group>"; };
+		B612A7881598B66B003B596F /* LHSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHSprite.mm; sourceTree = "<group>"; };
+		B612A7891598B66B003B596F /* LHTouchMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTouchMgr.h; sourceTree = "<group>"; };
+		B612A78A1598B66B003B596F /* LHTouchMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHTouchMgr.mm; sourceTree = "<group>"; };
+		B612A78B1598B66B003B596F /* SHDocumentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDocumentLoader.h; sourceTree = "<group>"; };
+		B612A78C1598B66B003B596F /* SHDocumentLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SHDocumentLoader.mm; sourceTree = "<group>"; };
 		B6AF6CBE158AC1F1009E49F0 /* CrazyJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AF6CC2158AC1F1009E49F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B6AF6CC4158AC1F2009E49F0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -515,58 +585,6 @@
 		B6AF6EAC158AC1F5009E49F0 /* LICENSE_Box2D.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_Box2D.txt; path = libs/LICENSE_Box2D.txt; sourceTree = "<group>"; };
 		B6AF6EAE158AC1F5009E49F0 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		B6AF6EAF158AC1F5009E49F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6AF6EB2158AC1F5009E49F0 /* LevelHelperLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LevelHelperLoader.h; path = LevelHelper/LevelHelperLoader.h; sourceTree = "<group>"; };
-		B6AF6EB3158AC1F6009E49F0 /* LevelHelperLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LevelHelperLoader.mm; path = LevelHelper/LevelHelperLoader.mm; sourceTree = "<group>"; };
-		B6AF6EB5158AC1F6009E49F0 /* LICENSE_LevelHelper.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_LevelHelper.txt; path = LevelHelper/LICENSE_LevelHelper.txt; sourceTree = "<group>"; };
-		B6AF6EB8158AC1F6009E49F0 /* LHAnimationNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHAnimationNode.h; path = LevelHelper/Nodes/LHAnimationNode.h; sourceTree = "<group>"; };
-		B6AF6EB9158AC1F6009E49F0 /* LHAnimationNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHAnimationNode.mm; path = LevelHelper/Nodes/LHAnimationNode.mm; sourceTree = "<group>"; };
-		B6AF6EBB158AC1F6009E49F0 /* LHBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHBatch.h; path = LevelHelper/Nodes/LHBatch.h; sourceTree = "<group>"; };
-		B6AF6EBC158AC1F6009E49F0 /* LHBatch.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHBatch.mm; path = LevelHelper/Nodes/LHBatch.mm; sourceTree = "<group>"; };
-		B6AF6EBE158AC1F6009E49F0 /* LHBezierNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHBezierNode.h; path = LevelHelper/Nodes/LHBezierNode.h; sourceTree = "<group>"; };
-		B6AF6EBF158AC1F6009E49F0 /* LHBezierNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHBezierNode.mm; path = LevelHelper/Nodes/LHBezierNode.mm; sourceTree = "<group>"; };
-		B6AF6EC1158AC1F6009E49F0 /* LHContactInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHContactInfo.h; path = LevelHelper/Nodes/LHContactInfo.h; sourceTree = "<group>"; };
-		B6AF6EC2158AC1F6009E49F0 /* LHContactInfo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHContactInfo.mm; path = LevelHelper/Nodes/LHContactInfo.mm; sourceTree = "<group>"; };
-		B6AF6EC4158AC1F6009E49F0 /* LHContactListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHContactListener.h; path = LevelHelper/Nodes/LHContactListener.h; sourceTree = "<group>"; };
-		B6AF6EC5158AC1F6009E49F0 /* LHContactListener.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHContactListener.mm; path = LevelHelper/Nodes/LHContactListener.mm; sourceTree = "<group>"; };
-		B6AF6EC7158AC1F6009E49F0 /* LHContactNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHContactNode.h; path = LevelHelper/Nodes/LHContactNode.h; sourceTree = "<group>"; };
-		B6AF6EC8158AC1F6009E49F0 /* LHContactNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHContactNode.mm; path = LevelHelper/Nodes/LHContactNode.mm; sourceTree = "<group>"; };
-		B6AF6ECA158AC1F6009E49F0 /* LHJoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHJoint.h; path = LevelHelper/Nodes/LHJoint.h; sourceTree = "<group>"; };
-		B6AF6ECB158AC1F6009E49F0 /* LHJoint.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHJoint.mm; path = LevelHelper/Nodes/LHJoint.mm; sourceTree = "<group>"; };
-		B6AF6ECD158AC1F6009E49F0 /* LHParallaxNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHParallaxNode.h; path = LevelHelper/Nodes/LHParallaxNode.h; sourceTree = "<group>"; };
-		B6AF6ECE158AC1F6009E49F0 /* LHParallaxNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHParallaxNode.mm; path = LevelHelper/Nodes/LHParallaxNode.mm; sourceTree = "<group>"; };
-		B6AF6ED0158AC1F6009E49F0 /* LHPathNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHPathNode.h; path = LevelHelper/Nodes/LHPathNode.h; sourceTree = "<group>"; };
-		B6AF6ED1158AC1F6009E49F0 /* LHPathNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHPathNode.mm; path = LevelHelper/Nodes/LHPathNode.mm; sourceTree = "<group>"; };
-		B6AF6ED3158AC1F6009E49F0 /* LHSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHSettings.h; path = LevelHelper/Nodes/LHSettings.h; sourceTree = "<group>"; };
-		B6AF6ED4158AC1F6009E49F0 /* LHSettings.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHSettings.mm; path = LevelHelper/Nodes/LHSettings.mm; sourceTree = "<group>"; };
-		B6AF6ED6158AC1F6009E49F0 /* LHSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHSprite.h; path = LevelHelper/Nodes/LHSprite.h; sourceTree = "<group>"; };
-		B6AF6ED7158AC1F6009E49F0 /* LHSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHSprite.mm; path = LevelHelper/Nodes/LHSprite.mm; sourceTree = "<group>"; };
-		B6AF6ED9158AC1F6009E49F0 /* LHCustomSpriteMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHCustomSpriteMgr.h; path = LevelHelper/Nodes/LHCustomSpriteMgr.h; sourceTree = "<group>"; };
-		B6AF6EDA158AC1F6009E49F0 /* LHCustomSpriteMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHCustomSpriteMgr.mm; path = LevelHelper/Nodes/LHCustomSpriteMgr.mm; sourceTree = "<group>"; };
-		B6AF6EDC158AC1F6009E49F0 /* LHTouchMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHTouchMgr.h; path = LevelHelper/Nodes/LHTouchMgr.h; sourceTree = "<group>"; };
-		B6AF6EDD158AC1F6009E49F0 /* LHTouchMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHTouchMgr.mm; path = LevelHelper/Nodes/LHTouchMgr.mm; sourceTree = "<group>"; };
-		B6AF6EDF158AC1F6009E49F0 /* SHDocumentLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHDocumentLoader.h; path = LevelHelper/Nodes/SHDocumentLoader.h; sourceTree = "<group>"; };
-		B6AF6EE0158AC1F6009E49F0 /* SHDocumentLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = SHDocumentLoader.mm; path = LevelHelper/Nodes/SHDocumentLoader.mm; sourceTree = "<group>"; };
-		B6AF6EE3158AC1F6009E49F0 /* LevelHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LevelHelper.h; path = LevelHelper/ExtendingCategories/LevelHelper.h; sourceTree = "<group>"; };
-		B6AF6EE4158AC1F6009E49F0 /* LHAnimationsExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHAnimationsExt.h; path = LevelHelper/ExtendingCategories/LHAnimationsExt.h; sourceTree = "<group>"; };
-		B6AF6EE5158AC1F6009E49F0 /* LHAnimationsExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHAnimationsExt.mm; path = LevelHelper/ExtendingCategories/LHAnimationsExt.mm; sourceTree = "<group>"; };
-		B6AF6EE7158AC1F6009E49F0 /* LHBatchExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHBatchExt.h; path = LevelHelper/ExtendingCategories/LHBatchExt.h; sourceTree = "<group>"; };
-		B6AF6EE8158AC1F6009E49F0 /* LHBatchExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHBatchExt.mm; path = LevelHelper/ExtendingCategories/LHBatchExt.mm; sourceTree = "<group>"; };
-		B6AF6EEA158AC1F6009E49F0 /* LHConversionExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHConversionExt.h; path = LevelHelper/ExtendingCategories/LHConversionExt.h; sourceTree = "<group>"; };
-		B6AF6EEB158AC1F6009E49F0 /* LHConversionExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHConversionExt.mm; path = LevelHelper/ExtendingCategories/LHConversionExt.mm; sourceTree = "<group>"; };
-		B6AF6EED158AC1F6009E49F0 /* LHCreationExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHCreationExt.h; path = LevelHelper/ExtendingCategories/LHCreationExt.h; sourceTree = "<group>"; };
-		B6AF6EEE158AC1F6009E49F0 /* LHCreationExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHCreationExt.mm; path = LevelHelper/ExtendingCategories/LHCreationExt.mm; sourceTree = "<group>"; };
-		B6AF6EF0158AC1F6009E49F0 /* LHJointsExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHJointsExt.h; path = LevelHelper/ExtendingCategories/LHJointsExt.h; sourceTree = "<group>"; };
-		B6AF6EF1158AC1F6009E49F0 /* LHJointsExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHJointsExt.mm; path = LevelHelper/ExtendingCategories/LHJointsExt.mm; sourceTree = "<group>"; };
-		B6AF6EF3158AC1F6009E49F0 /* LHMouseJointExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHMouseJointExt.h; path = LevelHelper/ExtendingCategories/LHMouseJointExt.h; sourceTree = "<group>"; };
-		B6AF6EF4158AC1F6009E49F0 /* LHMouseJointExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHMouseJointExt.mm; path = LevelHelper/ExtendingCategories/LHMouseJointExt.mm; sourceTree = "<group>"; };
-		B6AF6EF6158AC1F6009E49F0 /* LHParallaxExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHParallaxExt.h; path = LevelHelper/ExtendingCategories/LHParallaxExt.h; sourceTree = "<group>"; };
-		B6AF6EF7158AC1F6009E49F0 /* LHParallaxExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHParallaxExt.mm; path = LevelHelper/ExtendingCategories/LHParallaxExt.mm; sourceTree = "<group>"; };
-		B6AF6EF9158AC1F6009E49F0 /* LHPathExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHPathExt.h; path = LevelHelper/ExtendingCategories/LHPathExt.h; sourceTree = "<group>"; };
-		B6AF6EFA158AC1F6009E49F0 /* LHPathExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHPathExt.mm; path = LevelHelper/ExtendingCategories/LHPathExt.mm; sourceTree = "<group>"; };
-		B6AF6EFC158AC1F6009E49F0 /* LHSpritesExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHSpritesExt.h; path = LevelHelper/ExtendingCategories/LHSpritesExt.h; sourceTree = "<group>"; };
-		B6AF6EFD158AC1F6009E49F0 /* LHSpritesExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHSpritesExt.mm; path = LevelHelper/ExtendingCategories/LHSpritesExt.mm; sourceTree = "<group>"; };
-		B6AF6EFF158AC1F6009E49F0 /* LHUsersCategoriesExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LHUsersCategoriesExt.h; path = LevelHelper/ExtendingCategories/LHUsersCategoriesExt.h; sourceTree = "<group>"; };
-		B6AF6F00158AC1F6009E49F0 /* LHUsersCategoriesExt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LHUsersCategoriesExt.mm; path = LevelHelper/ExtendingCategories/LHUsersCategoriesExt.mm; sourceTree = "<group>"; };
 		B6AF6F02158AC1F6009E49F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6AF6F03158AC1F6009E49F0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		B6AF6F05158AC1F6009E49F0 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -598,6 +616,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B612A7421598B2AC003B596F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B612A7441598B2D1003B596F /* beta-hd.png */,
+				B612A7451598B2D1003B596F /* beta.png */,
+				B612A7461598B2D1003B596F /* CrazyJump.pshs */,
+				B612A7471598B2D1003B596F /* spriteSheet-hd.plist */,
+				B612A7481598B2D1003B596F /* spriteSheet.plist */,
+				B612A7491598B2D1003B596F /* tiremag.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		B612A7501598B319003B596F /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				B612A7511598B32E003B596F /* level1.plhs */,
+			);
+			name = levels;
+			sourceTree = "<group>";
+		};
+		B612A7531598B66B003B596F /* LevelHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B612A7541598B66B003B596F /* ExtendingCategories */,
+				B612A76A1598B66B003B596F /* LevelHelperLoader.h */,
+				B612A76B1598B66B003B596F /* LevelHelperLoader.mm */,
+				B612A76C1598B66B003B596F /* lhConfig.h */,
+				B612A76D1598B66B003B596F /* LICENSE_LevelHelper.txt */,
+				B612A76E1598B66B003B596F /* Nodes */,
+			);
+			path = LevelHelper;
+			sourceTree = "<group>";
+		};
+		B612A7541598B66B003B596F /* ExtendingCategories */ = {
+			isa = PBXGroup;
+			children = (
+				B612A7551598B66B003B596F /* LevelHelper.h */,
+				B612A7561598B66B003B596F /* LHAnimationsExt.h */,
+				B612A7571598B66B003B596F /* LHAnimationsExt.mm */,
+				B612A7581598B66B003B596F /* LHBatchExt.h */,
+				B612A7591598B66B003B596F /* LHBatchExt.mm */,
+				B612A75A1598B66B003B596F /* LHConversionExt.h */,
+				B612A75B1598B66B003B596F /* LHConversionExt.mm */,
+				B612A75C1598B66B003B596F /* LHCreationExt.h */,
+				B612A75D1598B66B003B596F /* LHCreationExt.mm */,
+				B612A75E1598B66B003B596F /* LHJointsExt.h */,
+				B612A75F1598B66B003B596F /* LHJointsExt.mm */,
+				B612A7601598B66B003B596F /* LHMouseJointExt.h */,
+				B612A7611598B66B003B596F /* LHMouseJointExt.mm */,
+				B612A7621598B66B003B596F /* LHParallaxExt.h */,
+				B612A7631598B66B003B596F /* LHParallaxExt.mm */,
+				B612A7641598B66B003B596F /* LHPathExt.h */,
+				B612A7651598B66B003B596F /* LHPathExt.mm */,
+				B612A7661598B66B003B596F /* LHSpritesExt.h */,
+				B612A7671598B66B003B596F /* LHSpritesExt.mm */,
+				B612A7681598B66B003B596F /* LHUsersCategoriesExt.h */,
+				B612A7691598B66B003B596F /* LHUsersCategoriesExt.mm */,
+			);
+			path = ExtendingCategories;
+			sourceTree = "<group>";
+		};
+		B612A76E1598B66B003B596F /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				B612A76F1598B66B003B596F /* LHAnimationNode.h */,
+				B612A7701598B66B003B596F /* LHAnimationNode.mm */,
+				B612A7711598B66B003B596F /* LHBatch.h */,
+				B612A7721598B66B003B596F /* LHBatch.mm */,
+				B612A7731598B66B003B596F /* LHBezierNode.h */,
+				B612A7741598B66B003B596F /* LHBezierNode.mm */,
+				B612A7751598B66B003B596F /* LHContactInfo.h */,
+				B612A7761598B66B003B596F /* LHContactInfo.mm */,
+				B612A7771598B66B003B596F /* LHContactListener.h */,
+				B612A7781598B66B003B596F /* LHContactListener.mm */,
+				B612A7791598B66B003B596F /* LHContactNode.h */,
+				B612A77A1598B66B003B596F /* LHContactNode.mm */,
+				B612A77B1598B66B003B596F /* LHCustomSpriteMgr.h */,
+				B612A77C1598B66B003B596F /* LHCustomSpriteMgr.mm */,
+				B612A77D1598B66B003B596F /* LHCuttingEngineMgr.h */,
+				B612A77E1598B66B003B596F /* LHCuttingEngineMgr.mm */,
+				B612A77F1598B66B003B596F /* LHJoint.h */,
+				B612A7801598B66B003B596F /* LHJoint.mm */,
+				B612A7811598B66B003B596F /* LHParallaxNode.h */,
+				B612A7821598B66B003B596F /* LHParallaxNode.mm */,
+				B612A7831598B66B003B596F /* LHPathNode.h */,
+				B612A7841598B66B003B596F /* LHPathNode.mm */,
+				B612A7851598B66B003B596F /* LHSettings.h */,
+				B612A7861598B66B003B596F /* LHSettings.mm */,
+				B612A7871598B66B003B596F /* LHSprite.h */,
+				B612A7881598B66B003B596F /* LHSprite.mm */,
+				B612A7891598B66B003B596F /* LHTouchMgr.h */,
+				B612A78A1598B66B003B596F /* LHTouchMgr.mm */,
+				B612A78B1598B66B003B596F /* SHDocumentLoader.h */,
+				B612A78C1598B66B003B596F /* SHDocumentLoader.mm */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		B6AF6CB3158AC1F1009E49F0 = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +770,8 @@
 		B6AF6CD3158AC1F2009E49F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B612A7501598B319003B596F /* levels */,
+				B612A7421598B2AC003B596F /* images */,
 				B6AF6CD4158AC1F2009E49F0 /* Default.png */,
 				B6AF6CD6158AC1F2009E49F0 /* fps_images.png */,
 				B6AF6CD8158AC1F2009E49F0 /* Icon-72.png */,
@@ -1128,76 +1247,9 @@
 		B6AF6EB1158AC1F5009E49F0 /* LevelHelper */ = {
 			isa = PBXGroup;
 			children = (
-				B6AF6EB2158AC1F5009E49F0 /* LevelHelperLoader.h */,
-				B6AF6EB3158AC1F6009E49F0 /* LevelHelperLoader.mm */,
-				B6AF6EB5158AC1F6009E49F0 /* LICENSE_LevelHelper.txt */,
-				B6AF6EB7158AC1F6009E49F0 /* Nodes */,
-				B6AF6EE2158AC1F6009E49F0 /* ExtendingCategories */,
+				B612A7531598B66B003B596F /* LevelHelper */,
 			);
 			name = LevelHelper;
-			sourceTree = "<group>";
-		};
-		B6AF6EB7158AC1F6009E49F0 /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				B6AF6EB8158AC1F6009E49F0 /* LHAnimationNode.h */,
-				B6AF6EB9158AC1F6009E49F0 /* LHAnimationNode.mm */,
-				B6AF6EBB158AC1F6009E49F0 /* LHBatch.h */,
-				B6AF6EBC158AC1F6009E49F0 /* LHBatch.mm */,
-				B6AF6EBE158AC1F6009E49F0 /* LHBezierNode.h */,
-				B6AF6EBF158AC1F6009E49F0 /* LHBezierNode.mm */,
-				B6AF6EC1158AC1F6009E49F0 /* LHContactInfo.h */,
-				B6AF6EC2158AC1F6009E49F0 /* LHContactInfo.mm */,
-				B6AF6EC4158AC1F6009E49F0 /* LHContactListener.h */,
-				B6AF6EC5158AC1F6009E49F0 /* LHContactListener.mm */,
-				B6AF6EC7158AC1F6009E49F0 /* LHContactNode.h */,
-				B6AF6EC8158AC1F6009E49F0 /* LHContactNode.mm */,
-				B6AF6ECA158AC1F6009E49F0 /* LHJoint.h */,
-				B6AF6ECB158AC1F6009E49F0 /* LHJoint.mm */,
-				B6AF6ECD158AC1F6009E49F0 /* LHParallaxNode.h */,
-				B6AF6ECE158AC1F6009E49F0 /* LHParallaxNode.mm */,
-				B6AF6ED0158AC1F6009E49F0 /* LHPathNode.h */,
-				B6AF6ED1158AC1F6009E49F0 /* LHPathNode.mm */,
-				B6AF6ED3158AC1F6009E49F0 /* LHSettings.h */,
-				B6AF6ED4158AC1F6009E49F0 /* LHSettings.mm */,
-				B6AF6ED6158AC1F6009E49F0 /* LHSprite.h */,
-				B6AF6ED7158AC1F6009E49F0 /* LHSprite.mm */,
-				B6AF6ED9158AC1F6009E49F0 /* LHCustomSpriteMgr.h */,
-				B6AF6EDA158AC1F6009E49F0 /* LHCustomSpriteMgr.mm */,
-				B6AF6EDC158AC1F6009E49F0 /* LHTouchMgr.h */,
-				B6AF6EDD158AC1F6009E49F0 /* LHTouchMgr.mm */,
-				B6AF6EDF158AC1F6009E49F0 /* SHDocumentLoader.h */,
-				B6AF6EE0158AC1F6009E49F0 /* SHDocumentLoader.mm */,
-			);
-			name = Nodes;
-			sourceTree = "<group>";
-		};
-		B6AF6EE2158AC1F6009E49F0 /* ExtendingCategories */ = {
-			isa = PBXGroup;
-			children = (
-				B6AF6EE3158AC1F6009E49F0 /* LevelHelper.h */,
-				B6AF6EE4158AC1F6009E49F0 /* LHAnimationsExt.h */,
-				B6AF6EE5158AC1F6009E49F0 /* LHAnimationsExt.mm */,
-				B6AF6EE7158AC1F6009E49F0 /* LHBatchExt.h */,
-				B6AF6EE8158AC1F6009E49F0 /* LHBatchExt.mm */,
-				B6AF6EEA158AC1F6009E49F0 /* LHConversionExt.h */,
-				B6AF6EEB158AC1F6009E49F0 /* LHConversionExt.mm */,
-				B6AF6EED158AC1F6009E49F0 /* LHCreationExt.h */,
-				B6AF6EEE158AC1F6009E49F0 /* LHCreationExt.mm */,
-				B6AF6EF0158AC1F6009E49F0 /* LHJointsExt.h */,
-				B6AF6EF1158AC1F6009E49F0 /* LHJointsExt.mm */,
-				B6AF6EF3158AC1F6009E49F0 /* LHMouseJointExt.h */,
-				B6AF6EF4158AC1F6009E49F0 /* LHMouseJointExt.mm */,
-				B6AF6EF6158AC1F6009E49F0 /* LHParallaxExt.h */,
-				B6AF6EF7158AC1F6009E49F0 /* LHParallaxExt.mm */,
-				B6AF6EF9158AC1F6009E49F0 /* LHPathExt.h */,
-				B6AF6EFA158AC1F6009E49F0 /* LHPathExt.mm */,
-				B6AF6EFC158AC1F6009E49F0 /* LHSpritesExt.h */,
-				B6AF6EFD158AC1F6009E49F0 /* LHSpritesExt.mm */,
-				B6AF6EFF158AC1F6009E49F0 /* LHUsersCategoriesExt.h */,
-				B6AF6F00158AC1F6009E49F0 /* LHUsersCategoriesExt.mm */,
-			);
-			name = ExtendingCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1259,8 +1311,15 @@
 				B6AF6CE1158AC1F2009E49F0 /* Icon.png in Resources */,
 				B6AF6CE3158AC1F2009E49F0 /* Icon@2x.png in Resources */,
 				B6AF6CE6158AC1F2009E49F0 /* iTunesArtwork in Resources */,
-				B6AF6EB6158AC1F6009E49F0 /* LICENSE_LevelHelper.txt in Resources */,
 				B6AF6F10158AC1F6009E49F0 /* blocks.png in Resources */,
+				B612A74A1598B2D1003B596F /* beta-hd.png in Resources */,
+				B612A74B1598B2D1003B596F /* beta.png in Resources */,
+				B612A74C1598B2D1003B596F /* CrazyJump.pshs in Resources */,
+				B612A74D1598B2D1003B596F /* spriteSheet-hd.plist in Resources */,
+				B612A74E1598B2D1003B596F /* spriteSheet.plist in Resources */,
+				B612A74F1598B2D1003B596F /* tiremag.png in Resources */,
+				B612A7521598B32E003B596F /* level1.plhs in Resources */,
+				B612A7981598B66B003B596F /* LICENSE_LevelHelper.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1410,35 +1469,36 @@
 				B6AF6EA7158AC1F5009E49F0 /* b2WeldJoint.cpp in Sources */,
 				B6AF6EAA158AC1F5009E49F0 /* b2WheelJoint.cpp in Sources */,
 				B6AF6EB0158AC1F5009E49F0 /* main.m in Sources */,
-				B6AF6EB4158AC1F6009E49F0 /* LevelHelperLoader.mm in Sources */,
-				B6AF6EBA158AC1F6009E49F0 /* LHAnimationNode.mm in Sources */,
-				B6AF6EBD158AC1F6009E49F0 /* LHBatch.mm in Sources */,
-				B6AF6EC0158AC1F6009E49F0 /* LHBezierNode.mm in Sources */,
-				B6AF6EC3158AC1F6009E49F0 /* LHContactInfo.mm in Sources */,
-				B6AF6EC6158AC1F6009E49F0 /* LHContactListener.mm in Sources */,
-				B6AF6EC9158AC1F6009E49F0 /* LHContactNode.mm in Sources */,
-				B6AF6ECC158AC1F6009E49F0 /* LHJoint.mm in Sources */,
-				B6AF6ECF158AC1F6009E49F0 /* LHParallaxNode.mm in Sources */,
-				B6AF6ED2158AC1F6009E49F0 /* LHPathNode.mm in Sources */,
-				B6AF6ED5158AC1F6009E49F0 /* LHSettings.mm in Sources */,
-				B6AF6ED8158AC1F6009E49F0 /* LHSprite.mm in Sources */,
-				B6AF6EDB158AC1F6009E49F0 /* LHCustomSpriteMgr.mm in Sources */,
-				B6AF6EDE158AC1F6009E49F0 /* LHTouchMgr.mm in Sources */,
-				B6AF6EE1158AC1F6009E49F0 /* SHDocumentLoader.mm in Sources */,
-				B6AF6EE6158AC1F6009E49F0 /* LHAnimationsExt.mm in Sources */,
-				B6AF6EE9158AC1F6009E49F0 /* LHBatchExt.mm in Sources */,
-				B6AF6EEC158AC1F6009E49F0 /* LHConversionExt.mm in Sources */,
-				B6AF6EEF158AC1F6009E49F0 /* LHCreationExt.mm in Sources */,
-				B6AF6EF2158AC1F6009E49F0 /* LHJointsExt.mm in Sources */,
-				B6AF6EF5158AC1F6009E49F0 /* LHMouseJointExt.mm in Sources */,
-				B6AF6EF8158AC1F6009E49F0 /* LHParallaxExt.mm in Sources */,
-				B6AF6EFB158AC1F6009E49F0 /* LHPathExt.mm in Sources */,
-				B6AF6EFE158AC1F6009E49F0 /* LHSpritesExt.mm in Sources */,
-				B6AF6F01158AC1F6009E49F0 /* LHUsersCategoriesExt.mm in Sources */,
 				B6AF6F04158AC1F6009E49F0 /* AppDelegate.mm in Sources */,
 				B6AF6F07158AC1F6009E49F0 /* RootViewController.m in Sources */,
 				B6AF6F0A158AC1F6009E49F0 /* GLES-Render.mm in Sources */,
 				B6AF6F0D158AC1F6009E49F0 /* HelloWorldScene.mm in Sources */,
+				B612A78D1598B66B003B596F /* LHAnimationsExt.mm in Sources */,
+				B612A78E1598B66B003B596F /* LHBatchExt.mm in Sources */,
+				B612A78F1598B66B003B596F /* LHConversionExt.mm in Sources */,
+				B612A7901598B66B003B596F /* LHCreationExt.mm in Sources */,
+				B612A7911598B66B003B596F /* LHJointsExt.mm in Sources */,
+				B612A7921598B66B003B596F /* LHMouseJointExt.mm in Sources */,
+				B612A7931598B66B003B596F /* LHParallaxExt.mm in Sources */,
+				B612A7941598B66B003B596F /* LHPathExt.mm in Sources */,
+				B612A7951598B66B003B596F /* LHSpritesExt.mm in Sources */,
+				B612A7961598B66B003B596F /* LHUsersCategoriesExt.mm in Sources */,
+				B612A7971598B66B003B596F /* LevelHelperLoader.mm in Sources */,
+				B612A7991598B66B003B596F /* LHAnimationNode.mm in Sources */,
+				B612A79A1598B66B003B596F /* LHBatch.mm in Sources */,
+				B612A79B1598B66B003B596F /* LHBezierNode.mm in Sources */,
+				B612A79C1598B66B003B596F /* LHContactInfo.mm in Sources */,
+				B612A79D1598B66B003B596F /* LHContactListener.mm in Sources */,
+				B612A79E1598B66B003B596F /* LHContactNode.mm in Sources */,
+				B612A79F1598B66B003B596F /* LHCustomSpriteMgr.mm in Sources */,
+				B612A7A01598B66B003B596F /* LHCuttingEngineMgr.mm in Sources */,
+				B612A7A11598B66B003B596F /* LHJoint.mm in Sources */,
+				B612A7A21598B66B003B596F /* LHParallaxNode.mm in Sources */,
+				B612A7A31598B66B003B596F /* LHPathNode.mm in Sources */,
+				B612A7A41598B66B003B596F /* LHSettings.mm in Sources */,
+				B612A7A51598B66B003B596F /* LHSprite.mm in Sources */,
+				B612A7A61598B66B003B596F /* LHTouchMgr.mm in Sources */,
+				B612A7A71598B66B003B596F /* SHDocumentLoader.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1538,6 +1598,7 @@
 				B6AF6F43158AC1F7009E49F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

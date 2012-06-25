@@ -11,7 +11,7 @@
 	<key>Engine</key>
 	<integer>0</integer>
 	<key>LastLevelLoaded</key>
-	<string>/Users/sebastiendumont/Documents/dev/Games/CarCrash2/Resources/level4.plhs</string>
+	<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/levels/level1.plhs</string>
 	<key>LevelsPathRelative</key>
 	<string>CrazyJump/Resources/levels/</string>
 	<key>ProjectName</key>

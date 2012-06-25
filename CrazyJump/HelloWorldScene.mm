@@ -15,7 +15,8 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 // HelloWorld implementation
 @implementation HelloWorldScene
 
--(void)afterStep {
+-(void)afterStep 
+{
 	// process collisions and result from callbacks called by the step
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -54,7 +55,8 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 // initialize your instance here
 -(id) init
 {
-	if( (self=[super init])) {
+	if( (self=[super init])) 
+    {
 		
 		// enable touches
 		self.isTouchEnabled = YES;
@@ -84,7 +86,7 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 				
 		[self schedule: @selector(tick:) interval:1.0f/60.0f];
 		
-        lh = [[LevelHelperLoader alloc] initWithContentOfFile:@"bezierTile"];
+        lh = [[LevelHelperLoader alloc] initWithContentOfFile:@"level1"];
 		        
         //creating the objects
         [lh addObjectsToWorld:world cocos2dLayer:self];
@@ -94,6 +96,8 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
         
         if(![lh isGravityZero])
             [lh createGravity:world];
+        
+        [self retrieveRequiredObjects];
         
 	}
 	return self;
@@ -116,6 +120,14 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 
 }
+
+-(void) retrieveRequiredObjects
+{
+    [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:NO];
+
+    tire = [lh spriteWithUniqueName:@"tiremag"];
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 //FIX TIME STEPT------------>>>>>>>>>>>>>>>>>>
 -(void) tick: (ccTime) dt
@@ -139,6 +151,24 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
             
         }	
 	}	
+    
+    
+    b2Vec2 tirePos = [tire body]->GetPosition();
+    
+    CGPoint tirePosInCocos2dCoordinates = [LevelHelperLoader metersToPoints:tirePos];
+    float x = tirePosInCocos2dCoordinates.x;
+    if (x > 5120)
+    {
+        x = 5120;
+    }
+    
+    [self.camera setCenterX:x centerY:tirePosInCocos2dCoordinates.y centerZ:0];
+    [self.camera setEyeX:x eyeY:tirePosInCocos2dCoordinates.y eyeZ:100];
+    
+    CGSize winSize = [CCDirector sharedDirector].winSize;
+    float scale = (winSize.height*3/4) / tire.position.y;
+    if (scale > 1) scale = 1;
+    self.scale = scale;
 }
 //FIX TIME STEPT<<<<<<<<<<<<<<<----------------------
 ////////////////////////////////////////////////////////////////////////////////

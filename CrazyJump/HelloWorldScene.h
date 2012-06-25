@@ -19,11 +19,14 @@
 	b2World* world;
 	GLESDebugDraw *m_debugDraw;
     
-	LevelHelperLoader* lh;    
+	LevelHelperLoader* lh;   
+    LHSprite *tire;
     
 }
 
 // returns a Scene that contains the HelloWorld as the only child
 +(id) scene;
+-(void) retrieveRequiredObjects;
+
 
 @end
