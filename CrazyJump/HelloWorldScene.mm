@@ -155,20 +155,17 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
     
     b2Vec2 tirePos = [tire body]->GetPosition();
     
-    CGPoint tirePosInCocos2dCoordinates = [LevelHelperLoader metersToPoints:tirePos];
-    float x = tirePosInCocos2dCoordinates.x;
-    if (x > 5120)
-    {
-        x = 5120;
-    }
+    CGSize screenSize = [CCDirector sharedDirector].winSize;
+    CGPoint screenCenter = CGPointMake(screenSize.width * 0.5f, 
+                                       screenSize.height * 0.5f);
     
-    [self.camera setCenterX:x centerY:tirePosInCocos2dCoordinates.y centerZ:0];
-    [self.camera setEyeX:x eyeY:tirePosInCocos2dCoordinates.y eyeZ:100];
-    
-    CGSize winSize = [CCDirector sharedDirector].winSize;
-    float scale = (winSize.height*3/4) / tire.position.y;
+    CGPoint offsetToCenter = ccpSub(screenCenter, tire.position);    
+    float scale = (screenSize.height*3/4) / tire.position.y;
     if (scale > 1) scale = 1;
     self.scale = scale;
+    
+    self.position = ccpMult(offsetToCenter, self.scale);
+
 }
 //FIX TIME STEPT<<<<<<<<<<<<<<<----------------------
 ////////////////////////////////////////////////////////////////////////////////
