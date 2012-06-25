@@ -12,11 +12,11 @@
 	<string>SpriteHelper</string>
 	<key>ImportedImages</key>
 	<array>
-		<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/beta.png</string>
+		<string>beta.png</string>
 	</array>
 	<key>ImportedImages-HD</key>
 	<array>
-		<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/beta-hd.png</string>
+		<string>beta-hd.png</string>
 	</array>
 	<key>ImportedImages-HD_relative</key>
 	<array>
@@ -388,9 +388,9 @@
 				<key>Image-HD</key>
 				<string>beta-hd.png</string>
 				<key>ImageURL</key>
-				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/beta.png</string>
+				<string>beta.png</string>
 				<key>ImageURL-HD</key>
-				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/beta-hd.png</string>
+				<string>beta-hd.png</string>
 				<key>Name</key>
 				<string>tiremag</string>
 				<key>Opacity</key>
