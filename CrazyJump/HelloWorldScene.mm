@@ -103,6 +103,11 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 	return self;
 }
 
+-(void)restartGame
+{
+    [[CCDirector sharedDirector] replaceScene:[HelloWorldScene scene]];
+}
+
 -(void) draw
 {
 	// Default GL states: GL_TEXTURE_2D, GL_VERTEX_ARRAY, GL_COLOR_ARRAY, GL_TEXTURE_COORD_ARRAY
@@ -184,12 +189,13 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 
 -(void) ccTouchMoved:(UITouch*)touch withEvent:(UIEvent *)event
 {
+    [self restartGame];
 }
 
 -(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
 	
-	[ladaClean body]->ApplyLinearImpulse(b2Vec2(100, 0),  
+	[ladaClean body]->ApplyLinearImpulse(b2Vec2(20, 0),  
                                 [ladaClean body]->GetPosition());
     
 }
