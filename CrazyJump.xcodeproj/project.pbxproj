@@ -41,6 +41,8 @@
 		B612A7A51598B66B003B596F /* LHSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A7881598B66B003B596F /* LHSprite.mm */; };
 		B612A7A61598B66B003B596F /* LHTouchMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A78A1598B66B003B596F /* LHTouchMgr.mm */; };
 		B612A7A71598B66B003B596F /* SHDocumentLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = B612A78C1598B66B003B596F /* SHDocumentLoader.mm */; };
+		B612A7AA159BCB76003B596F /* CrazyJump-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = B612A7A8159BCB76003B596F /* CrazyJump-hd.png */; };
+		B612A7AB159BCB76003B596F /* CrazyJump.png in Resources */ = {isa = PBXBuildFile; fileRef = B612A7A9159BCB76003B596F /* CrazyJump.png */; };
 		B6AF6CC3158AC1F1009E49F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF6CC2158AC1F1009E49F0 /* QuartzCore.framework */; };
 		B6AF6CC5158AC1F2009E49F0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF6CC4158AC1F2009E49F0 /* OpenGLES.framework */; };
 		B6AF6CC7158AC1F2009E49F0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF6CC6158AC1F2009E49F0 /* OpenAL.framework */; };
@@ -267,6 +269,8 @@
 		B612A78A1598B66B003B596F /* LHTouchMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LHTouchMgr.mm; sourceTree = "<group>"; };
 		B612A78B1598B66B003B596F /* SHDocumentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDocumentLoader.h; sourceTree = "<group>"; };
 		B612A78C1598B66B003B596F /* SHDocumentLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SHDocumentLoader.mm; sourceTree = "<group>"; };
+		B612A7A8159BCB76003B596F /* CrazyJump-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CrazyJump-hd.png"; path = "Resources/images/CrazyJump-hd.png"; sourceTree = "<group>"; };
+		B612A7A9159BCB76003B596F /* CrazyJump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CrazyJump.png; path = Resources/images/CrazyJump.png; sourceTree = "<group>"; };
 		B6AF6CBE158AC1F1009E49F0 /* CrazyJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AF6CC2158AC1F1009E49F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B6AF6CC4158AC1F2009E49F0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -619,6 +623,8 @@
 		B612A7421598B2AC003B596F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B612A7A8159BCB76003B596F /* CrazyJump-hd.png */,
+				B612A7A9159BCB76003B596F /* CrazyJump.png */,
 				B612A7441598B2D1003B596F /* beta-hd.png */,
 				B612A7451598B2D1003B596F /* beta.png */,
 				B612A7461598B2D1003B596F /* CrazyJump.pshs */,
@@ -1320,6 +1326,8 @@
 				B612A74F1598B2D1003B596F /* tiremag.png in Resources */,
 				B612A7521598B32E003B596F /* level1.plhs in Resources */,
 				B612A7981598B66B003B596F /* LICENSE_LevelHelper.txt in Resources */,
+				B612A7AA159BCB76003B596F /* CrazyJump-hd.png in Resources */,
+				B612A7AB159BCB76003B596F /* CrazyJump.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

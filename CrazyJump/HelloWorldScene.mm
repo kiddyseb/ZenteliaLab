@@ -125,7 +125,13 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 {
     [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:NO];
 
-    tire = [lh spriteWithUniqueName:@"tiremag"];
+//    tire = [lh spriteWithUniqueName:@"tiremag"];
+    ladaClean = [lh spriteWithUniqueName:@"Lada_clean"];
+//    
+//    smoke = [[CCParticleSmoke alloc] init];
+//    [smoke setStartSize:15.0];
+//    [smoke setEndSize:15.0];    
+//    [self addChild:smoke z:tire.zOrder+1];
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -153,18 +159,22 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 	}	
     
     
-    b2Vec2 tirePos = [tire body]->GetPosition();
+    //b2Vec2 ladaPos = [ladaClean body]->GetPosition();
     
     CGSize screenSize = [CCDirector sharedDirector].winSize;
     CGPoint screenCenter = CGPointMake(screenSize.width * 0.5f, 
                                        screenSize.height * 0.5f);
     
-    CGPoint offsetToCenter = ccpSub(screenCenter, tire.position);    
-    float scale = (screenSize.height*3/4) / tire.position.y;
+    CGPoint offsetToCenter = ccpSub(screenCenter, ladaClean.position);    
+    float scale = (screenSize.height*3/4) / ladaClean.position.y;
     if (scale > 1) scale = 1;
-    self.scale = scale;
+   // self.scale = scale;
     
-    self.position = ccpMult(offsetToCenter, self.scale);
+   // self.position = ccpMult(offsetToCenter, self.scale);
+    self.position = offsetToCenter;
+    
+    //smoke.position = tire.position;
+
 
 }
 //FIX TIME STEPT<<<<<<<<<<<<<<<----------------------

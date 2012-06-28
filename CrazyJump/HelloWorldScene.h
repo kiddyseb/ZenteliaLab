@@ -21,6 +21,9 @@
     
 	LevelHelperLoader* lh;   
     LHSprite *tire;
+    LHSprite *ladaClean;
+    CCParticleSmoke *smoke;
+
     
 }
 
