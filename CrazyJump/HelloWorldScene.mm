@@ -168,28 +168,32 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
     CGPoint offsetToCenter = ccpSub(screenCenter, ladaClean.position);    
     float scale = (screenSize.height*3/4) / ladaClean.position.y;
     if (scale > 1) scale = 1;
-   // self.scale = scale;
+    self.scale = scale;
     
-   // self.position = ccpMult(offsetToCenter, self.scale);
-    self.position = offsetToCenter;
+    self.position = ccpMult(offsetToCenter, self.scale);
+   // self.position = offsetToCenter;
     
     //smoke.position = tire.position;
 
 
 }
-//FIX TIME STEPT<<<<<<<<<<<<<<<----------------------
-////////////////////////////////////////////////////////////////////////////////
-- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
+-(BOOL) ccTouchBegan:(UITouch*)touch withEvent:(UIEvent *)event
+{
+	return YES;
+}
+
+-(void) ccTouchMoved:(UITouch*)touch withEvent:(UIEvent *)event
 {
 }
-////////////////////////////////////////////////////////////////////////////////
-- (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
+	
+	[ladaClean body]->ApplyLinearImpulse(b2Vec2(100, 0),  
+                                [ladaClean body]->GetPosition());
+    
 }
-////////////////////////////////////////////////////////////////////////////////
-- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-}
+
 ////////////////////////////////////////////////////////////////////////////////
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
