@@ -321,7 +321,7 @@
 			<key>GeneralProperties</key>
 			<dict>
 				<key>Angle</key>
-				<integer>24</integer>
+				<integer>20</integer>
 				<key>AnimAtStart</key>
 				<false/>
 				<key>AnimLoop</key>
@@ -600,7 +600,7 @@
 				<key>PathStartPoint</key>
 				<integer>0</integer>
 				<key>Position</key>
-				<string>{367.38618295724575, -446.33487887801726}</string>
+				<string>{370.76584070260708, -453.51665158691009}</string>
 				<key>SHName</key>
 				<string>RoueAv</string>
 				<key>SHScene</key>
@@ -756,7 +756,7 @@
 				<key>PathStartPoint</key>
 				<integer>0</integer>
 				<key>Position</key>
-				<string>{233.02357393875792, -504.54609649370173}</string>
+				<string>{232.60111672058775, -502.4338104028509}</string>
 				<key>SHName</key>
 				<string>RoueArr</string>
 				<key>SHScene</key>
@@ -874,7 +874,7 @@
 		<key>LevelsPath</key>
 		<string>file://localhost/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/levels/</string>
 		<key>PanValue</key>
-		<string>{168.70394438314293, -509.26542078725686}</string>
+		<string>{306.43371922361712, -458.21698652783573}</string>
 		<key>ProjectName</key>
 		<string>CrazyJump</string>
 		<key>SHScenesPath</key>
@@ -888,7 +888,7 @@
 			<string>DEFAULT</string>
 		</array>
 		<key>ZoomValue</key>
-		<real>0.7559015154838562</real>
+		<real>0.42245721817016602</real>
 	</dict>
 	<key>WBInfo</key>
 	<dict>

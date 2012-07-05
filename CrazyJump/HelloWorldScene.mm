@@ -132,11 +132,11 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 
 //    tire = [lh spriteWithUniqueName:@"tiremag"];
     ladaClean = [lh spriteWithUniqueName:@"Lada_clean"];
-//    
-//    smoke = [[CCParticleSmoke alloc] init];
-//    [smoke setStartSize:15.0];
-//    [smoke setEndSize:15.0];    
-//    [self addChild:smoke z:tire.zOrder+1];
+    
+    smoke = [[CCParticleSmoke alloc] init];
+    [smoke setStartSize:15.0];
+    [smoke setEndSize:15.0];    
+    [self addChild:smoke z:ladaClean.zOrder+1];
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -176,9 +176,9 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
     self.scale = scale;
     
     self.position = ccpMult(offsetToCenter, self.scale);
-   // self.position = offsetToCenter;
+   // self.position = offsetToCenter; 
     
-    //smoke.position = tire.position;
+    smoke.position = ccpSub(ladaClean.position, CGPointMake(120, 0));
 
 
 }
@@ -197,6 +197,9 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 	
 	[ladaClean body]->ApplyLinearImpulse(b2Vec2(20, 0),  
                                 [ladaClean body]->GetPosition());
+    
+    //[ladaClean body]->ApplyAngularImpulse([ladaClean body]->GetAngle());
+
     
 }
 
