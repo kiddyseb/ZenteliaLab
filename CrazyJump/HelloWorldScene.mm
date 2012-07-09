@@ -134,8 +134,9 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
     ladaClean = [lh spriteWithUniqueName:@"Lada_clean"];
     
     smoke = [[CCParticleSmoke alloc] init];
-    [smoke setStartSize:15.0];
-    [smoke setEndSize:15.0];    
+    [smoke setStartSize:10.0];
+    [smoke setEndSize:10.0]; 
+    [smoke setAngle:200];
     [self addChild:smoke z:ladaClean.zOrder+1];
 }
 
