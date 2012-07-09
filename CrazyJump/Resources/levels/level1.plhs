@@ -301,6 +301,38 @@
 			<key>UniqueName</key>
 			<string>roueArJoint</string>
 		</dict>
+		<dict>
+			<key>AnchorA</key>
+			<string>{-106.03006935635469, -12.172968606852113}</string>
+			<key>AnchorB</key>
+			<string>{0, 0}</string>
+			<key>CenterOfMass</key>
+			<false/>
+			<key>CollideConnected</key>
+			<false/>
+			<key>Damping</key>
+			<real>0.0</real>
+			<key>Frequency</key>
+			<real>0.0</real>
+			<key>LHAnchorA</key>
+			<string>{-103.34999917075038, -26.633333321660757}</string>
+			<key>LHAnchorB</key>
+			<string>{0, 0}</string>
+			<key>ObjectA</key>
+			<string>Lada_clean</string>
+			<key>ObjectB</key>
+			<string>Muffler</string>
+			<key>PointRelativeness</key>
+			<integer>0</integer>
+			<key>Tag</key>
+			<integer>0</integer>
+			<key>TagName</key>
+			<string>DEFAULT</string>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>UniqueName</key>
+			<string>mufflerJoint</string>
+		</dict>
 	</array>
 	<key>LHVersion</key>
 	<string>1.4.7</string>
@@ -321,7 +353,7 @@
 			<key>GeneralProperties</key>
 			<dict>
 				<key>Angle</key>
-				<integer>20</integer>
+				<integer>21</integer>
 				<key>AnimAtStart</key>
 				<false/>
 				<key>AnimLoop</key>
@@ -365,7 +397,7 @@
 				<key>PathStartPoint</key>
 				<integer>0</integer>
 				<key>Position</key>
-				<string>{300.32198162355633, -512.32416843306999}</string>
+				<string>{298.99103863516063, -511.32596119177322}</string>
 				<key>SHName</key>
 				<string>Lada_clean</string>
 				<key>SHScene</key>
@@ -864,6 +896,162 @@
 				<integer>2</integer>
 			</dict>
 		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>2</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathFlipX</key>
+				<false/>
+				<key>PathFlipY</key>
+				<false/>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathMoveDelta</key>
+				<true/>
+				<key>PathName</key>
+				<string></string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartAtLaunch</key>
+				<true/>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{190.66084272099016, -523.9940403185235}</string>
+				<key>SHName</key>
+				<string>RoueAv</string>
+				<key>SHScene</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.pshs</string>
+				<key>Scale</key>
+				<string>{-0.22106435894966125, 0.22106435894966125}</string>
+				<key>Size</key>
+				<string>{32, 32}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{0, 179}, {32, 32}}</string>
+				<key>UniqueName</key>
+				<string>Muffler</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{-0.5, 16}</string>
+						<string>{-16, -1}</string>
+						<string>{-2, -15.5}</string>
+						<string>{15.5, -0.5}</string>
+						<string>{15.5, 3.5}</string>
+						<string>{14, 7.5}</string>
+						<string>{11.5, 11.5}</string>
+						<string>{7.5, 14.5}</string>
+					</array>
+					<array>
+						<string>{15, -4.5}</string>
+						<string>{15.5, -0.5}</string>
+						<string>{-2, -15.5}</string>
+						<string>{2, -15.5}</string>
+						<string>{6, -14.5}</string>
+						<string>{10, -12}</string>
+						<string>{13.5, -8.5}</string>
+					</array>
+					<array>
+						<string>{-15.5, -5}</string>
+						<string>{-13.5, -9}</string>
+						<string>{-10, -12.5}</string>
+						<string>{-6, -15}</string>
+						<string>{-2, -15.5}</string>
+						<string>{-16, -1}</string>
+					</array>
+					<array>
+						<string>{-16, 3}</string>
+						<string>{-16, -1}</string>
+						<string>{-0.5, 16}</string>
+						<string>{-4.5, 15.5}</string>
+						<string>{-8.5, 14}</string>
+						<string>{-12.5, 11}</string>
+						<string>{-15, 7}</string>
+					</array>
+					<array>
+						<string>{-0.5, 16}</string>
+						<string>{7.5, 14.5}</string>
+						<string>{3.5, 16}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
 	</array>
 	<key>ScenePreference</key>
 	<dict>
@@ -874,7 +1062,7 @@
 		<key>LevelsPath</key>
 		<string>file://localhost/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/levels/</string>
 		<key>PanValue</key>
-		<string>{306.43371922361712, -458.21698652783573}</string>
+		<string>{299.10711721015451, -518.5603124431716}</string>
 		<key>ProjectName</key>
 		<string>CrazyJump</string>
 		<key>SHScenesPath</key>
@@ -888,7 +1076,7 @@
 			<string>DEFAULT</string>
 		</array>
 		<key>ZoomValue</key>
-		<real>0.42245721817016602</real>
+		<real>0.33273574709892273</real>
 	</dict>
 	<key>WBInfo</key>
 	<dict>

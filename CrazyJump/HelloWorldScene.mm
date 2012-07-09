@@ -130,8 +130,9 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
 {
     [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:NO];
 
-//    tire = [lh spriteWithUniqueName:@"tiremag"];
     ladaClean = [lh spriteWithUniqueName:@"Lada_clean"];
+    
+    muffler = [lh spriteWithUniqueName:@"Muffler"];
     
     smoke = [[CCParticleSmoke alloc] init];
     [smoke setStartSize:10.0];
@@ -179,8 +180,8 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
     self.position = ccpMult(offsetToCenter, self.scale);
    // self.position = offsetToCenter; 
     
-    smoke.position = ccpSub(ladaClean.position, CGPointMake(120, 0));
-
+   // smoke.position = ccpSub(ladaClean.position, CGPointMake(ladaClean.contentSize.width/4, 10));
+    smoke.position = muffler.position;
 
 }
 -(BOOL) ccTouchBegan:(UITouch*)touch withEvent:(UIEvent *)event

@@ -20,8 +20,8 @@
 	GLESDebugDraw *m_debugDraw;
     
 	LevelHelperLoader* lh;   
-    LHSprite *tire;
     LHSprite *ladaClean;
+    LHSprite *muffler;
     CCParticleSmoke *smoke;
 
     
