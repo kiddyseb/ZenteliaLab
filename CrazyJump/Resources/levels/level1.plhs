@@ -59,9 +59,9 @@
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
-					<string>{2640.1512230634689, 420.34856569465228}</string>
+					<string>{2663.9823569059372, 500.50783407386371}</string>
 					<key>EndPoint</key>
-					<string>{2821.1204301118851, 118.3548301428182}</string>
+					<string>{2771.2916957139969, 493.15357148345538}</string>
 					<key>StartControlPoint</key>
 					<string>{2529.2713831663132, 496.77024924453326}</string>
 					<key>StartPoint</key>
@@ -69,13 +69,13 @@
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
-					<string>{2831.1204301118851, 433.11055195029803}</string>
+					<string>{2833.2868968248367, 615.09375583823748}</string>
 					<key>EndPoint</key>
 					<string>{2821.1204301118851, 747.86627375777789}</string>
 					<key>StartControlPoint</key>
-					<string>{2811.1204301118851, 433.11055195029803}</string>
+					<string>{2832.7850972414017, 487.27221977408954}</string>
 					<key>StartPoint</key>
-					<string>{2821.1204301118851, 118.3548301428182}</string>
+					<string>{2771.2916957139969, 493.15357148345538}</string>
 				</dict>
 			</array>
 			<key>Density</key>
@@ -132,11 +132,11 @@
 			<array>
 				<dict>
 					<key>EndControlPoint</key>
-					<string>{3401.348880648613, 426.74527632888385}</string>
+					<string>{3392.6830137968063, 541.56801211532184}</string>
 					<key>EndPoint</key>
-					<string>{3384.4564195871353, 105.09709345992636}</string>
+					<string>{3403.9546200037003, 508.05990206893512}</string>
 					<key>StartControlPoint</key>
-					<string>{3381.348880648613, 426.74527632888385}</string>
+					<string>{3387.848280787468, 589.23027980025836}</string>
 					<key>StartPoint</key>
 					<string>{3398.2413417100906, 748.39345919784137}</string>
 				</dict>
@@ -146,9 +146,9 @@
 					<key>EndPoint</key>
 					<string>{3908.2834602594376, 509.45480906661578}</string>
 					<key>StartControlPoint</key>
-					<string>{3617.7808817625046, 301.07959854301043}</string>
+					<string>{3522.4563463926315, 511.22686969932147}</string>
 					<key>StartPoint</key>
-					<string>{3384.4564195871353, 105.09709345992636}</string>
+					<string>{3403.9546200037003, 508.05990206893512}</string>
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
@@ -211,6 +211,165 @@
 			<array/>
 			<key>UniqueName</key>
 			<string>Bezier_1</string>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>CanSleep</key>
+			<true/>
+			<key>Category</key>
+			<integer>1</integer>
+			<key>Color</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>Curves</key>
+			<array>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2779.2353905624204, 388.86335549623482}</string>
+					<key>EndPoint</key>
+					<string>{2819.8556465095335, 354.23912558824532}</string>
+					<key>StartControlPoint</key>
+					<string>{2700.27937873066, 421.78684262306206}</string>
+					<key>StartPoint</key>
+					<string>{2650.15412913621, 463.99737072855942}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2903.5658463424497, 327.07981667787544}</string>
+					<key>EndPoint</key>
+					<string>{2862.7022203391844, 367.58592448503487}</string>
+					<key>StartControlPoint</key>
+					<string>{2832.8167838043028, 345.53402123720161}</string>
+					<key>StartPoint</key>
+					<string>{2819.8556465095335, 354.23912558824532}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2814.8473295158201, 509.8596809890937}</string>
+					<key>EndPoint</key>
+					<string>{2808.5064538902097, 492.19699797899239}</string>
+					<key>StartControlPoint</key>
+					<string>{2773.3174241966062, 408.36155591279976}</string>
+					<key>StartPoint</key>
+					<string>{2862.7022203391844, 367.58592448503487}</string>
+				</dict>
+				<dict>
+					<key>EndControlPoint</key>
+					<string>{2484.0729449576193, 537.63213930398933}</string>
+					<key>EndPoint</key>
+					<string>{2650.15412913621, 463.99737072855942}</string>
+					<key>StartControlPoint</key>
+					<string>{2630.2217055743986, 484.03576491147987}</string>
+					<key>StartPoint</key>
+					<string>{2808.5064538902097, 492.19699797899239}</string>
+				</dict>
+			</array>
+			<key>Density</key>
+			<real>0.20000000298023224</real>
+			<key>Friction</key>
+			<real>0.20000000298023224</real>
+			<key>GravityScale</key>
+			<real>1</real>
+			<key>Group</key>
+			<integer>0</integer>
+			<key>Image</key>
+			<string></string>
+			<key>IsClosed</key>
+			<true/>
+			<key>IsDrawable</key>
+			<true/>
+			<key>IsPath</key>
+			<false/>
+			<key>IsSenzor</key>
+			<false/>
+			<key>IsSimpleLine</key>
+			<false/>
+			<key>IsTile</key>
+			<true/>
+			<key>LineColor</key>
+			<string>{{1, 1}, {1, 1}}</string>
+			<key>LineWidth</key>
+			<real>1</real>
+			<key>Mask</key>
+			<integer>65535</integer>
+			<key>PhysicType</key>
+			<integer>2</integer>
+			<key>Restitution</key>
+			<real>0.20000000298023224</real>
+			<key>Tag</key>
+			<integer>0</integer>
+			<key>TagName</key>
+			<string>DEFAULT</string>
+			<key>TileVertices</key>
+			<array>
+				<array>
+					<string>{2582.8011671344475, 503.38344398410959}</string>
+					<string>{2577.4550862046713, 501.79411797450518}</string>
+					<string>{2580.6570101554325, 497.64144294340372}</string>
+				</array>
+				<array>
+					<string>{2804.3211918116804, 455.16093797598688}</string>
+					<string>{2809.2007538972571, 494.24026709513805}</string>
+					<string>{2726.5454534551204, 492.24855760588423}</string>
+				</array>
+				<array>
+					<string>{2582.8011671344475, 503.38344398410959}</string>
+					<string>{2580.6570101554325, 497.64144294340372}</string>
+					<string>{2631.7051992091601, 472.2348934141163}</string>
+				</array>
+				<array>
+					<string>{2726.5454534551204, 492.24855760588423}</string>
+					<string>{2582.8011671344475, 503.38344398410959}</string>
+					<string>{2631.7051992091601, 472.2348934141163}</string>
+				</array>
+				<array>
+					<string>{2726.5454534551204, 492.24855760588423}</string>
+					<string>{2631.7051992091601, 472.2348934141163}</string>
+					<string>{2650.15412913621, 463.99737072855942}</string>
+				</array>
+				<array>
+					<string>{2726.5454534551204, 492.24855760588423}</string>
+					<string>{2650.15412913621, 463.99737072855942}</string>
+					<string>{2821.6773380589825, 353.152091592528}</string>
+				</array>
+				<array>
+					<string>{2804.3211918116804, 455.16093797598688}</string>
+					<string>{2726.5454534551204, 492.24855760588423}</string>
+					<string>{2821.6773380589825, 353.152091592528}</string>
+				</array>
+				<array>
+					<string>{2811.251685353518, 419.49010251009685}</string>
+					<string>{2804.3211918116804, 455.16093797598688}</string>
+					<string>{2821.6773380589825, 353.152091592528}</string>
+				</array>
+				<array>
+					<string>{2829.1198404466822, 391.08496243798896}</string>
+					<string>{2811.251685353518, 419.49010251009685}</string>
+					<string>{2821.6773380589825, 353.152091592528}</string>
+				</array>
+				<array>
+					<string>{2870.453322195468, 358.96133951976219}</string>
+					<string>{2829.1198404466822, 391.08496243798896}</string>
+					<string>{2821.6773380589825, 353.152091592528}</string>
+				</array>
+				<array>
+					<string>{2870.453322195468, 358.96133951976219}</string>
+					<string>{2821.6773380589825, 353.152091592528}</string>
+					<string>{2848.4181991599107, 344.25288653735601}</string>
+				</array>
+				<array>
+					<string>{2870.453322195468, 358.96133951976219}</string>
+					<string>{2848.4181991599107, 344.25288653735601}</string>
+					<string>{2869.0062252478156, 342.88215460685961}</string>
+				</array>
+				<array>
+					<string>{2870.453322195468, 358.96133951976219}</string>
+					<string>{2869.0062252478156, 342.88215460685961}</string>
+					<string>{2875.1791693019663, 347.6600339360794}</string>
+				</array>
+			</array>
+			<key>UniqueName</key>
+			<string>Bezier_2</string>
 			<key>ZOrder</key>
 			<integer>0</integer>
 		</dict>
@@ -1062,7 +1221,7 @@
 		<key>LevelsPath</key>
 		<string>file://localhost/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/levels/</string>
 		<key>PanValue</key>
-		<string>{299.10711721015451, -518.5603124431716}</string>
+		<string>{2662.6130174982645, 478.6380601258694}</string>
 		<key>ProjectName</key>
 		<string>CrazyJump</string>
 		<key>SHScenesPath</key>
@@ -1076,7 +1235,7 @@
 			<string>DEFAULT</string>
 		</array>
 		<key>ZoomValue</key>
-		<real>0.33273574709892273</real>
+		<real>1.5378503799438477</real>
 	</dict>
 	<key>WBInfo</key>
 	<dict>
