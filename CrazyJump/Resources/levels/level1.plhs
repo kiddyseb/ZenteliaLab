@@ -237,21 +237,21 @@
 					<key>EndControlPoint</key>
 					<string>{2903.5658463424497, 327.07981667787544}</string>
 					<key>EndPoint</key>
-					<string>{2862.7022203391844, 367.58592448503487}</string>
+					<string>{2858.8959207719618, 355.07951162130348}</string>
 					<key>StartControlPoint</key>
-					<string>{2832.8167838043028, 345.53402123720161}</string>
+					<string>{2829.0104842370802, 351.51534912855141}</string>
 					<key>StartPoint</key>
 					<string>{2819.8556465095335, 354.23912558824532}</string>
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
-					<string>{2814.8473295158201, 509.8596809890937}</string>
+					<string>{2761.082450885182, 417.36828027040474}</string>
 					<key>EndPoint</key>
-					<string>{2808.5064538902097, 492.19699797899239}</string>
+					<string>{2695.6325466817671, 449.98755548269264}</string>
 					<key>StartControlPoint</key>
-					<string>{2773.3174241966062, 408.36155591279976}</string>
+					<string>{2822.7993185705, 360.51093278200142}</string>
 					<key>StartPoint</key>
-					<string>{2862.7022203391844, 367.58592448503487}</string>
+					<string>{2858.8959207719618, 355.07951162130348}</string>
 				</dict>
 				<dict>
 					<key>EndControlPoint</key>
@@ -261,7 +261,7 @@
 					<key>StartControlPoint</key>
 					<string>{2630.2217055743986, 484.03576491147987}</string>
 					<key>StartPoint</key>
-					<string>{2808.5064538902097, 492.19699797899239}</string>
+					<string>{2695.6325466817671, 449.98755548269264}</string>
 				</dict>
 			</array>
 			<key>Density</key>
@@ -303,69 +303,49 @@
 			<key>TileVertices</key>
 			<array>
 				<array>
-					<string>{2582.8011671344475, 503.38344398410959}</string>
-					<string>{2577.4550862046713, 501.79411797450518}</string>
-					<string>{2580.6570101554325, 497.64144294340372}</string>
+					<string>{2589.0943654517737, 496.29611763753547}</string>
+					<string>{2573.847193041187, 500.90359681777124}</string>
+					<string>{2579.0966422056508, 497.05793996314662}</string>
 				</array>
 				<array>
-					<string>{2804.3211918116804, 455.16093797598688}</string>
-					<string>{2809.2007538972571, 494.24026709513805}</string>
-					<string>{2726.5454534551204, 492.24855760588423}</string>
+					<string>{2589.0943654517737, 496.29611763753547}</string>
+					<string>{2579.0966422056508, 497.05793996314662}</string>
+					<string>{2631.6979753645282, 472.23219204174319}</string>
 				</array>
 				<array>
-					<string>{2582.8011671344475, 503.38344398410959}</string>
-					<string>{2580.6570101554325, 497.64144294340372}</string>
-					<string>{2631.7051992091601, 472.2348934141163}</string>
+					<string>{2703.4671879676007, 445.96175292536509}</string>
+					<string>{2589.0943654517737, 496.29611763753547}</string>
+					<string>{2631.6979753645282, 472.23219204174319}</string>
 				</array>
 				<array>
-					<string>{2726.5454534551204, 492.24855760588423}</string>
-					<string>{2582.8011671344475, 503.38344398410959}</string>
-					<string>{2631.7051992091601, 472.2348934141163}</string>
-				</array>
-				<array>
-					<string>{2726.5454534551204, 492.24855760588423}</string>
-					<string>{2631.7051992091601, 472.2348934141163}</string>
+					<string>{2703.4671879676007, 445.96175292536509}</string>
+					<string>{2631.6979753645282, 472.23219204174319}</string>
 					<string>{2650.15412913621, 463.99737072855942}</string>
 				</array>
 				<array>
-					<string>{2726.5454534551204, 492.24855760588423}</string>
+					<string>{2703.4671879676007, 445.96175292536509}</string>
 					<string>{2650.15412913621, 463.99737072855942}</string>
-					<string>{2821.6773380589825, 353.152091592528}</string>
+					<string>{2819.8556610362684, 354.23911320562951}</string>
 				</array>
 				<array>
-					<string>{2804.3211918116804, 455.16093797598688}</string>
-					<string>{2726.5454534551204, 492.24855760588423}</string>
-					<string>{2821.6773380589825, 353.152091592528}</string>
+					<string>{2823.2322894029489, 370.07630196988544}</string>
+					<string>{2703.4671879676007, 445.96175292536509}</string>
+					<string>{2819.8556610362684, 354.23911320562951}</string>
 				</array>
 				<array>
-					<string>{2811.251685353518, 419.49010251009685}</string>
-					<string>{2804.3211918116804, 455.16093797598688}</string>
-					<string>{2821.6773380589825, 353.152091592528}</string>
+					<string>{2859.4396620720368, 355.0795216347525}</string>
+					<string>{2823.2322894029489, 370.07630196988544}</string>
+					<string>{2819.8556610362684, 354.23911320562951}</string>
 				</array>
 				<array>
-					<string>{2829.1198404466822, 391.08496243798896}</string>
-					<string>{2811.251685353518, 419.49010251009685}</string>
-					<string>{2821.6773380589825, 353.152091592528}</string>
+					<string>{2859.4396620720368, 355.0795216347525}</string>
+					<string>{2819.8556610362684, 354.23911320562951}</string>
+					<string>{2869.5411458005865, 341.76726236701779}</string>
 				</array>
 				<array>
-					<string>{2870.453322195468, 358.96133951976219}</string>
-					<string>{2829.1198404466822, 391.08496243798896}</string>
-					<string>{2821.6773380589825, 353.152091592528}</string>
-				</array>
-				<array>
-					<string>{2870.453322195468, 358.96133951976219}</string>
-					<string>{2821.6773380589825, 353.152091592528}</string>
-					<string>{2848.4181991599107, 344.25288653735601}</string>
-				</array>
-				<array>
-					<string>{2870.453322195468, 358.96133951976219}</string>
-					<string>{2848.4181991599107, 344.25288653735601}</string>
-					<string>{2869.0062252478156, 342.88215460685961}</string>
-				</array>
-				<array>
-					<string>{2870.453322195468, 358.96133951976219}</string>
-					<string>{2869.0062252478156, 342.88215460685961}</string>
-					<string>{2875.1791693019663, 347.6600339360794}</string>
+					<string>{2859.4396620720368, 355.0795216347525}</string>
+					<string>{2869.5411458005865, 341.76726236701779}</string>
+					<string>{2872.2594045421997, 345.36297036326255}</string>
 				</array>
 			</array>
 			<key>UniqueName</key>
@@ -570,7 +550,7 @@
 				<key>TagName</key>
 				<string>DEFAULT</string>
 				<key>UV</key>
-				<string>{{178, 219}, {238.5, 70.5}}</string>
+				<string>{{178, 73}, {238.5, 70.5}}</string>
 				<key>UniqueName</key>
 				<string>Lada_clean</string>
 				<key>ZOrder</key>
@@ -617,124 +597,25 @@
 				<key>ShapeFixtures</key>
 				<array>
 					<array>
-						<string>{112.75, -28.25}</string>
-						<string>{118.25, -23.75}</string>
-						<string>{113.75, -17.75}</string>
-						<string>{97.25, -30.25}</string>
-						<string>{105.25, -31.75}</string>
+						<string>{-119.25, -20.25}</string>
+						<string>{-101.25, -32.75}</string>
+						<string>{63.25, -34.75}</string>
+						<string>{-71.564499, 9.1585083}</string>
+						<string>{-113.25, 3.25}</string>
 					</array>
 					<array>
-						<string>{113.75, -17.75}</string>
-						<string>{115.25, -9.75}</string>
-						<string>{111.75, -2.25}</string>
-						<string>{103.75, 1.25}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{97.25, -30.25}</string>
+						<string>{112.54004, -30.864227}</string>
+						<string>{112.75, -2.75}</string>
+						<string>{63.057404, 6.2477646}</string>
+						<string>{63.25, -34.75}</string>
 					</array>
 					<array>
-						<string>{-116.75, -17.25}</string>
-						<string>{-117.25, -24.25}</string>
-						<string>{-109.75, -27.75}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-88.25, 8.25}</string>
-						<string>{-96.25, 7.75}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-115.25, -10.25}</string>
-					</array>
-					<array>
-						<string>{-115.75, -3.25}</string>
-						<string>{-115.25, -10.25}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-112.25, 3.75}</string>
-					</array>
-					<array>
-						<string>{-88.25, 8.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-86.25, -32.75}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-80.25, 9.25}</string>
-					</array>
-					<array>
-						<string>{-102.25, -32.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-109.75, -27.75}</string>
-					</array>
-					<array>
-						<string>{-80.25, 9.25}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-70.25, -30.75}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-70.25, -30.75}</string>
-						<string>{-62.25, -31.75}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-57.25, 28.25}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-38.25, -33.75}</string>
-						<string>{-30.25, -33.75}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-41.25, 34.75}</string>
-						<string>{-49.25, 33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-6.25, -34.25}</string>
-						<string>{-13.75, 34.75}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-30.25, -33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-102.25, -32.25}</string>
-					</array>
-					<array>
-						<string>{-6.25, -34.25}</string>
-						<string>{17.75, -34.25}</string>
-						<string>{10.25, 34.25}</string>
-						<string>{2.25, 34.75}</string>
-						<string>{-13.75, 34.75}</string>
-					</array>
-					<array>
-						<string>{81.25, -31.75}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{65.25, -32.75}</string>
-					</array>
-					<array>
-						<string>{17.75, -34.25}</string>
-						<string>{33.75, -34.25}</string>
-						<string>{48.25, 18.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{26.25, 33.75}</string>
-						<string>{18.25, 34.25}</string>
-						<string>{10.25, 34.25}</string>
-					</array>
-					<array>
-						<string>{57.75, -34.25}</string>
-						<string>{65.25, -32.75}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{33.75, -34.25}</string>
-					</array>
-					<array>
-						<string>{26.25, 33.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{34.25, 32.25}</string>
-					</array>
-					<array>
-						<string>{33.75, -34.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{48.25, 18.75}</string>
+						<string>{33.25, 32.75}</string>
+						<string>{-14.25, 35.199997}</string>
+						<string>{-49.75, 33.75}</string>
+						<string>{-71.564499, 9.1585083}</string>
+						<string>{63.25, -34.75}</string>
+						<string>{63.057404, 6.2477646}</string>
 					</array>
 				</array>
 				<key>ShapePositionOffset</key>
@@ -805,7 +686,7 @@
 				<key>TagName</key>
 				<string>DEFAULT</string>
 				<key>UV</key>
-				<string>{{0, 179}, {32, 32}}</string>
+				<string>{{419, 0}, {32, 32}}</string>
 				<key>UniqueName</key>
 				<string>RoueAv</string>
 				<key>ZOrder</key>
@@ -852,45 +733,12 @@
 				<key>ShapeFixtures</key>
 				<array>
 					<array>
-						<string>{-0.5, 16}</string>
-						<string>{-16, -1}</string>
-						<string>{-2, -15.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{15.5, 3.5}</string>
-						<string>{14, 7.5}</string>
-						<string>{11.5, 11.5}</string>
-						<string>{7.5, 14.5}</string>
-					</array>
-					<array>
-						<string>{15, -4.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{-2, -15.5}</string>
-						<string>{2, -15.5}</string>
-						<string>{6, -14.5}</string>
-						<string>{10, -12}</string>
 						<string>{13.5, -8.5}</string>
-					</array>
-					<array>
-						<string>{-15.5, -5}</string>
-						<string>{-13.5, -9}</string>
-						<string>{-10, -12.5}</string>
-						<string>{-6, -15}</string>
-						<string>{-2, -15.5}</string>
-						<string>{-16, -1}</string>
-					</array>
-					<array>
-						<string>{-16, 3}</string>
-						<string>{-16, -1}</string>
+						<string>{14, 7.5}</string>
 						<string>{-0.5, 16}</string>
-						<string>{-4.5, 15.5}</string>
-						<string>{-8.5, 14}</string>
 						<string>{-12.5, 11}</string>
-						<string>{-15, 7}</string>
-					</array>
-					<array>
-						<string>{-0.5, 16}</string>
-						<string>{7.5, 14.5}</string>
-						<string>{3.5, 16}</string>
+						<string>{-15.5, -5}</string>
+						<string>{-2, -15.5}</string>
 					</array>
 				</array>
 				<key>ShapePositionOffset</key>
@@ -961,7 +809,7 @@
 				<key>TagName</key>
 				<string>DEFAULT</string>
 				<key>UV</key>
-				<string>{{0, 213}, {32, 32}}</string>
+				<string>{{419, 35}, {32, 32}}</string>
 				<key>UniqueName</key>
 				<string>RoueArr</string>
 				<key>ZOrder</key>
@@ -1008,45 +856,12 @@
 				<key>ShapeFixtures</key>
 				<array>
 					<array>
-						<string>{-0.5, 16}</string>
-						<string>{-16, -1}</string>
-						<string>{-2, -15.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{15.5, 3.5}</string>
-						<string>{14, 7.5}</string>
-						<string>{11.5, 11.5}</string>
-						<string>{7.5, 14.5}</string>
-					</array>
-					<array>
-						<string>{15, -4.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{-2, -15.5}</string>
-						<string>{2, -15.5}</string>
-						<string>{6, -14.5}</string>
-						<string>{10, -12}</string>
 						<string>{13.5, -8.5}</string>
-					</array>
-					<array>
-						<string>{-15.5, -5}</string>
-						<string>{-13.5, -9}</string>
-						<string>{-10, -12.5}</string>
-						<string>{-6, -15}</string>
-						<string>{-2, -15.5}</string>
-						<string>{-16, -1}</string>
-					</array>
-					<array>
-						<string>{-16, 3}</string>
-						<string>{-16, -1}</string>
+						<string>{14, 7.5}</string>
 						<string>{-0.5, 16}</string>
-						<string>{-4.5, 15.5}</string>
-						<string>{-8.5, 14}</string>
 						<string>{-12.5, 11}</string>
-						<string>{-15, 7}</string>
-					</array>
-					<array>
-						<string>{-0.5, 16}</string>
-						<string>{7.5, 14.5}</string>
-						<string>{3.5, 16}</string>
+						<string>{-15.5, -5}</string>
+						<string>{-2, -15.5}</string>
 					</array>
 				</array>
 				<key>ShapePositionOffset</key>
@@ -1117,7 +932,7 @@
 				<key>TagName</key>
 				<string>DEFAULT</string>
 				<key>UV</key>
-				<string>{{0, 179}, {32, 32}}</string>
+				<string>{{419, 0}, {32, 32}}</string>
 				<key>UniqueName</key>
 				<string>Muffler</string>
 				<key>ZOrder</key>
@@ -1164,45 +979,527 @@
 				<key>ShapeFixtures</key>
 				<array>
 					<array>
-						<string>{-0.5, 16}</string>
-						<string>{-16, -1}</string>
-						<string>{-2, -15.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{15.5, 3.5}</string>
-						<string>{14, 7.5}</string>
-						<string>{11.5, 11.5}</string>
-						<string>{7.5, 14.5}</string>
-					</array>
-					<array>
-						<string>{15, -4.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{-2, -15.5}</string>
-						<string>{2, -15.5}</string>
-						<string>{6, -14.5}</string>
-						<string>{10, -12}</string>
 						<string>{13.5, -8.5}</string>
-					</array>
-					<array>
-						<string>{-15.5, -5}</string>
-						<string>{-13.5, -9}</string>
-						<string>{-10, -12.5}</string>
-						<string>{-6, -15}</string>
-						<string>{-2, -15.5}</string>
-						<string>{-16, -1}</string>
-					</array>
-					<array>
-						<string>{-16, 3}</string>
-						<string>{-16, -1}</string>
+						<string>{14, 7.5}</string>
 						<string>{-0.5, 16}</string>
-						<string>{-4.5, 15.5}</string>
-						<string>{-8.5, 14}</string>
 						<string>{-12.5, 11}</string>
-						<string>{-15, 7}</string>
+						<string>{-15.5, -5}</string>
+						<string>{-2, -15.5}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>57</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathFlipX</key>
+				<false/>
+				<key>PathFlipY</key>
+				<false/>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathMoveDelta</key>
+				<true/>
+				<key>PathName</key>
+				<string></string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartAtLaunch</key>
+				<true/>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{2735.5225250363756, 465.92954143280906}</string>
+				<key>SHName</key>
+				<string>Big_rock</string>
+				<key>SHScene</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.pshs</string>
+				<key>Scale</key>
+				<string>{0.57689940929412842, 0.57689940929412842}</string>
+				<key>Size</key>
+				<string>{105, 119.5}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{241, 252}, {105, 119.5}}</string>
+				<key>UniqueName</key>
+				<string>Big_rock</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{42.5, 35.75}</string>
+						<string>{27, 48.25}</string>
+						<string>{-0.5, 59.700012}</string>
+						<string>{-52.449997, 8.25}</string>
+						<string>{-51.5, -11.25}</string>
+						<string>{35.5, -33.25}</string>
+						<string>{51.493469, -1.6668701}</string>
+						<string>{49.5, 28.25}</string>
 					</array>
 					<array>
-						<string>{-0.5, 16}</string>
-						<string>{7.5, 14.5}</string>
-						<string>{3.5, 16}</string>
+						<string>{-49.5, -24.75}</string>
+						<string>{-32, -47.75}</string>
+						<string>{-13, -59.299988}</string>
+						<string>{17.5, -50.25}</string>
+						<string>{28, -44.25}</string>
+						<string>{35.5, -33.25}</string>
+						<string>{-51.5, -11.25}</string>
+					</array>
+					<array>
+						<string>{-52.449997, 8.25}</string>
+						<string>{-0.5, 59.700012}</string>
+						<string>{-23, 56.25}</string>
+						<string>{-46.5, 37.75}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathFlipX</key>
+				<false/>
+				<key>PathFlipY</key>
+				<false/>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathMoveDelta</key>
+				<true/>
+				<key>PathName</key>
+				<string></string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartAtLaunch</key>
+				<true/>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{3623.4492486954141, 437.51978292460365}</string>
+				<key>SHName</key>
+				<string>toilet</string>
+				<key>SHScene</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.pshs</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>Size</key>
+				<string>{85.5, 144.5}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{349, 252}, {85.5, 144.5}}</string>
+				<key>UniqueName</key>
+				<string>toilet</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.80000001192092896</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{-43.094788, 55.432617}</string>
+						<string>{-39.356445, -63.446167}</string>
+						<string>{-37.861115, -65.315338}</string>
+						<string>{22.699768, -69.801331}</string>
+						<string>{42.139069, -56.717194}</string>
+						<string>{41.391418, 58.049438}</string>
+						<string>{14.475464, 71.507401}</string>
+						<string>{-12.06665, 71.881226}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathFlipX</key>
+				<false/>
+				<key>PathFlipY</key>
+				<false/>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathMoveDelta</key>
+				<true/>
+				<key>PathName</key>
+				<string></string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartAtLaunch</key>
+				<true/>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{3708.9492486954141, 437.51978292460365}</string>
+				<key>SHName</key>
+				<string>toilet</string>
+				<key>SHScene</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.pshs</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>Size</key>
+				<string>{85.5, 144.5}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{349, 252}, {85.5, 144.5}}</string>
+				<key>UniqueName</key>
+				<string>toilet_1</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.80000001192092896</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{-43.094788, 55.432617}</string>
+						<string>{-39.356445, -63.446167}</string>
+						<string>{-37.861115, -65.315338}</string>
+						<string>{22.699768, -69.801331}</string>
+						<string>{42.139069, -56.717194}</string>
+						<string>{41.391418, 58.049438}</string>
+						<string>{14.475464, 71.507401}</string>
+						<string>{-12.06665, 71.881226}</string>
+					</array>
+				</array>
+				<key>ShapePositionOffset</key>
+				<string>{0, 0}</string>
+				<key>Type</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>GeneralProperties</key>
+			<dict>
+				<key>Angle</key>
+				<integer>0</integer>
+				<key>AnimAtStart</key>
+				<false/>
+				<key>AnimLoop</key>
+				<false/>
+				<key>AnimName</key>
+				<string></string>
+				<key>AnimRepetitions</key>
+				<integer>0</integer>
+				<key>AnimSpeed</key>
+				<real>0.0</real>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>IsDrawable</key>
+				<true/>
+				<key>IsInParallax</key>
+				<false/>
+				<key>Locked</key>
+				<false/>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>PathFlipX</key>
+				<false/>
+				<key>PathFlipY</key>
+				<false/>
+				<key>PathIsCyclic</key>
+				<false/>
+				<key>PathMoveDelta</key>
+				<true/>
+				<key>PathName</key>
+				<string></string>
+				<key>PathOrientation</key>
+				<integer>0</integer>
+				<key>PathOtherEnd</key>
+				<false/>
+				<key>PathSpeed</key>
+				<real>0.20000000298023224</real>
+				<key>PathStartAtLaunch</key>
+				<true/>
+				<key>PathStartPoint</key>
+				<integer>0</integer>
+				<key>Position</key>
+				<string>{3794.4492486954141, 437.51978292460365}</string>
+				<key>SHName</key>
+				<string>toilet</string>
+				<key>SHScene</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.pshs</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>Size</key>
+				<string>{85.5, 144.5}</string>
+				<key>Tag</key>
+				<integer>0</integer>
+				<key>TagName</key>
+				<string>DEFAULT</string>
+				<key>UV</key>
+				<string>{{349, 252}, {85.5, 144.5}}</string>
+				<key>UniqueName</key>
+				<string>toilet_2</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>FixedRot</key>
+				<false/>
+				<key>Friction</key>
+				<real>0.80000001192092896</real>
+				<key>GravityScale</key>
+				<real>1</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>HandledBySH</key>
+				<false/>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocity</key>
+				<string>{0, 0}</string>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>ShapeBorder</key>
+				<string>{0, 0}</string>
+				<key>ShapeFixtures</key>
+				<array>
+					<array>
+						<string>{-43.094788, 55.432617}</string>
+						<string>{-39.356445, -63.446167}</string>
+						<string>{-37.861115, -65.315338}</string>
+						<string>{22.699768, -69.801331}</string>
+						<string>{42.139069, -56.717194}</string>
+						<string>{41.391418, 58.049438}</string>
+						<string>{14.475464, 71.507401}</string>
+						<string>{-12.06665, 71.881226}</string>
 					</array>
 				</array>
 				<key>ShapePositionOffset</key>
@@ -1221,7 +1518,7 @@
 		<key>LevelsPath</key>
 		<string>file://localhost/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/levels/</string>
 		<key>PanValue</key>
-		<string>{2662.6130174982645, 478.6380601258694}</string>
+		<string>{3432.0604625028482, 402.11885770534229}</string>
 		<key>ProjectName</key>
 		<string>CrazyJump</string>
 		<key>SHScenesPath</key>
@@ -1235,7 +1532,7 @@
 			<string>DEFAULT</string>
 		</array>
 		<key>ZoomValue</key>
-		<real>1.5378503799438477</real>
+		<real>0.97353339195251465</real>
 	</dict>
 	<key>WBInfo</key>
 	<dict>

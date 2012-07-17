@@ -165,8 +165,13 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
         }	
 	}	
     
-    
-    //b2Vec2 ladaPos = [ladaClean body]->GetPosition();
+    //get angle of the car/////////////////////////////////////////
+    //Get the vector, angle, length, and normal vector of the touch
+	CGPoint vector = ccpSub(muffler.position, ladaClean.position);
+	CGPoint normalVector = ccpNormalize(vector);
+	float angleRads = ccpToAngle(normalVector);
+	int angleDegs = (int)CC_RADIANS_TO_DEGREES(angleRads) % 360;
+    ////////////////////////////////////////////////////////////////
     
     CGSize screenSize = [CCDirector sharedDirector].winSize;
     CGPoint screenCenter = CGPointMake(screenSize.width * 0.5f, 
@@ -182,6 +187,7 @@ const int32 MAXIMUM_NUMBER_OF_STEPS = 25;
     
    // smoke.position = ccpSub(ladaClean.position, CGPointMake(ladaClean.contentSize.width/4, 10));
     smoke.position = muffler.position;
+    [smoke setAngle:angleDegs];
 
 }
 -(BOOL) ccTouchBegan:(UITouch*)touch withEvent:(UIEvent *)event

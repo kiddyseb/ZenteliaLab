@@ -44,61 +44,34 @@
 				<key>Fixtures</key>
 				<array>
 					<array>
-						<string>{77.5, 40.5}</string>
-						<string>{-14, 87}</string>
-						<string>{-87.5, -1}</string>
-						<string>{36.5, -79.5}</string>
-						<string>{84, -23.5}</string>
+						<string>{78, -39.5}</string>
 						<string>{87, -7.5}</string>
-						<string>{87, 8.5}</string>
+						<string>{-86.5, 15}</string>
+						<string>{-86, -17}</string>
+						<string>{-73, -49}</string>
+						<string>{-43.5, -76.5}</string>
+						<string>{-11.5, -87}</string>
+						<string>{52.5, -70}</string>
+					</array>
+					<array>
+						<string>{67, 56.5}</string>
+						<string>{4, 88}</string>
+						<string>{-14, 87}</string>
+						<string>{-46, 75.5}</string>
+						<string>{-74.5, 47}</string>
+						<string>{-86.5, 15}</string>
+						<string>{87, -7.5}</string>
 						<string>{84, 24.5}</string>
 					</array>
 					<array>
-						<string>{-86.5, 15}</string>
-						<string>{-87.5, -1}</string>
-						<string>{-14, 87}</string>
-						<string>{-30, 83}</string>
-						<string>{-46, 75.5}</string>
-						<string>{-74.5, 47}</string>
-						<string>{-82.5, 31}</string>
-					</array>
-					<array>
-						<string>{78, -39.5}</string>
-						<string>{84, -23.5}</string>
-						<string>{36.5, -79.5}</string>
-						<string>{52.5, -70}</string>
-						<string>{67.5, -55.5}</string>
-					</array>
-					<array>
 						<string>{4, 88}</string>
-						<string>{-14, 87}</string>
-						<string>{77.5, 40.5}</string>
 						<string>{67, 56.5}</string>
-						<string>{52, 71}</string>
 						<string>{36, 80.5}</string>
-						<string>{20, 86}</string>
 					</array>
 					<array>
-						<string>{-81.5, -33}</string>
-						<string>{-73, -49}</string>
-						<string>{-59.5, -64.5}</string>
-						<string>{4.5, -87.5}</string>
 						<string>{20.5, -85.5}</string>
-						<string>{36.5, -79.5}</string>
-						<string>{-87.5, -1}</string>
-						<string>{-86, -17}</string>
-					</array>
-					<array>
-						<string>{-74.5, 47}</string>
-						<string>{-46, 75.5}</string>
-						<string>{-62, 63}</string>
-					</array>
-					<array>
-						<string>{-43.5, -76.5}</string>
-						<string>{-27.5, -83.5}</string>
+						<string>{52.5, -70}</string>
 						<string>{-11.5, -87}</string>
-						<string>{4.5, -87.5}</string>
-						<string>{-59.5, -64.5}</string>
 					</array>
 				</array>
 				<key>Friction</key>
@@ -130,35 +103,20 @@
 				<key>SHShapePoints</key>
 				<array>
 					<string>{147, 2}</string>
-					<string>{115, 10}</string>
 					<string>{83, 25}</string>
-					<string>{51, 50}</string>
 					<string>{26, 82}</string>
-					<string>{10, 114}</string>
 					<string>{2, 146}</string>
-					<string>{0, 178}</string>
 					<string>{3, 210}</string>
-					<string>{12, 242}</string>
 					<string>{29, 274}</string>
-					<string>{56, 305}</string>
 					<string>{88, 329}</string>
-					<string>{120, 343}</string>
 					<string>{152, 350}</string>
-					<string>{184, 351}</string>
 					<string>{216, 347}</string>
-					<string>{248, 335}</string>
 					<string>{280, 316}</string>
-					<string>{310, 287}</string>
 					<string>{331, 255}</string>
-					<string>{343, 223}</string>
 					<string>{349, 191}</string>
-					<string>{349, 159}</string>
 					<string>{343, 127}</string>
-					<string>{330, 95}</string>
 					<string>{309, 63}</string>
-					<string>{279, 34}</string>
 					<string>{247, 15}</string>
-					<string>{215, 4}</string>
 					<string>{183, 0}</string>
 				</array>
 				<key>ShapeBorderH</key>
@@ -179,9 +137,9 @@
 				<key>Frame-HD</key>
 				<string>{{0, 0}, {350, 352}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0}, {0.41866028, 0.55000001}}</string>
+				<string>{{0, 0}, {0.38716814, 0.44221106}}</string>
 				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
+				<string>{904, 796}</string>
 				<key>Image</key>
 				<string>CrazyJump.png</string>
 				<key>Image-HD</key>
@@ -195,7 +153,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
+				<string>{452, 398}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -218,124 +176,34 @@
 				<key>Fixtures</key>
 				<array>
 					<array>
-						<string>{112.75, -28.25}</string>
-						<string>{118.25, -23.75}</string>
-						<string>{113.75, -17.75}</string>
-						<string>{97.25, -30.25}</string>
-						<string>{105.25, -31.75}</string>
-					</array>
-					<array>
-						<string>{113.75, -17.75}</string>
-						<string>{115.25, -9.75}</string>
-						<string>{111.75, -2.25}</string>
-						<string>{103.75, 1.25}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{97.25, -30.25}</string>
-					</array>
-					<array>
-						<string>{-116.75, -17.25}</string>
 						<string>{-117.25, -24.25}</string>
-						<string>{-109.75, -27.75}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-88.25, 8.25}</string>
-						<string>{-96.25, 7.75}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-115.25, -10.25}</string>
-					</array>
-					<array>
-						<string>{-115.75, -3.25}</string>
-						<string>{-115.25, -10.25}</string>
-						<string>{-104.25, 6.75}</string>
+						<string>{-86.25, -32.75}</string>
+						<string>{-54.25, -32.25}</string>
+						<string>{-80.25, 9.25}</string>
 						<string>{-112.25, 3.75}</string>
 					</array>
 					<array>
-						<string>{-88.25, 8.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-86.25, -32.75}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-80.25, 9.25}</string>
-					</array>
-					<array>
-						<string>{-102.25, -32.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-109.75, -27.75}</string>
-					</array>
-					<array>
-						<string>{-80.25, 9.25}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-70.25, -30.75}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-70.25, -30.75}</string>
-						<string>{-62.25, -31.75}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-57.25, 28.25}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-38.25, -33.75}</string>
-						<string>{-30.25, -33.75}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-41.25, 34.75}</string>
-						<string>{-49.25, 33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-6.25, -34.25}</string>
-						<string>{-13.75, 34.75}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-30.25, -33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-102.25, -32.25}</string>
-					</array>
-					<array>
-						<string>{-6.25, -34.25}</string>
-						<string>{17.75, -34.25}</string>
-						<string>{10.25, 34.25}</string>
-						<string>{2.25, 34.75}</string>
-						<string>{-13.75, 34.75}</string>
-					</array>
-					<array>
-						<string>{81.25, -31.75}</string>
-						<string>{89.25, -30.75}</string>
+						<string>{105.25, -31.75}</string>
+						<string>{115.25, -9.75}</string>
 						<string>{87.75, 4.25}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{65.25, -32.75}</string>
-					</array>
-					<array>
-						<string>{17.75, -34.25}</string>
-						<string>{33.75, -34.25}</string>
-						<string>{48.25, 18.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{26.25, 33.75}</string>
-						<string>{18.25, 34.25}</string>
-						<string>{10.25, 34.25}</string>
-					</array>
-					<array>
-						<string>{57.75, -34.25}</string>
-						<string>{65.25, -32.75}</string>
-						<string>{63.75, 7.25}</string>
 						<string>{55.75, 10.75}</string>
-						<string>{33.75, -34.25}</string>
+						<string>{73.25, -32.25}</string>
 					</array>
 					<array>
-						<string>{26.25, 33.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{34.25, 32.25}</string>
-					</array>
-					<array>
-						<string>{33.75, -34.25}</string>
+						<string>{-54.25, -32.25}</string>
+						<string>{-22.25, -34.25}</string>
+						<string>{9.75, -34.25}</string>
 						<string>{55.75, 10.75}</string>
-						<string>{48.25, 18.75}</string>
+						<string>{26.25, 33.75}</string>
+						<string>{-5.75, 34.75}</string>
+						<string>{-49.25, 33.75}</string>
+						<string>{-80.25, 9.25}</string>
+					</array>
+					<array>
+						<string>{41.75, -34.25}</string>
+						<string>{73.25, -32.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{9.75, -34.25}</string>
 					</array>
 				</array>
 				<key>Friction</key>
@@ -366,71 +234,22 @@
 				<array/>
 				<key>SHShapePoints</key>
 				<array>
-					<string>{528, 1}</string>
-					<string>{512, 1}</string>
 					<string>{496, 3}</string>
-					<string>{480, 14}</string>
-					<string>{465, 30}</string>
-					<string>{450, 46}</string>
 					<string>{434, 52}</string>
-					<string>{418, 54}</string>
-					<string>{402, 55}</string>
-					<string>{386, 57}</string>
 					<string>{370, 63}</string>
-					<string>{363, 77}</string>
-					<string>{364, 91}</string>
-					<string>{361, 105}</string>
 					<string>{360, 119}</string>
-					<string>{375, 126}</string>
-					<string>{390, 135}</string>
-					<string>{406, 136}</string>
 					<string>{422, 136}</string>
-					<string>{438, 131}</string>
-					<string>{454, 132}</string>
-					<string>{470, 134}</string>
 					<string>{486, 135}</string>
-					<string>{502, 136}</string>
-					<string>{518, 138}</string>
-					<string>{534, 138}</string>
 					<string>{550, 139}</string>
-					<string>{566, 139}</string>
-					<string>{582, 139}</string>
-					<string>{598, 139}</string>
 					<string>{614, 139}</string>
-					<string>{630, 139}</string>
-					<string>{646, 139}</string>
-					<string>{662, 139}</string>
 					<string>{678, 139}</string>
-					<string>{694, 139}</string>
-					<string>{710, 139}</string>
-					<string>{725, 136}</string>
 					<string>{741, 135}</string>
-					<string>{757, 134}</string>
-					<string>{773, 132}</string>
-					<string>{789, 131}</string>
 					<string>{805, 134}</string>
-					<string>{820, 127}</string>
-					<string>{831, 118}</string>
-					<string>{822, 106}</string>
 					<string>{825, 90}</string>
-					<string>{818, 75}</string>
-					<string>{802, 68}</string>
-					<string>{786, 65}</string>
 					<string>{770, 62}</string>
-					<string>{754, 60}</string>
-					<string>{738, 58}</string>
-					<string>{722, 56}</string>
 					<string>{706, 49}</string>
-					<string>{691, 33}</string>
-					<string>{677, 17}</string>
-					<string>{663, 6}</string>
 					<string>{647, 3}</string>
-					<string>{631, 2}</string>
-					<string>{615, 2}</string>
-					<string>{599, 1}</string>
 					<string>{583, 1}</string>
-					<string>{567, 1}</string>
-					<string>{551, 0}</string>
 				</array>
 				<key>ShapeBorderH</key>
 				<integer>0</integer>
@@ -450,9 +269,9 @@
 				<key>Frame-HD</key>
 				<string>{{356, 0}, {477, 141}}</string>
 				<key>FrameUV</key>
-				<string>{{0.42583731, 0}, {0.9964115, 0.22031251}}</string>
+				<string>{{0.3938053, 0}, {0.92146015, 0.17713568}}</string>
 				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
+				<string>{904, 796}</string>
 				<key>Image</key>
 				<string>CrazyJump.png</string>
 				<key>Image-HD</key>
@@ -466,7 +285,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
+				<string>{452, 398}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -489,124 +308,25 @@
 				<key>Fixtures</key>
 				<array>
 					<array>
-						<string>{112.75, -28.25}</string>
-						<string>{118.25, -23.75}</string>
-						<string>{113.75, -17.75}</string>
-						<string>{97.25, -30.25}</string>
-						<string>{105.25, -31.75}</string>
+						<string>{-119.25, -20.25}</string>
+						<string>{-101.25, -32.75}</string>
+						<string>{63.25, -34.75}</string>
+						<string>{-71.564499, 9.1585083}</string>
+						<string>{-113.25, 3.25}</string>
 					</array>
 					<array>
-						<string>{113.75, -17.75}</string>
-						<string>{115.25, -9.75}</string>
-						<string>{111.75, -2.25}</string>
-						<string>{103.75, 1.25}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{97.25, -30.25}</string>
+						<string>{112.54004, -30.864227}</string>
+						<string>{112.75, -2.75}</string>
+						<string>{63.057404, 6.2477646}</string>
+						<string>{63.25, -34.75}</string>
 					</array>
 					<array>
-						<string>{-116.75, -17.25}</string>
-						<string>{-117.25, -24.25}</string>
-						<string>{-109.75, -27.75}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-88.25, 8.25}</string>
-						<string>{-96.25, 7.75}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-115.25, -10.25}</string>
-					</array>
-					<array>
-						<string>{-115.75, -3.25}</string>
-						<string>{-115.25, -10.25}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-112.25, 3.75}</string>
-					</array>
-					<array>
-						<string>{-88.25, 8.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-86.25, -32.75}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-80.25, 9.25}</string>
-					</array>
-					<array>
-						<string>{-102.25, -32.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-109.75, -27.75}</string>
-					</array>
-					<array>
-						<string>{-80.25, 9.25}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-70.25, -30.75}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-70.25, -30.75}</string>
-						<string>{-62.25, -31.75}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-57.25, 28.25}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-38.25, -33.75}</string>
-						<string>{-30.25, -33.75}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-41.25, 34.75}</string>
-						<string>{-49.25, 33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-6.25, -34.25}</string>
-						<string>{-13.75, 34.75}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-30.25, -33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-102.25, -32.25}</string>
-					</array>
-					<array>
-						<string>{-6.25, -34.25}</string>
-						<string>{17.75, -34.25}</string>
-						<string>{10.25, 34.25}</string>
-						<string>{2.25, 34.75}</string>
-						<string>{-13.75, 34.75}</string>
-					</array>
-					<array>
-						<string>{81.25, -31.75}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{65.25, -32.75}</string>
-					</array>
-					<array>
-						<string>{17.75, -34.25}</string>
-						<string>{33.75, -34.25}</string>
-						<string>{48.25, 18.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{26.25, 33.75}</string>
-						<string>{18.25, 34.25}</string>
-						<string>{10.25, 34.25}</string>
-					</array>
-					<array>
-						<string>{57.75, -34.25}</string>
-						<string>{65.25, -32.75}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{33.75, -34.25}</string>
-					</array>
-					<array>
-						<string>{26.25, 33.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{34.25, 32.25}</string>
-					</array>
-					<array>
-						<string>{33.75, -34.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{48.25, 18.75}</string>
+						<string>{33.25, 32.75}</string>
+						<string>{-14.25, 35.199997}</string>
+						<string>{-49.75, 33.75}</string>
+						<string>{-71.564499, 9.1585083}</string>
+						<string>{63.25, -34.75}</string>
+						<string>{63.057404, 6.2477646}</string>
 					</array>
 				</array>
 				<key>Friction</key>
@@ -637,71 +357,17 @@
 				<array/>
 				<key>SHShapePoints</key>
 				<array>
-					<string>{528, 147}</string>
-					<string>{512, 147}</string>
-					<string>{496, 149}</string>
-					<string>{480, 160}</string>
-					<string>{465, 176}</string>
-					<string>{450, 192}</string>
-					<string>{434, 198}</string>
-					<string>{418, 200}</string>
-					<string>{402, 201}</string>
-					<string>{386, 203}</string>
-					<string>{370, 209}</string>
-					<string>{363, 223}</string>
-					<string>{364, 237}</string>
-					<string>{361, 251}</string>
-					<string>{360, 265}</string>
-					<string>{375, 272}</string>
-					<string>{390, 281}</string>
-					<string>{406, 282}</string>
-					<string>{422, 282}</string>
-					<string>{438, 277}</string>
-					<string>{454, 278}</string>
-					<string>{470, 280}</string>
-					<string>{486, 281}</string>
-					<string>{502, 282}</string>
-					<string>{518, 284}</string>
-					<string>{534, 284}</string>
-					<string>{550, 285}</string>
-					<string>{566, 285}</string>
-					<string>{582, 285}</string>
-					<string>{598, 285}</string>
-					<string>{614, 285}</string>
-					<string>{630, 285}</string>
-					<string>{646, 285}</string>
-					<string>{662, 285}</string>
-					<string>{678, 285}</string>
-					<string>{694, 285}</string>
-					<string>{710, 285}</string>
-					<string>{725, 282}</string>
-					<string>{741, 281}</string>
-					<string>{757, 280}</string>
-					<string>{773, 278}</string>
-					<string>{789, 277}</string>
-					<string>{805, 280}</string>
-					<string>{820, 273}</string>
-					<string>{831, 264}</string>
-					<string>{822, 252}</string>
-					<string>{825, 236}</string>
-					<string>{818, 221}</string>
-					<string>{802, 214}</string>
-					<string>{786, 211}</string>
-					<string>{770, 208}</string>
-					<string>{754, 206}</string>
-					<string>{738, 204}</string>
-					<string>{722, 202}</string>
-					<string>{706, 195}</string>
-					<string>{691, 179}</string>
-					<string>{677, 163}</string>
-					<string>{663, 152}</string>
-					<string>{647, 149}</string>
-					<string>{631, 148}</string>
-					<string>{615, 148}</string>
-					<string>{599, 147}</string>
-					<string>{583, 147}</string>
-					<string>{567, 147}</string>
-					<string>{551, 146}</string>
+					<string>{356, 257}</string>
+					<string>{368, 210}</string>
+					<string>{451.371, 198.18298}</string>
+					<string>{495, 149}</string>
+					<string>{566, 146.10001}</string>
+					<string>{661, 151}</string>
+					<string>{720.61481, 204.00447}</string>
+					<string>{820, 222}</string>
+					<string>{819.58008, 278.22845}</string>
+					<string>{721, 286}</string>
+					<string>{392, 282}</string>
 				</array>
 				<key>ShapeBorderH</key>
 				<integer>0</integer>
@@ -721,551 +387,9 @@
 				<key>Frame-HD</key>
 				<string>{{356, 146}, {477, 141}}</string>
 				<key>FrameUV</key>
-				<string>{{0.42583731, 0.22812501}, {0.9964115, 0.44843751}}</string>
+				<string>{{0.3938053, 0.18341708}, {0.92146015, 0.36055276}}</string>
 				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
-				<key>Image</key>
-				<string>CrazyJump.png</string>
-				<key>Image-HD</key>
-				<string>CrazyJump-hd.png</string>
-				<key>ImageURL</key>
-				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
-				<key>ImageURL-HD</key>
-				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
-				<key>Name</key>
-				<string>Lada_very_dirty</string>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
-				<key>Scale</key>
-				<string>{1, 1}</string>
-				<key>ZOrder</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>AngularDamping</key>
-				<real>0.0</real>
-				<key>AngularVelocity</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<integer>1</integer>
-				<key>Density</key>
-				<real>0.20000000298023224</real>
-				<key>Fixtures</key>
-				<array>
-					<array>
-						<string>{112.75, -28.25}</string>
-						<string>{118.25, -23.75}</string>
-						<string>{113.75, -17.75}</string>
-						<string>{97.25, -30.25}</string>
-						<string>{105.25, -31.75}</string>
-					</array>
-					<array>
-						<string>{113.75, -17.75}</string>
-						<string>{115.25, -9.75}</string>
-						<string>{111.75, -2.25}</string>
-						<string>{103.75, 1.25}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{97.25, -30.25}</string>
-					</array>
-					<array>
-						<string>{-116.75, -17.25}</string>
-						<string>{-117.25, -24.25}</string>
-						<string>{-109.75, -27.75}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-88.25, 8.25}</string>
-						<string>{-96.25, 7.75}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-115.25, -10.25}</string>
-					</array>
-					<array>
-						<string>{-115.75, -3.25}</string>
-						<string>{-115.25, -10.25}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-112.25, 3.75}</string>
-					</array>
-					<array>
-						<string>{-88.25, 8.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-86.25, -32.75}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-80.25, 9.25}</string>
-					</array>
-					<array>
-						<string>{-102.25, -32.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-109.75, -27.75}</string>
-					</array>
-					<array>
-						<string>{-80.25, 9.25}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-70.25, -30.75}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-70.25, -30.75}</string>
-						<string>{-62.25, -31.75}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-57.25, 28.25}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-38.25, -33.75}</string>
-						<string>{-30.25, -33.75}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-41.25, 34.75}</string>
-						<string>{-49.25, 33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-6.25, -34.25}</string>
-						<string>{-13.75, 34.75}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-30.25, -33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-102.25, -32.25}</string>
-					</array>
-					<array>
-						<string>{-6.25, -34.25}</string>
-						<string>{17.75, -34.25}</string>
-						<string>{10.25, 34.25}</string>
-						<string>{2.25, 34.75}</string>
-						<string>{-13.75, 34.75}</string>
-					</array>
-					<array>
-						<string>{81.25, -31.75}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{65.25, -32.75}</string>
-					</array>
-					<array>
-						<string>{17.75, -34.25}</string>
-						<string>{33.75, -34.25}</string>
-						<string>{48.25, 18.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{26.25, 33.75}</string>
-						<string>{18.25, 34.25}</string>
-						<string>{10.25, 34.25}</string>
-					</array>
-					<array>
-						<string>{57.75, -34.25}</string>
-						<string>{65.25, -32.75}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{33.75, -34.25}</string>
-					</array>
-					<array>
-						<string>{26.25, 33.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{34.25, 32.25}</string>
-					</array>
-					<array>
-						<string>{33.75, -34.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{48.25, 18.75}</string>
-					</array>
-				</array>
-				<key>Friction</key>
-				<real>0.20000000298023224</real>
-				<key>Group</key>
-				<integer>0</integer>
-				<key>IsBullet</key>
-				<false/>
-				<key>IsCircle</key>
-				<false/>
-				<key>IsFixedRot</key>
-				<false/>
-				<key>IsSensor</key>
-				<false/>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>LinearVelocityX</key>
-				<real>0.0</real>
-				<key>LinearVelocityY</key>
-				<real>0.0</real>
-				<key>Mask</key>
-				<integer>65535</integer>
-				<key>PhysicType</key>
-				<integer>0</integer>
-				<key>Restitution</key>
-				<real>0.20000000298023224</real>
-				<key>SHHolesPoints</key>
-				<array/>
-				<key>SHShapePoints</key>
-				<array>
-					<string>{528, 293}</string>
-					<string>{512, 293}</string>
-					<string>{496, 295}</string>
-					<string>{480, 306}</string>
-					<string>{465, 322}</string>
-					<string>{450, 338}</string>
-					<string>{434, 344}</string>
-					<string>{418, 346}</string>
-					<string>{402, 347}</string>
-					<string>{386, 349}</string>
-					<string>{370, 355}</string>
-					<string>{363, 369}</string>
-					<string>{364, 383}</string>
-					<string>{361, 397}</string>
-					<string>{360, 411}</string>
-					<string>{375, 418}</string>
-					<string>{390, 427}</string>
-					<string>{406, 428}</string>
-					<string>{422, 428}</string>
-					<string>{438, 423}</string>
-					<string>{454, 424}</string>
-					<string>{470, 426}</string>
-					<string>{486, 427}</string>
-					<string>{502, 428}</string>
-					<string>{518, 430}</string>
-					<string>{534, 430}</string>
-					<string>{550, 431}</string>
-					<string>{566, 431}</string>
-					<string>{582, 431}</string>
-					<string>{598, 431}</string>
-					<string>{614, 431}</string>
-					<string>{630, 431}</string>
-					<string>{646, 431}</string>
-					<string>{662, 431}</string>
-					<string>{678, 431}</string>
-					<string>{694, 431}</string>
-					<string>{710, 431}</string>
-					<string>{725, 428}</string>
-					<string>{741, 427}</string>
-					<string>{757, 426}</string>
-					<string>{773, 424}</string>
-					<string>{789, 423}</string>
-					<string>{805, 426}</string>
-					<string>{820, 419}</string>
-					<string>{831, 410}</string>
-					<string>{822, 398}</string>
-					<string>{825, 382}</string>
-					<string>{818, 367}</string>
-					<string>{802, 360}</string>
-					<string>{786, 357}</string>
-					<string>{770, 354}</string>
-					<string>{754, 352}</string>
-					<string>{738, 350}</string>
-					<string>{722, 348}</string>
-					<string>{706, 341}</string>
-					<string>{691, 325}</string>
-					<string>{677, 309}</string>
-					<string>{663, 298}</string>
-					<string>{647, 295}</string>
-					<string>{631, 294}</string>
-					<string>{615, 294}</string>
-					<string>{599, 293}</string>
-					<string>{583, 293}</string>
-					<string>{567, 293}</string>
-					<string>{551, 292}</string>
-				</array>
-				<key>ShapeBorderH</key>
-				<integer>0</integer>
-				<key>ShapeBorderW</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetX</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetY</key>
-				<integer>0</integer>
-			</dict>
-			<key>TextureProperties</key>
-			<dict>
-				<key>Color</key>
-				<string>{{1, 1}, {1, 0}}</string>
-				<key>Frame</key>
-				<string>{{178, 146}, {238.5, 70.5}}</string>
-				<key>Frame-HD</key>
-				<string>{{356, 292}, {477, 141}}</string>
-				<key>FrameUV</key>
-				<string>{{0.42583731, 0.45625001}, {0.9964115, 0.67656249}}</string>
-				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
-				<key>Image</key>
-				<string>CrazyJump.png</string>
-				<key>Image-HD</key>
-				<string>CrazyJump-hd.png</string>
-				<key>ImageURL</key>
-				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
-				<key>ImageURL-HD</key>
-				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
-				<key>Name</key>
-				<string>Lada_old</string>
-				<key>Opacity</key>
-				<real>1</real>
-				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
-				<key>Scale</key>
-				<string>{1, 1}</string>
-				<key>ZOrder</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>PhysicProperties</key>
-			<dict>
-				<key>AngularDamping</key>
-				<real>0.0</real>
-				<key>AngularVelocity</key>
-				<real>0.0</real>
-				<key>CanSleep</key>
-				<true/>
-				<key>Category</key>
-				<integer>1</integer>
-				<key>Density</key>
-				<real>0.20000000298023224</real>
-				<key>Fixtures</key>
-				<array>
-					<array>
-						<string>{112.75, -28.25}</string>
-						<string>{118.25, -23.75}</string>
-						<string>{113.75, -17.75}</string>
-						<string>{97.25, -30.25}</string>
-						<string>{105.25, -31.75}</string>
-					</array>
-					<array>
-						<string>{113.75, -17.75}</string>
-						<string>{115.25, -9.75}</string>
-						<string>{111.75, -2.25}</string>
-						<string>{103.75, 1.25}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{97.25, -30.25}</string>
-					</array>
-					<array>
-						<string>{-116.75, -17.25}</string>
-						<string>{-117.25, -24.25}</string>
-						<string>{-109.75, -27.75}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-88.25, 8.25}</string>
-						<string>{-96.25, 7.75}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-115.25, -10.25}</string>
-					</array>
-					<array>
-						<string>{-115.75, -3.25}</string>
-						<string>{-115.25, -10.25}</string>
-						<string>{-104.25, 6.75}</string>
-						<string>{-112.25, 3.75}</string>
-					</array>
-					<array>
-						<string>{-88.25, 8.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-86.25, -32.75}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-80.25, 9.25}</string>
-					</array>
-					<array>
-						<string>{-102.25, -32.25}</string>
-						<string>{-94.25, -32.75}</string>
-						<string>{-109.75, -27.75}</string>
-					</array>
-					<array>
-						<string>{-80.25, 9.25}</string>
-						<string>{-78.25, -30.25}</string>
-						<string>{-70.25, -30.75}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-70.25, -30.75}</string>
-						<string>{-62.25, -31.75}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-72.25, 12.25}</string>
-					</array>
-					<array>
-						<string>{-57.25, 28.25}</string>
-						<string>{-64.75, 20.25}</string>
-						<string>{-46.25, -32.75}</string>
-						<string>{-38.25, -33.75}</string>
-						<string>{-30.25, -33.75}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-41.25, 34.75}</string>
-						<string>{-49.25, 33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-6.25, -34.25}</string>
-						<string>{-13.75, 34.75}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-33.25, 34.75}</string>
-						<string>{-30.25, -33.75}</string>
-					</array>
-					<array>
-						<string>{-22.25, -34.25}</string>
-						<string>{-21.75, 35.25}</string>
-						<string>{-102.25, -32.25}</string>
-					</array>
-					<array>
-						<string>{-6.25, -34.25}</string>
-						<string>{17.75, -34.25}</string>
-						<string>{10.25, 34.25}</string>
-						<string>{2.25, 34.75}</string>
-						<string>{-13.75, 34.75}</string>
-					</array>
-					<array>
-						<string>{81.25, -31.75}</string>
-						<string>{89.25, -30.75}</string>
-						<string>{87.75, 4.25}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{65.25, -32.75}</string>
-					</array>
-					<array>
-						<string>{17.75, -34.25}</string>
-						<string>{33.75, -34.25}</string>
-						<string>{48.25, 18.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{26.25, 33.75}</string>
-						<string>{18.25, 34.25}</string>
-						<string>{10.25, 34.25}</string>
-					</array>
-					<array>
-						<string>{57.75, -34.25}</string>
-						<string>{65.25, -32.75}</string>
-						<string>{63.75, 7.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{33.75, -34.25}</string>
-					</array>
-					<array>
-						<string>{26.25, 33.75}</string>
-						<string>{41.25, 26.75}</string>
-						<string>{34.25, 32.25}</string>
-					</array>
-					<array>
-						<string>{33.75, -34.25}</string>
-						<string>{55.75, 10.75}</string>
-						<string>{48.25, 18.75}</string>
-					</array>
-				</array>
-				<key>Friction</key>
-				<real>0.20000000298023224</real>
-				<key>Group</key>
-				<integer>0</integer>
-				<key>IsBullet</key>
-				<false/>
-				<key>IsCircle</key>
-				<false/>
-				<key>IsFixedRot</key>
-				<false/>
-				<key>IsSensor</key>
-				<false/>
-				<key>LinearDamping</key>
-				<real>0.0</real>
-				<key>LinearVelocityX</key>
-				<real>0.0</real>
-				<key>LinearVelocityY</key>
-				<real>0.0</real>
-				<key>Mask</key>
-				<integer>65535</integer>
-				<key>PhysicType</key>
-				<integer>0</integer>
-				<key>Restitution</key>
-				<real>0.20000000298023224</real>
-				<key>SHHolesPoints</key>
-				<array/>
-				<key>SHShapePoints</key>
-				<array>
-					<string>{528, 439}</string>
-					<string>{512, 439}</string>
-					<string>{496, 441}</string>
-					<string>{480, 452}</string>
-					<string>{465, 468}</string>
-					<string>{450, 484}</string>
-					<string>{434, 490}</string>
-					<string>{418, 492}</string>
-					<string>{402, 493}</string>
-					<string>{386, 495}</string>
-					<string>{370, 501}</string>
-					<string>{363, 515}</string>
-					<string>{364, 529}</string>
-					<string>{361, 543}</string>
-					<string>{360, 557}</string>
-					<string>{375, 564}</string>
-					<string>{390, 573}</string>
-					<string>{406, 574}</string>
-					<string>{422, 574}</string>
-					<string>{438, 569}</string>
-					<string>{454, 570}</string>
-					<string>{470, 572}</string>
-					<string>{486, 573}</string>
-					<string>{502, 574}</string>
-					<string>{518, 576}</string>
-					<string>{534, 576}</string>
-					<string>{550, 577}</string>
-					<string>{566, 577}</string>
-					<string>{582, 577}</string>
-					<string>{598, 577}</string>
-					<string>{614, 577}</string>
-					<string>{630, 577}</string>
-					<string>{646, 577}</string>
-					<string>{662, 577}</string>
-					<string>{678, 577}</string>
-					<string>{694, 577}</string>
-					<string>{710, 577}</string>
-					<string>{725, 574}</string>
-					<string>{741, 573}</string>
-					<string>{757, 572}</string>
-					<string>{773, 570}</string>
-					<string>{789, 569}</string>
-					<string>{805, 572}</string>
-					<string>{820, 565}</string>
-					<string>{831, 556}</string>
-					<string>{822, 544}</string>
-					<string>{825, 528}</string>
-					<string>{818, 513}</string>
-					<string>{802, 506}</string>
-					<string>{786, 503}</string>
-					<string>{770, 500}</string>
-					<string>{754, 498}</string>
-					<string>{738, 496}</string>
-					<string>{722, 494}</string>
-					<string>{706, 487}</string>
-					<string>{691, 471}</string>
-					<string>{677, 455}</string>
-					<string>{663, 444}</string>
-					<string>{647, 441}</string>
-					<string>{631, 440}</string>
-					<string>{615, 440}</string>
-					<string>{599, 439}</string>
-					<string>{583, 439}</string>
-					<string>{567, 439}</string>
-					<string>{551, 438}</string>
-				</array>
-				<key>ShapeBorderH</key>
-				<integer>0</integer>
-				<key>ShapeBorderW</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetX</key>
-				<integer>0</integer>
-				<key>ShapePositionOffsetY</key>
-				<integer>0</integer>
-			</dict>
-			<key>TextureProperties</key>
-			<dict>
-				<key>Color</key>
-				<string>{{1, 1}, {1, 0}}</string>
-				<key>Frame</key>
-				<string>{{178, 219}, {238.5, 70.5}}</string>
-				<key>Frame-HD</key>
-				<string>{{356, 438}, {477, 141}}</string>
-				<key>FrameUV</key>
-				<string>{{0.42583731, 0.68437499}, {0.9964115, 0.90468752}}</string>
-				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
+				<string>{904, 796}</string>
 				<key>Image</key>
 				<string>CrazyJump.png</string>
 				<key>Image-HD</key>
@@ -1279,7 +403,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
+				<string>{452, 398}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1302,106 +426,19 @@
 				<key>Fixtures</key>
 				<array>
 					<array>
-						<string>{110.25, -8.25}</string>
-						<string>{113.75, -2.75}</string>
-						<string>{108.75, 5.25}</string>
-						<string>{101.75, 10.25}</string>
-						<string>{93.75, 10.75}</string>
-						<string>{85.75, 10.25}</string>
-						<string>{94.25, -7.75}</string>
-						<string>{102.25, -8.25}</string>
+						<string>{-119.25, -20.25}</string>
+						<string>{-101.25, -32.75}</string>
+						<string>{63.25, -34.75}</string>
+						<string>{112.75, -2.75}</string>
+						<string>{33.25, 32.75}</string>
+						<string>{-14.25, 35.199997}</string>
+						<string>{-49.75, 33.75}</string>
+						<string>{-113.25, 3.25}</string>
 					</array>
 					<array>
-						<string>{-114.25, -0.75}</string>
-						<string>{-113.25, -8.75}</string>
-						<string>{-105.25, -12.25}</string>
-						<string>{-97.25, -12.75}</string>
-						<string>{-89.25, -11.75}</string>
-						<string>{-90.25, 13.25}</string>
-						<string>{-99.75, 12.25}</string>
-						<string>{-107.75, 6.75}</string>
-					</array>
-					<array>
-						<string>{94.25, -7.75}</string>
-						<string>{85.75, 10.25}</string>
-						<string>{69.75, 10.25}</string>
-						<string>{70.25, -10.75}</string>
-						<string>{78.25, -10.75}</string>
-					</array>
-					<array>
-						<string>{-89.25, -11.75}</string>
-						<string>{-81.25, -11.75}</string>
-						<string>{-65.25, -10.75}</string>
-						<string>{-66.25, 10.75}</string>
-						<string>{-82.25, 12.75}</string>
-						<string>{-90.25, 13.25}</string>
-					</array>
-					<array>
-						<string>{-57.25, -11.25}</string>
-						<string>{-49.25, -11.25}</string>
-						<string>{-50.25, 10.25}</string>
-						<string>{-58.25, 10.25}</string>
-						<string>{-65.25, -10.75}</string>
-					</array>
-					<array>
-						<string>{22.25, -10.75}</string>
-						<string>{30.25, -12.25}</string>
-						<string>{38.25, -10.75}</string>
-						<string>{29.75, 10.75}</string>
-						<string>{21.75, 11.25}</string>
-						<string>{13.75, 10.75}</string>
-					</array>
-					<array>
-						<string>{-49.25, -11.25}</string>
-						<string>{-41.25, -11.75}</string>
-						<string>{-33.25, -11.25}</string>
-						<string>{-26.25, 10.25}</string>
-						<string>{-34.25, 11.25}</string>
-						<string>{-50.25, 10.25}</string>
-					</array>
-					<array>
-						<string>{-65.25, -10.75}</string>
-						<string>{-58.25, 10.25}</string>
-						<string>{-66.25, 10.75}</string>
-					</array>
-					<array>
-						<string>{-90.25, 13.25}</string>
-						<string>{-41.25, -11.75}</string>
-						<string>{-42.25, 10.75}</string>
-					</array>
-					<array>
-						<string>{-25.25, -11.75}</string>
-						<string>{-17.25, -11.75}</string>
-						<string>{-18.25, 10.25}</string>
-						<string>{-26.25, 10.25}</string>
-						<string>{-33.25, -11.25}</string>
-					</array>
-					<array>
-						<string>{-17.25, -11.75}</string>
-						<string>{6.75, -11.75}</string>
-						<string>{5.75, 10.75}</string>
-						<string>{-10.25, 10.75}</string>
-						<string>{-18.25, 10.25}</string>
-					</array>
-					<array>
-						<string>{6.75, -11.75}</string>
-						<string>{14.75, -11.75}</string>
-						<string>{22.25, -10.75}</string>
-						<string>{13.75, 10.75}</string>
-						<string>{5.75, 10.75}</string>
-					</array>
-					<array>
-						<string>{29.75, 10.75}</string>
-						<string>{38.25, -10.75}</string>
-						<string>{54.25, -10.75}</string>
-						<string>{61.75, 10.25}</string>
-						<string>{53.75, 10.75}</string>
-					</array>
-					<array>
-						<string>{54.25, -10.75}</string>
-						<string>{70.25, -10.75}</string>
-						<string>{69.75, 10.25}</string>
-						<string>{61.75, 10.25}</string>
+						<string>{63.25, -34.75}</string>
+						<string>{118.79999, -25.25}</string>
+						<string>{112.75, -2.75}</string>
 					</array>
 				</array>
 				<key>Friction</key>
@@ -1432,65 +469,15 @@
 				<array/>
 				<key>SHShapePoints</key>
 				<array>
-					<string>{386, 586}</string>
-					<string>{370, 597}</string>
-					<string>{357, 612}</string>
-					<string>{359, 628}</string>
-					<string>{375, 635}</string>
-					<string>{391, 636}</string>
-					<string>{407, 634}</string>
-					<string>{423, 634}</string>
-					<string>{439, 633}</string>
-					<string>{455, 632}</string>
-					<string>{471, 633}</string>
-					<string>{487, 633}</string>
-					<string>{503, 634}</string>
-					<string>{519, 633}</string>
-					<string>{535, 634}</string>
-					<string>{551, 634}</string>
-					<string>{567, 634}</string>
-					<string>{583, 634}</string>
-					<string>{599, 634}</string>
-					<string>{615, 634}</string>
-					<string>{630, 632}</string>
-					<string>{646, 635}</string>
-					<string>{662, 632}</string>
-					<string>{678, 632}</string>
-					<string>{694, 632}</string>
-					<string>{710, 632}</string>
-					<string>{726, 632}</string>
-					<string>{742, 632}</string>
-					<string>{758, 629}</string>
-					<string>{774, 626}</string>
-					<string>{790, 627}</string>
-					<string>{806, 627}</string>
-					<string>{813, 616}</string>
-					<string>{803, 600}</string>
-					<string>{789, 590}</string>
-					<string>{773, 589}</string>
-					<string>{757, 590}</string>
-					<string>{741, 590}</string>
-					<string>{725, 590}</string>
-					<string>{709, 590}</string>
-					<string>{693, 589}</string>
-					<string>{677, 589}</string>
-					<string>{661, 589}</string>
-					<string>{645, 589}</string>
-					<string>{629, 588}</string>
-					<string>{613, 589}</string>
-					<string>{597, 589}</string>
-					<string>{581, 589}</string>
-					<string>{565, 589}</string>
-					<string>{549, 590}</string>
-					<string>{533, 590}</string>
-					<string>{517, 588}</string>
-					<string>{501, 589}</string>
-					<string>{485, 590}</string>
-					<string>{469, 590}</string>
-					<string>{453, 589}</string>
-					<string>{437, 587}</string>
-					<string>{421, 585}</string>
-					<string>{405, 584}</string>
+					<string>{0, 469}</string>
+					<string>{12, 422}</string>
+					<string>{139, 361}</string>
+					<string>{210, 358.10001}</string>
+					<string>{305, 363}</string>
+					<string>{464, 434}</string>
+					<string>{476.09998, 479}</string>
+					<string>{365, 498}</string>
+					<string>{36, 494}</string>
 				</array>
 				<key>ShapeBorderH</key>
 				<integer>0</integer>
@@ -1506,13 +493,634 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{178, 292}, {229.5, 26.5}}</string>
+				<string>{{0, 179}, {238.5, 70.5}}</string>
 				<key>Frame-HD</key>
-				<string>{{356, 584}, {459, 53}}</string>
+				<string>{{0, 358}, {477, 141}}</string>
 				<key>FrameUV</key>
-				<string>{{0.42583731, 0.91250002}, {0.9748804, 0.99531251}}</string>
+				<string>{{0, 0.44974875}, {0.52765489, 0.6268844}}</string>
 				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
+				<string>{904, 796}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>Image-HD</key>
+				<string>CrazyJump-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
+				<key>Name</key>
+				<string>CrazyJump-hd</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{452, 398}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array>
+					<array>
+						<string>{-117.25, -24.25}</string>
+						<string>{-86.25, -32.75}</string>
+						<string>{-54.25, -32.25}</string>
+						<string>{-80.25, 9.25}</string>
+						<string>{-112.25, 3.75}</string>
+					</array>
+					<array>
+						<string>{105.25, -31.75}</string>
+						<string>{115.25, -9.75}</string>
+						<string>{87.75, 4.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{73.25, -32.25}</string>
+					</array>
+					<array>
+						<string>{-54.25, -32.25}</string>
+						<string>{-22.25, -34.25}</string>
+						<string>{9.75, -34.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{26.25, 33.75}</string>
+						<string>{-5.75, 34.75}</string>
+						<string>{-49.25, 33.75}</string>
+						<string>{-80.25, 9.25}</string>
+					</array>
+					<array>
+						<string>{41.75, -34.25}</string>
+						<string>{73.25, -32.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{9.75, -34.25}</string>
+					</array>
+				</array>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array>
+					<string>{140, 507}</string>
+					<string>{78, 556}</string>
+					<string>{14, 567}</string>
+					<string>{4, 623}</string>
+					<string>{66, 640}</string>
+					<string>{130, 639}</string>
+					<string>{194, 643}</string>
+					<string>{258, 643}</string>
+					<string>{322, 643}</string>
+					<string>{385, 639}</string>
+					<string>{449, 638}</string>
+					<string>{469, 594}</string>
+					<string>{414, 566}</string>
+					<string>{350, 553}</string>
+					<string>{291, 507}</string>
+					<string>{227, 505}</string>
+				</array>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 252}, {238.5, 70.5}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 504}, {477, 141}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.63316584}, {0.52765489, 0.81030148}}</string>
+				<key>HD_ImageSize</key>
+				<string>{904, 796}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>Image-HD</key>
+				<string>CrazyJump-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
+				<key>Name</key>
+				<string>Lada_very_dirty</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{452, 398}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array>
+					<array>
+						<string>{-117.25, -24.25}</string>
+						<string>{-86.25, -32.75}</string>
+						<string>{-54.25, -32.25}</string>
+						<string>{-80.25, 9.25}</string>
+						<string>{-112.25, 3.75}</string>
+					</array>
+					<array>
+						<string>{105.25, -31.75}</string>
+						<string>{115.25, -9.75}</string>
+						<string>{87.75, 4.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{73.25, -32.25}</string>
+					</array>
+					<array>
+						<string>{-54.25, -32.25}</string>
+						<string>{-22.25, -34.25}</string>
+						<string>{9.75, -34.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{26.25, 33.75}</string>
+						<string>{-5.75, 34.75}</string>
+						<string>{-49.25, 33.75}</string>
+						<string>{-80.25, 9.25}</string>
+					</array>
+					<array>
+						<string>{41.75, -34.25}</string>
+						<string>{73.25, -32.25}</string>
+						<string>{55.75, 10.75}</string>
+						<string>{9.75, -34.25}</string>
+					</array>
+				</array>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array>
+					<string>{140, 653}</string>
+					<string>{78, 702}</string>
+					<string>{14, 713}</string>
+					<string>{4, 769}</string>
+					<string>{66, 786}</string>
+					<string>{130, 785}</string>
+					<string>{194, 789}</string>
+					<string>{258, 789}</string>
+					<string>{322, 789}</string>
+					<string>{385, 785}</string>
+					<string>{449, 784}</string>
+					<string>{469, 740}</string>
+					<string>{414, 712}</string>
+					<string>{350, 699}</string>
+					<string>{291, 653}</string>
+					<string>{227, 651}</string>
+				</array>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{0, 325}, {238.5, 70.5}}</string>
+				<key>Frame-HD</key>
+				<string>{{0, 650}, {477, 141}}</string>
+				<key>FrameUV</key>
+				<string>{{0, 0.81658292}, {0.52765489, 0.99371856}}</string>
+				<key>HD_ImageSize</key>
+				<string>{904, 796}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>Image-HD</key>
+				<string>CrazyJump-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
+				<key>Name</key>
+				<string>Lada_old</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{452, 398}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array>
+					<array>
+						<string>{42.5, 35.75}</string>
+						<string>{27, 48.25}</string>
+						<string>{-0.5, 59.700012}</string>
+						<string>{-52.449997, 8.25}</string>
+						<string>{-51.5, -11.25}</string>
+						<string>{35.5, -33.25}</string>
+						<string>{51.493469, -1.6668701}</string>
+						<string>{49.5, 28.25}</string>
+					</array>
+					<array>
+						<string>{-49.5, -24.75}</string>
+						<string>{-32, -47.75}</string>
+						<string>{-13, -59.299988}</string>
+						<string>{17.5, -50.25}</string>
+						<string>{28, -44.25}</string>
+						<string>{35.5, -33.25}</string>
+						<string>{-51.5, -11.25}</string>
+					</array>
+					<array>
+						<string>{-52.449997, 8.25}</string>
+						<string>{-0.5, 59.700012}</string>
+						<string>{-23, 56.25}</string>
+						<string>{-46.5, 37.75}</string>
+					</array>
+				</array>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array>
+					<string>{482.10001, 607}</string>
+					<string>{494, 548}</string>
+					<string>{541, 511}</string>
+					<string>{586, 504.09998}</string>
+					<string>{641, 527}</string>
+					<string>{672, 552}</string>
+					<string>{686, 567}</string>
+					<string>{689.98694, 626.83374}</string>
+					<string>{658, 690}</string>
+					<string>{643, 712}</string>
+					<string>{622, 724}</string>
+					<string>{561, 742.09998}</string>
+					<string>{523, 719}</string>
+					<string>{488, 673}</string>
+					<string>{484, 646}</string>
+				</array>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{241, 252}, {105, 119.5}}</string>
+				<key>Frame-HD</key>
+				<string>{{482, 504}, {210, 239}}</string>
+				<key>FrameUV</key>
+				<string>{{0.53318584, 0.63316584}, {0.76548672, 0.93341708}}</string>
+				<key>HD_ImageSize</key>
+				<string>{904, 796}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>Image-HD</key>
+				<string>CrazyJump-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
+				<key>Name</key>
+				<string>Big_rock</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{452, 398}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array>
+					<array>
+						<string>{-43.094788, 55.432617}</string>
+						<string>{-39.356445, -63.446167}</string>
+						<string>{-37.861115, -65.315338}</string>
+						<string>{22.699768, -69.801331}</string>
+						<string>{42.139069, -56.717194}</string>
+						<string>{41.391418, 58.049438}</string>
+						<string>{14.475464, 71.507401}</string>
+						<string>{-12.06665, 71.881226}</string>
+					</array>
+				</array>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array>
+					<string>{707.77777, 779.13068}</string>
+					<string>{828.89954, 788.10266}</string>
+					<string>{867.77814, 761.93439}</string>
+					<string>{866.28284, 532.40112}</string>
+					<string>{812.45093, 505.4852}</string>
+					<string>{759.3667, 504.73755}</string>
+					<string>{697.31042, 537.63477}</string>
+					<string>{704.78711, 775.39233}</string>
+				</array>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{349, 252}, {85.5, 144.5}}</string>
+				<key>Frame-HD</key>
+				<string>{{698, 504}, {171, 289}}</string>
+				<key>FrameUV</key>
+				<string>{{0.77212387, 0.63316584}, {0.96128321, 0.99623114}}</string>
+				<key>HD_ImageSize</key>
+				<string>{904, 796}</string>
+				<key>Image</key>
+				<string>CrazyJump.png</string>
+				<key>Image-HD</key>
+				<string>CrazyJump-hd.png</string>
+				<key>ImageURL</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump.png</string>
+				<key>ImageURL-HD</key>
+				<string>/Users/sebastiendumont/Documents/dev/Games/CrazyJump/CrazyJump/Resources/images/CrazyJump-hd.png</string>
+				<key>Name</key>
+				<string>toilet</string>
+				<key>Opacity</key>
+				<real>1</real>
+				<key>SD_ImageSize</key>
+				<string>{452, 398}</string>
+				<key>Scale</key>
+				<string>{1, 1}</string>
+				<key>ZOrder</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>PhysicProperties</key>
+			<dict>
+				<key>AngularDamping</key>
+				<real>0.0</real>
+				<key>AngularVelocity</key>
+				<real>0.0</real>
+				<key>CanSleep</key>
+				<true/>
+				<key>Category</key>
+				<integer>1</integer>
+				<key>Density</key>
+				<real>0.20000000298023224</real>
+				<key>Fixtures</key>
+				<array>
+					<array>
+						<string>{69.75, 10.25}</string>
+						<string>{38.25, -10.75}</string>
+						<string>{70.25, -10.75}</string>
+						<string>{102.25, -8.25}</string>
+						<string>{101.75, 10.25}</string>
+					</array>
+					<array>
+						<string>{-114.25, -0.75}</string>
+						<string>{-89.25, -11.75}</string>
+						<string>{-57.25, -11.25}</string>
+						<string>{-58.25, 10.25}</string>
+						<string>{-90.25, 13.25}</string>
+					</array>
+					<array>
+						<string>{-57.25, -11.25}</string>
+						<string>{-25.25, -11.75}</string>
+						<string>{-26.25, 10.25}</string>
+						<string>{-58.25, 10.25}</string>
+					</array>
+					<array>
+						<string>{38.25, -10.75}</string>
+						<string>{69.75, 10.25}</string>
+						<string>{-26.25, 10.25}</string>
+						<string>{-25.25, -11.75}</string>
+					</array>
+				</array>
+				<key>Friction</key>
+				<real>0.20000000298023224</real>
+				<key>Group</key>
+				<integer>0</integer>
+				<key>IsBullet</key>
+				<false/>
+				<key>IsCircle</key>
+				<false/>
+				<key>IsFixedRot</key>
+				<false/>
+				<key>IsSensor</key>
+				<false/>
+				<key>LinearDamping</key>
+				<real>0.0</real>
+				<key>LinearVelocityX</key>
+				<real>0.0</real>
+				<key>LinearVelocityY</key>
+				<real>0.0</real>
+				<key>Mask</key>
+				<integer>65535</integer>
+				<key>PhysicType</key>
+				<integer>0</integer>
+				<key>Restitution</key>
+				<real>0.20000000298023224</real>
+				<key>SHHolesPoints</key>
+				<array/>
+				<key>SHShapePoints</key>
+				<array>
+					<string>{357, 320}</string>
+					<string>{407, 342}</string>
+					<string>{471, 341}</string>
+					<string>{535, 342}</string>
+					<string>{599, 342}</string>
+					<string>{662, 340}</string>
+					<string>{726, 340}</string>
+					<string>{790, 335}</string>
+					<string>{789, 298}</string>
+					<string>{725, 298}</string>
+					<string>{661, 297}</string>
+					<string>{597, 297}</string>
+					<string>{533, 298}</string>
+					<string>{469, 298}</string>
+					<string>{405, 292}</string>
+				</array>
+				<key>ShapeBorderH</key>
+				<integer>0</integer>
+				<key>ShapeBorderW</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetX</key>
+				<integer>0</integer>
+				<key>ShapePositionOffsetY</key>
+				<integer>0</integer>
+			</dict>
+			<key>TextureProperties</key>
+			<dict>
+				<key>Color</key>
+				<string>{{1, 1}, {1, 0}}</string>
+				<key>Frame</key>
+				<string>{{178, 146}, {229.5, 26.5}}</string>
+				<key>Frame-HD</key>
+				<string>{{356, 292}, {459, 53}}</string>
+				<key>FrameUV</key>
+				<string>{{0.3938053, 0.36683416}, {0.90154868, 0.43341708}}</string>
+				<key>HD_ImageSize</key>
+				<string>{904, 796}</string>
 				<key>Image</key>
 				<string>CrazyJump.png</string>
 				<key>Image-HD</key>
@@ -1526,7 +1134,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
+				<string>{452, 398}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1549,45 +1157,12 @@
 				<key>Fixtures</key>
 				<array>
 					<array>
-						<string>{-0.5, 16}</string>
-						<string>{-16, -1}</string>
-						<string>{-2, -15.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{15.5, 3.5}</string>
-						<string>{14, 7.5}</string>
-						<string>{11.5, 11.5}</string>
-						<string>{7.5, 14.5}</string>
-					</array>
-					<array>
-						<string>{15, -4.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{-2, -15.5}</string>
-						<string>{2, -15.5}</string>
-						<string>{6, -14.5}</string>
-						<string>{10, -12}</string>
 						<string>{13.5, -8.5}</string>
-					</array>
-					<array>
-						<string>{-15.5, -5}</string>
-						<string>{-13.5, -9}</string>
-						<string>{-10, -12.5}</string>
-						<string>{-6, -15}</string>
-						<string>{-2, -15.5}</string>
-						<string>{-16, -1}</string>
-					</array>
-					<array>
-						<string>{-16, 3}</string>
-						<string>{-16, -1}</string>
+						<string>{14, 7.5}</string>
 						<string>{-0.5, 16}</string>
-						<string>{-4.5, 15.5}</string>
-						<string>{-8.5, 14}</string>
 						<string>{-12.5, 11}</string>
-						<string>{-15, 7}</string>
-					</array>
-					<array>
-						<string>{-0.5, 16}</string>
-						<string>{7.5, 14.5}</string>
-						<string>{3.5, 16}</string>
+						<string>{-15.5, -5}</string>
+						<string>{-2, -15.5}</string>
 					</array>
 				</array>
 				<key>Friction</key>
@@ -1618,29 +1193,12 @@
 				<array/>
 				<key>SHShapePoints</key>
 				<array>
-					<string>{23, 359}</string>
-					<string>{15, 362}</string>
-					<string>{7, 368}</string>
-					<string>{2, 376}</string>
-					<string>{0, 384}</string>
-					<string>{0, 392}</string>
-					<string>{1, 400}</string>
-					<string>{5, 408}</string>
-					<string>{12, 415}</string>
-					<string>{20, 420}</string>
-					<string>{28, 421}</string>
-					<string>{36, 421}</string>
-					<string>{44, 419}</string>
-					<string>{52, 414}</string>
-					<string>{59, 407}</string>
-					<string>{62, 399}</string>
-					<string>{63, 391}</string>
-					<string>{63, 383}</string>
-					<string>{60, 375}</string>
-					<string>{55, 367}</string>
-					<string>{47, 361}</string>
-					<string>{39, 358}</string>
-					<string>{31, 358}</string>
+					<string>{845, 10}</string>
+					<string>{839, 42}</string>
+					<string>{866, 63}</string>
+					<string>{897, 49}</string>
+					<string>{898, 17}</string>
+					<string>{869, 0}</string>
 				</array>
 				<key>ShapeBorderH</key>
 				<integer>0</integer>
@@ -1656,13 +1214,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{0, 179}, {32, 32}}</string>
+				<string>{{419, 0}, {32, 32}}</string>
 				<key>Frame-HD</key>
-				<string>{{0, 358}, {64, 64}}</string>
+				<string>{{838, 0}, {64, 64}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.55937499}, {0.076555021, 0.65937501}}</string>
+				<string>{{0.92699116, 0}, {0.99778759, 0.080402009}}</string>
 				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
+				<string>{904, 796}</string>
 				<key>Image</key>
 				<string>CrazyJump.png</string>
 				<key>Image-HD</key>
@@ -1676,7 +1234,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
+				<string>{452, 398}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
@@ -1699,45 +1257,12 @@
 				<key>Fixtures</key>
 				<array>
 					<array>
-						<string>{-0.5, 16}</string>
-						<string>{-16, -1}</string>
-						<string>{-2, -15.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{15.5, 3.5}</string>
-						<string>{14, 7.5}</string>
-						<string>{11.5, 11.5}</string>
-						<string>{7.5, 14.5}</string>
-					</array>
-					<array>
-						<string>{15, -4.5}</string>
-						<string>{15.5, -0.5}</string>
-						<string>{-2, -15.5}</string>
-						<string>{2, -15.5}</string>
-						<string>{6, -14.5}</string>
-						<string>{10, -12}</string>
 						<string>{13.5, -8.5}</string>
-					</array>
-					<array>
-						<string>{-15.5, -5}</string>
-						<string>{-13.5, -9}</string>
-						<string>{-10, -12.5}</string>
-						<string>{-6, -15}</string>
-						<string>{-2, -15.5}</string>
-						<string>{-16, -1}</string>
-					</array>
-					<array>
-						<string>{-16, 3}</string>
-						<string>{-16, -1}</string>
+						<string>{14, 7.5}</string>
 						<string>{-0.5, 16}</string>
-						<string>{-4.5, 15.5}</string>
-						<string>{-8.5, 14}</string>
 						<string>{-12.5, 11}</string>
-						<string>{-15, 7}</string>
-					</array>
-					<array>
-						<string>{-0.5, 16}</string>
-						<string>{7.5, 14.5}</string>
-						<string>{3.5, 16}</string>
+						<string>{-15.5, -5}</string>
+						<string>{-2, -15.5}</string>
 					</array>
 				</array>
 				<key>Friction</key>
@@ -1768,29 +1293,12 @@
 				<array/>
 				<key>SHShapePoints</key>
 				<array>
-					<string>{23, 427}</string>
-					<string>{15, 430}</string>
-					<string>{7, 436}</string>
-					<string>{2, 444}</string>
-					<string>{0, 452}</string>
-					<string>{0, 460}</string>
-					<string>{1, 468}</string>
-					<string>{5, 476}</string>
-					<string>{12, 483}</string>
-					<string>{20, 488}</string>
-					<string>{28, 489}</string>
-					<string>{36, 489}</string>
-					<string>{44, 487}</string>
-					<string>{52, 482}</string>
-					<string>{59, 475}</string>
-					<string>{62, 467}</string>
-					<string>{63, 459}</string>
-					<string>{63, 451}</string>
-					<string>{60, 443}</string>
-					<string>{55, 435}</string>
-					<string>{47, 429}</string>
-					<string>{39, 426}</string>
-					<string>{31, 426}</string>
+					<string>{845, 80}</string>
+					<string>{839, 112}</string>
+					<string>{866, 133}</string>
+					<string>{897, 119}</string>
+					<string>{898, 87}</string>
+					<string>{869, 70}</string>
 				</array>
 				<key>ShapeBorderH</key>
 				<integer>0</integer>
@@ -1806,13 +1314,13 @@
 				<key>Color</key>
 				<string>{{1, 1}, {1, 0}}</string>
 				<key>Frame</key>
-				<string>{{0, 213}, {32, 32}}</string>
+				<string>{{419, 35}, {32, 32}}</string>
 				<key>Frame-HD</key>
-				<string>{{0, 426}, {64, 64}}</string>
+				<string>{{838, 70}, {64, 64}}</string>
 				<key>FrameUV</key>
-				<string>{{0, 0.66562498}, {0.076555021, 0.765625}}</string>
+				<string>{{0.92699116, 0.087939702}, {0.99778759, 0.16834171}}</string>
 				<key>HD_ImageSize</key>
-				<string>{836, 640}</string>
+				<string>{904, 796}</string>
 				<key>Image</key>
 				<string>CrazyJump.png</string>
 				<key>Image-HD</key>
@@ -1826,7 +1334,7 @@
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
-				<string>{418, 320}</string>
+				<string>{452, 398}</string>
 				<key>Scale</key>
 				<string>{1, 1}</string>
 				<key>ZOrder</key>
